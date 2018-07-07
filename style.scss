@@ -333,14 +333,19 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border: 1px solid $footerborder;
+  border-style: solid none;
+  background-color: $footerbg;
 }
 
 footer {
   padding: 20px 0;
   text-align: center;
+
+  a{
+    display:block;
+    margin-right:10px;
+  }
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
