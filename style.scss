@@ -380,6 +380,32 @@ footer {
   }
 }
 
+
+/* Projects */
+.projects{
+	position:relative;
+}
+.project{
+	padding-top:18px;
+	padding-bottom:35px;
+	width:500px;
+	margin-top:0;
+	margin-bottom:0;
+}
+.project img{
+	display:block;
+	width:100%;
+}
+.project figcaption{
+	font-family: $copyfont;
+	text-align: center;
+	display: block;
+	height:2em;
+	line-height:2em;
+	font-weight:300;
+	padding-top:10px;
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
