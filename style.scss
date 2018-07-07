@@ -223,9 +223,6 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2em;
-}
 
 .posts > .post:last-child {
   padding-bottom: 1em;
@@ -257,11 +254,11 @@ nav {
   a:hover{
     h2{
       color: $linkhover;
-      text-transform: underline;
+      text-decoration: underline;
 
       .date{
         color: $linkhover;
-        text-transform: none;
+        text-decoration: none;
       }
     }
     h3{
