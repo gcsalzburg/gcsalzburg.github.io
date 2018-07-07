@@ -308,13 +308,18 @@ nav {
   a:hover{
     h2{
       color: $linkhover;
-      text-decoration: underline;
-
-      .date{
-        color: $linkhover;
-        text-decoration: none;
-      }
+      background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
+      background-position: 0 1.3em;
+      background-repeat: repeat-x;
+      background-size: 1px 1px;
     }
+
+    .date{
+      background-image: none;
+      color: $linkhover;
+      text-decoration: none;
+    }
+
     h3{
       color: $linkhover;
     }
