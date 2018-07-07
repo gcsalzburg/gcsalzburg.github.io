@@ -110,13 +110,15 @@ img {
 }
 
 // Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
+::-moz-selection{
+  background-color:$textselection;
+  color: $darkerGray;
+  text-shadow:none;
 }
-::selection {
-  color: $black;
-  background: $lightGray;
+::selection{
+  background-color: $textselection;
+  color: $darkerGray;
+  text-shadow:none;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -271,7 +273,7 @@ nav {
 
 .posts{
   padding-top: 250px;
-  
+
   a{
     display:block;
 
