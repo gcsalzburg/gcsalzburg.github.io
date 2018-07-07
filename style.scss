@@ -284,14 +284,14 @@ nav {
       .date{
         font-style: normal;
         display:block;
-        width:120px;
+        width:100px;
         float:left;
       }
     }
 
     h3{
       font-size: 16px;
-      margin-left:120px;
+      margin-left:100px;
       margin-top:0;
     }
   }
@@ -340,6 +340,7 @@ nav {
 
 footer {
   padding: 20px 0;
+  display: flex;
   text-align: center;
 
   a{
