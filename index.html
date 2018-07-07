@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        <h2><span class="date"></span>{{ post.title }}</h2>
+        <h3>{{ post.strapline }}</h3>
+      </a>
+    </article>
+  {% endfor %}
+</div>
