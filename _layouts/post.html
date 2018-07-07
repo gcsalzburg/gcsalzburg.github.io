@@ -11,7 +11,7 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
+  <div class="published_date">
     Published on {% assign day = page.date | date: "%-d"  %}
     {% case day %}
       {% when '1' or '21' or '31' %}{{ day }}st
