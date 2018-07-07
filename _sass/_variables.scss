@@ -25,6 +25,9 @@ $headingfont: 'Source Sans Pro', sans-serif;
 $navfont: 'Source Sans Pro', sans-serif;
 $copyfont: 'Source Sans Pro', sans-serif;
 
+// Dimensions
+$leftmargin: 150px;
+
 // Mobile breakpoints
 @mixin mobile {
   @media screen and (max-width: 640px) {

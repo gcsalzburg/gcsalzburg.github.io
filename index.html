@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="image_snapshots">
+<div class="top_banner image_snapshots">
   {% for image in site.static_files %}
     {% if image.path contains 'images/thumbnails' %}
         <img src="{{ site.baseurl }}{{ image.path }}" />

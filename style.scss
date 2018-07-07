@@ -24,8 +24,8 @@ body {
 }
 
 .container {
-  margin: 0 0 0 140px;
-  max-width: 740px;
+  margin: 0 0 0 $leftmargin;
+  max-width: 840px;
   padding: 0 10px;
   width: 100%;
 }
@@ -221,14 +221,25 @@ nav {
   }
 }
 
+
 //
-// .image_snapshots
+// .top-banner
 //
-.image_snapshots{
+.top_banner{
   margin: 0 0 0 60px;
   overflow: hidden;
   position: absolute;
   left: 0;
+}
+.top_banner + .post, .top_banner + .posts{
+  padding-top:240px;
+}
+
+
+//
+// .image_snapshots
+//
+.image_snapshots{
 
   img{
     display: block;
@@ -272,7 +283,6 @@ nav {
 }
 
 .posts{
-  padding-top: 250px;
 
   a{
     display:block;
@@ -312,6 +322,12 @@ nav {
 }
 
 .post {
+  font-family: $copyfont;
+  
+  h1 {
+    font-size: 48px;
+  }
+
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
@@ -319,6 +335,12 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+  }
+
+  .date{
+    font-style: normal;
+    font-size: 12px;
+    margin-top: 40px;
   }
 
   .comments {
