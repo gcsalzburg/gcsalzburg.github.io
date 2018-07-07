@@ -223,8 +223,10 @@ nav {
 // .image_snapshots
 //
 .image_snapshots{
-  margin: 36px 0 0 60px;
+  margin: 0 0 0 60px;
   overflow: hidden;
+  position: absolute;
+  left: 0;
 
   img{
     display: block;
@@ -268,6 +270,8 @@ nav {
 }
 
 .posts{
+  padding-top: 250px;
+  
   a{
     display:block;
 
