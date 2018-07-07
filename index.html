@@ -2,6 +2,14 @@
 layout: default
 ---
 
+<div class="image_snapshots">
+  {% for image in site.static_files %}
+    {% if image.path contains 'images/thumbnails' %}
+        <img src="{{ site.baseurl }}{{ image.path }}" />
+    {% endif %}
+  {% endfor %} 
+</div>
+
 <div class="posts">
   {% for post in site.posts %}
     <article class="post">
