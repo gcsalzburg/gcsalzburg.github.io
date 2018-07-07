@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-  margin: 0 0 0 90px;
+  margin: 0 0 0 140px;
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
@@ -230,6 +230,44 @@ nav {
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+}
+
+.posts{
+  a{
+    display:block;
+
+    h2{
+      font-size:22px;
+      margin-bottom:0;
+
+      .date{
+        font-style: normal;
+        display:block;
+        width:120px;
+        float:left;
+      }
+    }
+
+    h3{
+      font-size: 16px;
+      margin-left:120px;
+      margin-top:0;
+    }
+  }
+  a:hover{
+    h2{
+      color: $linkhover;
+      text-transform: underline;
+
+      .date{
+        color: $linkhover;
+        text-transform: none;
+      }
+    }
+    h3{
+      color: $linkhover;
+    }
+  }
 }
 
 .post {
