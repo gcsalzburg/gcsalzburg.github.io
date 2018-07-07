@@ -220,6 +220,44 @@ nav {
 }
 
 //
+// .image_snapshots
+//
+.image_snapshots{
+  margin: 36px 0 0 60px;
+  overflow: hidden;
+
+  img{
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin: 0 8px 0 0;
+  }
+  img:hover{
+    animation: hue-rotate 20s linear infinite;
+  }
+}
+
+@keyframes hue-rotate {
+  from {
+    -webkit-filter: hue-rotate(0);
+    -moz-filter: hue-rotate(0);
+    -ms-filter: hue-rotate(0);
+    filter: hue-rotate(0);
+  }
+  to {
+    -webkit-filter: hue-rotate(360deg);
+    -moz-filter: hue-rotate(360deg);
+    -ms-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+//
 // .main
 //
 
