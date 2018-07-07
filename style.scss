@@ -286,10 +286,12 @@ nav {
 
   a{
     display:block;
+    text-decoration: none;
 
     h2{
       font-size:22px;
       margin-bottom:0;
+      display:inline-block;
 
       .date{
         font-style: normal;
@@ -312,12 +314,13 @@ nav {
       background-position: 0 1.3em;
       background-repeat: repeat-x;
       background-size: 1px 1px;
+      text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
     }
 
     .date{
       background-image: none;
       color: $linkhover;
-      text-decoration: none;
+      background-color: #fff;
     }
 
     h3{
