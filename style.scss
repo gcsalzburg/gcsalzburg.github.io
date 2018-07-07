@@ -211,6 +211,7 @@ nav {
     text-align: right;
     font-weight: 300;
     display:block;
+    line-height: 1.4em;
 
     @include mobile {
       margin: 0 10px;
