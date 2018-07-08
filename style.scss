@@ -142,12 +142,12 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-top: 65px;
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 0 0 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -196,32 +196,6 @@ img {
   }
 }
 
-nav {
-  font-family: $navfont;
-  font-size: 18px;
-
-  @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
-  }
-
-  a {
-    margin-left: 20px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
-    display:block;
-    line-height: 1.4em;
-
-    @include mobile {
-      margin: 0 10px;
-    }
-  }
-}
-
-
 //
 // .top-banner
 //
@@ -230,6 +204,8 @@ nav {
   overflow: hidden;
   position: absolute;
   left: 0;
+  width: 1268px;
+  height: 200px;
 }
 .top_banner + .post, .top_banner + .posts{
   padding-top:240px;
@@ -275,7 +251,15 @@ nav {
 //
 // .main
 //
-
+.main{
+  background-color:$white;
+  z-index:20;
+  position:relative;
+  margin-left:0;
+  padding-left:($leftmargin+10);
+  padding-bottom: 50px;
+  box-sizing: content-box;
+}
 
 .posts > .post:last-child {
   padding-bottom: 1em;
@@ -362,24 +346,35 @@ nav {
   }
 }
 
-.wrapper-footer {
-  margin-top: 50px;
+.wrapper-homepage-lower{
   border: 1px solid $footerborder;
   border-style: solid none;
   background-color: $footerbg;
-}
+  z-index:20;
+  position: relative;
 
-footer {
-  padding: 20px 0;
-  display: flex;
-  text-align: center;
-
-  a{
-    display:block;
-    margin-right:10px;
+  .container{
+    display: flex;
   }
 }
 
+
+.homepage-nav {
+  font-family: $navfont;
+  font-size: 1.25em;
+  padding-top: 13px;
+  margin-left: 10px;
+
+  a {
+    margin-left: 30px;
+    color: $darkGray;
+    font-weight: 300;
+    display:block;
+    line-height: 1.4em;
+    padding: 5px 0;
+
+  }
+}
 
 /* Projects */
 .projects{
@@ -405,6 +400,79 @@ footer {
 	font-weight:300;
 	padding-top:10px;
 }
+
+
+.footer-spacer{
+  height: 420px;
+  display: block;
+}
+footer {
+  position:fixed;
+  z-index:10;
+  left:0;
+  bottom:0;
+  margin-left:$leftmargin;
+  font-weight:300;
+
+  .footer_logo{
+    width:90px;
+    opacity:0.5;
+    display:block;
+    margin:40px 0;
+  }
+
+  h4{
+    font-size:1.375em;
+    font-weight:300;
+    margin:0;
+  }
+
+  .quote_attribution{
+    font-family: $copyfont;
+    font-size:0.875em;
+    margin:5px 0 0 0;
+  }
+
+  a{
+    display:block;
+    margin-right:10px;
+  }
+}
+
+nav.social_links {
+	line-height:1.5em;
+  font-size:0.875em;
+  margin-left:0;
+  font-family: $copyfont;
+  
+  ul{
+    list-style: none;
+    margin:40px 0 100px 0;
+    padding:0;
+    font-weight:300;
+    line-height: 1.5em;
+  }
+
+
+  a{
+    color:#000;
+    text-decoration:none;
+    margin-left:0;
+    display: inline-block;
+  }
+  a:hover{
+    color:$linkhover;
+    text-decoration:none;
+    background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
+    background-position: 0 1.2em;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
+  }
+}
+
+
+
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
