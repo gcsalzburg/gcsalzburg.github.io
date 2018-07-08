@@ -18,11 +18,16 @@
     <!-- Derived from Jekyll Now by Barry Clark -->
   </head>
 
+  {% if page.ishomepage %}
+  <body class="homepage">
+  {% else %}
   <body>
+  {% endif %}
+
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/cave_logo.png" /></a>
+          <a href="{{ site.baseurl }}/" class="cave-logo"><img src="{{ site.baseurl }}/images/cave_logo.png" /></a>
           
         </header>
       </div>
@@ -39,7 +44,7 @@
     <div class="wrapper-footer">
       <span class="footer-spacer"></span>
       <footer class="footer">
-          <img src="images/cave_logo.png" class="footer_logo">
+          <img src="/images/cave_logo.png" class="footer_logo">
           <h4>“I’m sorry I made you such a complex design, I didn’t have time to make a more simple one”</h4>
           <p class="quote_attribution">Blaise Pascal / Elliott Baxter</p>
         
