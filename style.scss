@@ -175,7 +175,7 @@
 
 .post {
   font-family: $copyfont;
-  
+
   h1 {
     font-size: 48px;
     margin-top: 0.5em;
@@ -186,11 +186,24 @@
     font-weight: 300;
   }
 
-  p {
-    font-size: 1.1em;
-    line-height: 1.4em;
-    font-family: "Open Sans";
-    max-width: 40em;
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  p, li {
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Open Sans",sans-serif;
+  }
+
+  a {
+    text-decoration: underline;
   }
 
   blockquote {
@@ -203,9 +216,10 @@
   }
 
   .published_date{
-    font-style: normal;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 40px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
   }
 
   .comments {
