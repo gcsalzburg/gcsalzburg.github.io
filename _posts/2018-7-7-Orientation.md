@@ -8,6 +8,8 @@ Recently I've been experimenting a lot with understanding orientation data. Proc
 
 The primary output from any one of the many 9DOF (degree of freedom) boards available is a set of measurement points for acceleration, magnetic field and gyroscopic rotation. It is not immediately obvious why combining these is not a trivial exercise.
 
+![Various 9DOF sensors](/images/posts/Orientation/dof_sensors.jpg)
+
 ## Basic data capture ##
 
 At the heart of the problem is that absolute position in space requires a combination of four sensors: accelerometer, magnetometer, gyroscope and altimeter. A system which provides the raw data from these is commonly referred to as an IMU (Inertial Measurement System). Combining these results in an AHRS (Altitude and Heading Reference System). For my purposes I omit the "A", since I wish to calculate the relative orientation of a product with respect to a reference point.
@@ -119,7 +121,11 @@ public:
 
 ### Calibration ###
 
-Calibration is used to account for errors in the magnetometer output. I use the [MotionCal tool](https://www.pjrc.com/store/prop_shield.html) from PJRC and suggest you do the same. Upload the test sketch to the board and then wave it around for a while until the red dots look nice and round. The sensor reading function then becomes a little larger as shown below: 
+Calibration is used to account for errors in the magnetometer output. I use the [MotionCal tool](https://www.pjrc.com/store/prop_shield.html) from PJRC and suggest you do the same. 
+
+![Various 9DOF sensors](/images/posts/Orientation/motioncal.png)
+
+Upload the test sketch to the board and then wave it around for a while until the red dots look nice and round. The sensor reading function then becomes a little larger as shown below: 
 
 ```c++
 // Mag calibration values from via ahrs_calibration.
