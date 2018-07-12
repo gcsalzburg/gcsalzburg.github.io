@@ -10,7 +10,7 @@ The primary output from any one of the many 9DOF (degree of freedom) boards avai
 
 ## Basic data capture ##
 
-At the heart of the problem is that absolute position in space requires a combination of four sensors: accelerometer, magentometer, gyroscope and altimeter. A system which provides the raw data from these is commonly referred to as an IMU (Inertial Measurement System) Combining these results in an AHRS (Altitude and Heading Reference System). For my purposes I omit the "A", since I wish to calculate the relative orientation of a product with respect to a reference point.
+At the heart of the problem is that absolute position in space requires a combination of four sensors: accelerometer, magnetometer, gyroscope and altimeter. A system which provides the raw data from these is commonly referred to as an IMU (Inertial Measurement System). Combining these results in an AHRS (Altitude and Heading Reference System). For my purposes I omit the "A", since I wish to calculate the relative orientation of a product with respect to a reference point.
 
 I started off using analog MEMS accelerometers such as the [ADXL335](https://www.sparkfun.com/datasheets/Components/SMD/adxl335.pdf) but quickly progressed to the very impressive [NXP Precision breakout](https://www.adafruit.com/product/3463) from Adafruit for the FXOS8700 and FXAS21002. This board has level-shifting for a 5V interface and an I2C interface, which is everything I need.
 
@@ -86,7 +86,7 @@ It's important to set the rate correctly in the `filter.begin()` call. The fusio
 
 #### Madgwick ####
 
-On the M0 this is definitely the way to go. Implementation was again very simple, in fact the implementations are designed to be swappable with no code changes.
+On the M0 this is my preferred approach. Implementation was again very simple, in fact both of these AHRS implementations are designed to be swappable with no code changes.
 
 ```c++
 #include <Madgwick.h>
@@ -164,7 +164,7 @@ I use a small set of libraries for vector, quaternion and matrix manipulation wh
 
 The video below shows a test of the orientation code running on a 32u4 development board. The button saves the quaternion for the board at the moment it is pressed, and the lights then display the roll/pitch away from that position. I can use this to detects if an object has toppled over. 
 
-<video controls muted src="/images/posts/Orientation/orientation-test.mp4" width="600">
+<video controls muted src="/images/posts/Orientation/orientation-test.mp4" width="100%">
     Sorry, your browser doesn't support embedded videos.
 </video>
 
