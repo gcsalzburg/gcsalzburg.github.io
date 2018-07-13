@@ -2,6 +2,7 @@
 layout: post
 title: Orientation
 strapline: AHRS, calibration and quaternions
+tags: orientation electronics ahrs imu mems sensing arduino quaternions
 ---
 
 Recently I've been experimenting a lot with understanding orientation data. Processing and making sense of device orientation seems to be one of the few areas where the Arduino platform of sensors doesn't quite abstract away all of the technical challenge. 
