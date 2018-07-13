@@ -4,6 +4,11 @@
 .page{
   margin-left:$leftmargin;
   margin-right:$leftmargin;
+
+  @include mobile{
+    margin-left:20px;
+    margin-right:20px;
+  }
 }
 
 
@@ -14,10 +19,19 @@
 .instafeed_img{
     float:left; 
     margin:0 30px 30px 0;
+
+    @include mobile{
+      margin: 0 4px 8px 4px;
+    }
   
     img{
       width:200px;
       height:200px;
+
+      @include mobile{
+        width:150px;
+        height:150px;
+      }
     }
     figcaption{
       width:200px;
@@ -27,6 +41,10 @@
       text-align:center;
       height:4em;
       overflow:hidden;
+
+      @include mobile{
+        width:150px;
+      }
     }
   }
   
