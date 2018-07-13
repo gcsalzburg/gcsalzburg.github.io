@@ -4,9 +4,7 @@ title: Progress
 strapline: Faking an intelligent feedback bar 
 ---
 
-#Progress#
-
-##Progress indicators when you can't measure progress##
+## Progress indicators when you can't measure progress ##
 
 A couple of years a go I was developing a Chrome plugin for tagging and saving collections of web pages. My friend working on some UI concepts proposed a two step transformation of the Save button:
 
@@ -19,7 +17,7 @@ Here's a gif which shows what's going on quite clearly:
 
 The progress indication was the big challenge. We were both keen to provide some [positive feedback](https://www.smashingmagazine.com/2012/07/are-giving-users-positive-feedback/) that the request was being handled, but the animation concept didn't lend itself to a continuous looping sequence. Plus I felt we could do better than to simply.
 
-##Calculating progress times##
+## Calculating progress times ##
 
 When the Save button was clicked, the following steps occurred:
 
@@ -32,7 +30,7 @@ Steps 1, 3 and 4 took an unknown length of time, but the time varied little betw
 
 Since our simple architecture provided no means to measure the progress of the script execution on the server, we decided to fake it.
 
-##Pretending to measure##
+## Pretending to measure ##
 
 My rationale was:
 
@@ -49,6 +47,7 @@ Thus the progress bar was built twice, as the HTML fragment below shows.
   <span class="progress_bar_complete"></span>
 </a>
 ```
+
 The `prograss_bar` class uses a custom [cubic-bezier curve](http://cubic-bezier.com/?#.08,1,.43,1) for the fill. If used alone, it would start to fill the bar quickly before slowing to almost a crawl, finally reaching the end after 10 seconds:
 
 ```css
@@ -61,7 +60,7 @@ The `prograss_bar` class uses a custom [cubic-bezier curve](http://cubic-bezier.
 ```
 Behind this sits a second bar: `.progress_bar_complete`. This animation is triggered once a successful response is received back from the server. It is a fast, linear fill which takes about 0.4s to complete.
 
-##Feedback loop##
+## Feedback loop ##
 
 We initially deployed this system on a local intranet, where network latency was in effect 0, and the scripts would run blazing fast.
 
