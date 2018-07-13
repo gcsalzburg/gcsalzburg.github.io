@@ -4,30 +4,35 @@
 //
 
 // Colors
-$blue: #4183C4;
 
-$linkhover: #4183C4;
-$textselection: rgba(244,185,179,0.8);
+$bgcolour: #FFF;
 
-// Grays
-$black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
-$white: #fff;
+$headingcolour: #222;
+$copycolour: #222;
 
 $footerbg: #F5F5F5;
 $footerborder: #E1E1E1;
 
+// Brand colours (borders, lines etc)
+$lightgrey: #ddd;
+$midgrey: #666;
+$white: #FFF;
+
+// Links & text selection
+$linknormal: rgb(65, 131, 196);
+$linkhover: rgb(0, 105, 211);
+$textselection: rgba(244,185,179,0.8);
+
 // Font stacks
 $headingfont: 'Source Sans Pro', sans-serif;
-$navfont: 'Source Sans Pro', sans-serif;
-$copyfont: 'Source Sans Pro', sans-serif;
+$navfont:     'Source Sans Pro', sans-serif;
+$copyfont:    'Source Sans Pro', sans-serif;
+$postfont:    'Open Sans', sans-serif;
 
-// Key dimensions
+// Layout dimensions
 $topmargin: 65px;
 $leftmargin: 180px;
+$maxwidth: 840px;
 
 // Mobile breakpoints
 @mixin mobile {
@@ -35,3 +40,12 @@ $leftmargin: 180px;
     @content;
   }
 }
+
+/* USAGE:
+ *
+ *   @include mobile {
+ *     display: block;
+ *     margin: 0 auto;
+ *   }
+ *
+ */

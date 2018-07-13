@@ -3,7 +3,7 @@ layout: default
 ishomepage: true
 ---
 
-<div class="top_banner image_snapshots">
+<div class="top_banner image_snapshots clearfix">
   {% for image in site.static_files %}
     {% if image.path contains 'images/thumbnails' %}
         <img src="{{ site.baseurl }}{{ image.path }}" />
@@ -13,7 +13,7 @@ ishomepage: true
 
 <div class="posts">
   {% for post in site.posts %}
-    <article class="post">
+    <article class="post_preview">
       <a href="{{ site.baseurl }}{{ post.url }}">
         <h2><span class="date">{{ post.date | date: "%Y / %m" }}</span>{{ post.title }}</h2>
         <h3>{{ post.strapline }}</h3>

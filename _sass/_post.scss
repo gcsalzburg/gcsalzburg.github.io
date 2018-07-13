@@ -1,0 +1,61 @@
+.post {
+    font-family: $postfont;
+    max-width:$maxwidth;
+    margin-left:$leftmargin;
+  
+    h1 {
+      font-size: 48px;
+      margin-top: 0.5em;
+    }
+  
+    h2 {
+      font-size: 28px;
+      font-weight: 300;
+    }
+  
+    h3 {
+      font-size: 24px;
+      font-weight: 300;
+    }
+  
+    h4 {
+      font-size: 22px;
+      font-weight: 300;
+    }
+  
+    p, li {
+      font-size: 16px;
+      line-height: 26px;
+    }
+  
+    a {
+      text-decoration: underline;
+    }
+  
+    blockquote {
+      margin: 1.8em .8em;
+      border-left: 2px solid $midgrey;
+      padding: 0.1em 1em;
+      color: $copycolour;
+      font-size: 22px;
+      font-style: italic;
+    }
+  
+    .published_date{
+      font-size: 14px;
+      margin-top: 40px;
+      border-top: 1px solid $lightgrey;
+      padding-top: 15px;
+      line-height: 22px;
+    }
+  
+    .comments {
+      margin-top: 10px;
+    }
+  }
+
+  
+.post_header{
+    width:1300px;
+  }
+  

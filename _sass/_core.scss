@@ -3,27 +3,26 @@
 /**************/
 
 html {
-    font-size: 100%;
-  }
+  font-size: 100%;
+}
   
-  body {
-    background: $white;
-    font: 18px/1.4 $copyfont 300;
-    color: $darkGray;
-  }
+body {
+  background: $bgcolour;
+  font-size: 18px;
+  line-height: 1.4em;
+  font-family: $copyfont;
+  font-weight: 300;
+  color: $copycolour;
+}
   
   h1, h2, h3, h4, h5, h6 {
     font-family: $headingfont;
-    color: $darkerGray;
+    color: $headingcolour;
     font-weight: 300;
   
     line-height: 1.7;
     margin: 1em 0 15px;
     padding: 0;
-  
-    @include mobile {
-      line-height: 1.4;
-    }
   }
   
   h1 {
@@ -33,18 +32,19 @@ html {
     }
   }
   
-  h2 { font-size: 24px; }
+  h2 { font-size: 24px;}
   h3 { font-size: 20px;}
-  h4 { font-size: 18px; color: $gray;}
+  h4 { font-size: 18px;}
   
   p { margin: 15px 0; }
   
   a {
-    color: $blue;
+    color: $linknormal;
     text-decoration: none;
-      cursor: pointer;
+    cursor: pointer;
+    
     &:hover, &:active {
-      color: $blue;
+      color: $linkhover;
     }
   }
   
@@ -86,20 +86,15 @@ html {
     max-width: none;
   }
   
-  .date {
-    font-style: italic;
-    color: $gray;
-  }
-  
   // Specify the color of the selection
   ::-moz-selection{
     background-color:$textselection;
-    color: $darkerGray;
+    color: $copycolour;
     text-shadow:none;
   }
   ::selection{
     background-color: $textselection;
-    color: $darkerGray;
+    color: $copycolour;
     text-shadow:none;
   }
   
