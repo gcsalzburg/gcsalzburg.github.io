@@ -128,49 +128,53 @@
 
 .posts{
 
-  a{
-    display:block;
-    text-decoration: none;
+  .post {
 
-    h2{
-      font-size:22px;
-      margin-bottom:0;
-      display:inline-block;
-
-      .date{
-        font-style: normal;
-        display:block;
-        width:100px;
-        float:left;
+    a{
+      display:block;
+      text-decoration: none;
+  
+      h2{
+        font-size:22px;
+        margin-bottom:0;
+        display:inline-block;
+  
+        .date{
+          font-style: normal;
+          display:block;
+          width:100px;
+          float:left;
+        }
+      }
+  
+      h3{
+        font-size: 16px;
+        margin-left:100px;
+        margin-top:0;
       }
     }
-
-    h3{
-      font-size: 16px;
-      margin-left:100px;
-      margin-top:0;
+    a:hover{
+      h2{
+        color: $linkhover;
+        background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
+        background-position: 0 1.3em;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
+      }
+  
+      .date{
+        background-image: none;
+        color: $linkhover;
+        background-color: #fff;
+      }
+  
+      h3{
+        color: $linkhover;
+      }
     }
   }
-  a:hover{
-    h2{
-      color: $linkhover;
-      background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
-      background-position: 0 1.3em;
-      background-repeat: repeat-x;
-      background-size: 1px 1px;
-      text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
-    }
 
-    .date{
-      background-image: none;
-      color: $linkhover;
-      background-color: #fff;
-    }
-
-    h3{
-      color: $linkhover;
-    }
-  }
 }
 
 .post {
