@@ -3,20 +3,32 @@
 // .image_snapshots
 //
 .image_snapshots{
+  
+  @include mobile {
+    width: 316px;
+  }
 
-    img{
-      display: block;
-      float: left;
-      width: 200px;
-      height: 200px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-      margin: 0 8px 0 0;
-    }
-    img:hover{
-      animation: hue-rotate 20s linear infinite;
+  img{
+    display: block;
+    float: left;
+    width: 200px;
+    height: 200px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin: 0 8px 0 0;
+
+    @include mobile {
+      width:150px;
+      height:150px;
+      margin: 0 4px 8px 4px;
     }
   }
+
+  img:hover{
+    animation: hue-rotate 20s linear infinite;
+  }
+
+}
 
   
 @keyframes hue-rotate {
@@ -39,6 +51,10 @@
     background-color: $white;
     z-index: 30;
     position: relative;
+    
+    @include mobile {
+      padding:0 20px;
+    }
 
     .post_preview{
       a{
@@ -105,6 +121,10 @@
 
     .container{
         display: flex;
+
+        @include mobile {
+          flex-direction: column;
+        }
     }
 }
   
@@ -113,6 +133,13 @@
     font-size: 1.1em;
     padding-top: 13px;
     margin-left: 10px;
+        
+    @include mobile {
+      order: -1;
+      padding: 13px 20px;
+      text-align: center;
+      margin: 0;
+    }
 
     a {
         margin-left: 30px;
@@ -120,7 +147,11 @@
         display:block;
         line-height: 1.4em;
         padding: 5px 0;
-        color: $copycolour;
+        color: $copycolour; 
+
+        @include mobile {
+          margin-left: 0px;
+        }
 
         &:hover, &:active {
           color: $copycolour;
@@ -136,13 +167,22 @@
 .projects{
   position:relative;
   margin-left:$leftmargin;
+
+  @include mobile{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 .project{
 	padding-top:18px;
 	padding-bottom:35px;
 	width:500px;
 	margin-top:0;
-	margin-bottom:0;
+  margin-bottom:0;
+  
+  @include mobile{
+    max-width:100%;
+  }
 }
 .project img{
 	display:block;
@@ -166,9 +206,18 @@
 .homepage{
   .footer-spacer{
     display:block;
+
+    @include mobile{
+      display:none;
+    }
   }
   footer{
     position:fixed;
+
+    
+    @include mobile {
+      position: relative;
+    }
 
     h4{display:block;}
     .quote_attribution{display:block;}
