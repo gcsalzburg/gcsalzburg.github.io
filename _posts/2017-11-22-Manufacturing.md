@@ -2,6 +2,7 @@
 layout: post
 title: Manufacturing
 strapline: Learning DFMA from a rotary dial telephone 
+tags: dfma dfm manufacturing assembly servicing repair telephones engineering
 ---
 
 ## DFMA ##
