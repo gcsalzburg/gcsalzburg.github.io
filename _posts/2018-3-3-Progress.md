@@ -15,6 +15,10 @@ _(this was 2015, and flood fills were the height of fashion)_
 
 Here's a gif which shows what's going on quite clearly:
 
+![Flood fill effect on progress bar](/images/posts/Progress/initial_idea.gif)
+
+![Estimation from XKCD](https://imgs.xkcd.com/comics/estimation.png)
+
 The progress indication was the big challenge. We were both keen to provide some [positive feedback](https://www.smashingmagazine.com/2012/07/are-giving-users-positive-feedback/) that the request was being handled, but the animation concept didn't lend itself to a continuous looping sequence. Plus I felt we could do better than to simply.
 
 ## Calculating progress times ##
