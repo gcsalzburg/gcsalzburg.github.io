@@ -28,19 +28,19 @@ Adafruit_FXAS21002C gyro = Adafruit_FXAS21002C(0x0021002C);
 Adafruit_FXOS8700 accelmag = Adafruit_FXOS8700(0x8700A, 0x8700B);
 
 void init_sensors(){
-	accelmag.begin(ACCEL_RANGE_4G);
-	gyro.begin();
+    accelmag.begin(ACCEL_RANGE_4G);
+    gyro.begin();
 }
 
 void read_sensors(){
-   	// Create a new sensor event
-	sensors_event_t gyro_event;
-	sensors_event_t accel_event;
-	sensors_event_t mag_event;
+    // Create a new sensor event
+    sensors_event_t gyro_event;
+    sensors_event_t accel_event;
+    sensors_event_t mag_event;
 
-	// Get new data samples
-	gyro.getEvent(&gyro_event);
-	accelmag.getEvent(&accel_event, &mag_event); 
+    // Get new data samples
+    gyro.getEvent(&gyro_event);
+    accelmag.getEvent(&accel_event, &mag_event); 
 }
 ```
 
@@ -167,7 +167,7 @@ Of course, this calibration will differ on a sensor by sensor basis. I've yet to
 
 Euler angles are not uniquely mapped to orientations, which means that just knowing the angles doesn't tell you with any certainty what the orientation of the sensor is. The maths for quaternion manipulation is etched into the stone of [Broom Bridge](https://en.wikipedia.org/wiki/Broom_Bridge) in Dublin, but fortunately it is also implemented in various IMU libraries.
 
-I use a small set of libraries for vector, quaternion and matrix manipulation which I adapted from the Embedded Tool Kit by [Samuel Cowen](http://www.camelsoftware.com/). However, I recently found an almost identical implementation from Adafruit in [their repo for the BNO055 sensor](https://github.com/adafruit/Adafruit_BNO055/tree/master/utility) (see below).
+I use a small set of libraries for vector, quaternion and matrix manipulation which I adapted from the Embedded Tool Kit by [Samuel Cowen](http://www.camelsoftware.com/). However, I recently found an almost identical implementation from Adafruit in [their repo for the BNO055 sensor](https://github.com/adafruit/Adafruit_BNO055/tree/master/utility) (see [Future options](#future-options) below for a discussion on this sensor).
 
 The video below shows a test of the orientation code running on a 32u4 development board. The button saves the quaternion for the board at the moment it is pressed, and the lights then display the roll/pitch away from that position. I can use this to detects if an object has toppled over. 
 
