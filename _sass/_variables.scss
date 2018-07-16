@@ -23,11 +23,17 @@ $linknormal: rgb(65, 131, 196);
 $linkhover: rgb(0, 105, 211);
 $textselection: rgba(244,185,179,0.8);
 
+// Code block
+$codeborder: #bbb;
+$codebg: #fff;
+$codelinksbg: #ddd;
+
 // Font stacks
 $headingfont: 'Source Sans Pro', sans-serif;
 $navfont:     'Source Sans Pro', sans-serif;
 $copyfont:    'Source Sans Pro', sans-serif;
 $postfont:    'Open Sans', sans-serif;
+$codefont:    Consolas, monaco, 'IBM Plex Mono', monospace;
 
 // Layout dimensions
 $topmargin: 65px;
