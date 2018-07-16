@@ -23,7 +23,7 @@ layout: default
       {% when '3' or '23' %}{{ day }}rd
       {% else %}{{ day }}th
     {% endcase %}
-    {{ page.date | date: " %B, %Y" }}
+    {{ page.date | date: " %B %Y" }}
   </div>
 
   {% include disqus.html %}
