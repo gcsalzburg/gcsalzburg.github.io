@@ -2,6 +2,7 @@
 layout: post
 title: Progress
 strapline: Faking an intelligent feedback bar 
+published: false
 ---
 
 ## Progress indicators when you can't measure progress ##
