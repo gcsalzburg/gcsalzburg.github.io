@@ -50,7 +50,7 @@ body {
   
   ul, ol {
     margin: 15px 0;
-    padding-left: 30px;
+    padding-left: 40px;
   }
   
   ul {
@@ -60,13 +60,17 @@ body {
   ol {
     list-style-type: decimal;
   }
+
+  li {
+    padding-left: 5px;
+  }
   
   ol ul, ul ol, ul ul, ol ol {
-    margin: 0;
+    /* margin: 0; */
   }
   
   ul ul, ol ul {
-    list-style-type: circle;
+    list-style-type: square;
   }
   
   em, i {
