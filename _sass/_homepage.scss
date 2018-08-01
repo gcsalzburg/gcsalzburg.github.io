@@ -30,7 +30,34 @@
   img:hover{
     animation: hue-rotate 20s linear infinite;
   }
+}
 
+.homepage_intro{
+  h2{
+    font-size: 1.375em;
+    font-weight: 300;
+    line-height: 1.35em;
+
+    @include mobile{
+      text-align: center;
+    }
+  }
+
+  p{
+    font-size: 0.95em;
+    line-height: 1.35em;
+    font-weight: 300;
+    max-width: 50em;
+
+    a:hover, a:active {
+      text-decoration:none;
+      background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
+      background-position: 0 1.15em;
+      background-repeat: repeat-x;
+      background-size: 1px 1px;
+      text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
+    }
+  }
 }
 
   
@@ -136,6 +163,7 @@
     font-size: 1.1em;
     padding-top: 13px;
     margin-left: 10px;
+    overflow: hidden;
         
     @include mobile {
       order: -1;
