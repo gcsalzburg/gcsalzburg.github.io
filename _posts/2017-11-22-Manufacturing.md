@@ -31,8 +31,6 @@ Under the cover, this telephone superbly illustrates five important points that 
 
 The telephone has a single flat-head screw, with a wide uniform slot which means any flat sided object can be used to open it - no need for a screwdriver let alone a bespoke tool. The use of a captive screw here is genius too, slightly higher cost but it will never be lost. Note the turned end to aid alignment during [re-assembly](#5-design-for-re-assembly).
 
-Products designed for disassembly help both the end user but also aid .
-
 ![Single flathead screw for access](/images/posts/Manufacturing/access.jpg)
 
 ![Captive screw](/images/posts/Manufacturing/screw.jpg)
