@@ -29,7 +29,7 @@ The DFMA acronym focuses the engineering mind on just the manufacturing and init
 
 ### 1. Design for disassembly ###
 
-No matter how difficult you try to make it, somebody will one day dismantle your product. Unless there is a clear safety case (children's toys, hazardous voltage etc..) you may as well make this a pleasant experience for them.
+No matter how difficult you try to make it, somebody will one day [dismantle your product](http://www.nightscout.info/). Unless there is a clear safety case (children's toys, hazardous voltage etc..) you may as well make this a pleasant experience for them.
 
 The telephone has a single flat-head screw, with a wide uniform slot which means any flat sided object can be used to open it - no need for a screwdriver let alone a bespoke tool. The use of a captive screw here is genius too, slightly higher cost but it will never be lost. Note the turned end to aid alignment during [re-assembly](#5-design-for-re-assembly).
 
