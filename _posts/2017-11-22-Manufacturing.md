@@ -62,7 +62,7 @@ These wiring looms might not have much colour variety in the cabling, but they a
 
 ### 5. Accessible documentation ###
 
-Projects such as [iFixit](https://www.ifixit.com/) collate [community sourced wikis](https://www.youtube.com/watch?v=dMwLUnd_ydI) for all manner of repair tasks on consumer electronics, typically where no manual or supplier information exists. What's one better than shipping your product with a [technical support manual](https://archive.org/details/computermanuals)? A printed schematic to aid fault finding included inside the casework! Bonus points for being hand drawn.
+Projects such as [iFixit](https://www.ifixit.com/) collate [community sourced wikis](https://www.youtube.com/watch?v=dMwLUnd_ydI) for all manner of repair tasks on consumer electronics, typically where no manual or supplier information exists. On a component level, services like [AllDataSheet](https://www.alldatasheet.com/) and [Octopart](https://octopart.com/) fill the void. But what's one better than shipping your product with a [technical support manual](https://archive.org/details/computermanuals)? A printed schematic to aid fault finding included inside the casework! Bonus points for being hand drawn.
 
 ![Hand drawn schematic](/images/posts/Manufacturing/label.jpg)
 
