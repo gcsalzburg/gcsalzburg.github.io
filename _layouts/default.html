@@ -34,6 +34,7 @@
       {% include homepage_projects.html %}
     {% endif %}
 
+    {% unless page.nofooter %}
     <div class="wrapper-footer">
       <span class="footer-spacer"></span>
       <footer class="footer">
@@ -52,6 +53,7 @@
           </nav>
         </footer>
     </div>
+    {% endunless %}
     
     {% include analytics.html %}
 
