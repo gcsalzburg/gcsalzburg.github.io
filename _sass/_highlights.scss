@@ -8,11 +8,14 @@
   box-sizing: border-box;
   font-family: $codefont;
   line-height: 1.2em;
-  overflow-x: scroll;
   position:relative;
+  overflow:hidden;
 
   .highlight {
     padding:7px;
+  }
+  > .highlight{
+    overflow-x: scroll;
   }
 }
 
