@@ -3,11 +3,12 @@ layout: post
 title: Tracking
 strapline: Deciphering the hidden iPhone CellLocation data
 tags: iphone
+published: false
 ---
 
 As widely reported in the [news](http://www.bbc.co.uk/news/technology-13145562) during April 2011, iPhones store and save to a backup file timestamp/location data for the phone whilst it is in operation. Inspired by the description provided by [Pete Warden](http://petewarden.github.com/iPhoneTracker/), I conducted my own investigation to plot the information onto Google Maps.
 
-## How it works ##
+## How it works ## 
 
 ![Example output](/images/posts/Tracking/map_demo.png)
 
