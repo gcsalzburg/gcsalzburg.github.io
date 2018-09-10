@@ -40,3 +40,7 @@ We start by observing every possible riding scenario to determine the key intera
 Don't think of this as just copying some minimalistic design trend. <mark>Building interfaces for these sorts of situations is only possible when the design is directly driven by the context</mark> in which it will be used. After all, at 250kph, nobody ever wonders if their heated seat is turned on, but everyone should know their speed.
 
 ![On stage at Ars Electronica](/images/posts/Motorbikes/on-stage.jpg)
+
+<video controls muted src="/images/posts/Motorbikes/Ars_Electronica_George_Cave.mp4" width="100%">
+    Sorry, your browser doesn't support embedded videos.
+</video>
