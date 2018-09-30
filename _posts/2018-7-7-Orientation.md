@@ -5,7 +5,7 @@ strapline: AHRS, calibration and quaternions
 tags: orientation electronics ahrs imu mems sensing arduino quaternions
 ---
 
-Recently I've been experimenting a lot with understanding orientation data. Processing and making sense of device orientation seems to be one of the few areas where the Arduino platform of sensors doesn't quite abstract away all of the technical challenge. 
+Recently I've been experimenting a lot with understanding orientation data. Processing and interpreting device orientation seems to be one of the few areas where the Arduino platform of sensors doesn't quite abstract away all of the technical challenge. 
 
 The primary output from any one of the many 9DOF (degree of freedom) boards available is a set of measurement points for acceleration, magnetic field and gyroscopic rotation. It is not immediately obvious why combining these is not a trivial exercise.
 
