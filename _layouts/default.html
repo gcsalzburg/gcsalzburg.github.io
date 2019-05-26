@@ -5,10 +5,6 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
@@ -45,10 +41,11 @@
           <nav class="social_links">
             <ul>
               <li>George Cave (c){{ site.time | date: '%Y' }}</li>
-              <li><a href="https://www.instagram.com/{{ site.footer-links.instagram }}/">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}">LinkedIn</a></li>
-              <li><a href="https://github.com/{{ site.footer-links.github }}">Github</a></li>
-              <li><a href="mailto:hello@designedbycave.co.uk">E-mail</a></li>
+              <li><a href="https://www.instagram.com/{{ site.footer-links.instagram }}/"> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"> LinkedIn</a></li>
+              <li><a href="https://twitter.com/{{ site.footer-links.twitter }}">          Twitter</a></li>
+              <li><a href="https://github.com/{{ site.footer-links.github }}">            Github</a></li>
+              <li><a href="mailto:hello@designedbycave.co.uk">                            Email</a></li>
             </ul>
           </nav>
         </footer>
