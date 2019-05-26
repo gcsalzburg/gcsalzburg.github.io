@@ -4,6 +4,7 @@
 
 # Name of your site (displayed in the header)
 name: George Cave • Design engineering
+author: George Cave
 
 # Short bio or description (displayed in the header)
 description: The best engineer is the one having the most fun
@@ -33,9 +34,13 @@ url: https://www.designedbycave.co.uk
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
-#
-# !! You don't need to change any of the configuration flags below !!
-#
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
 
 permalink: /:year/:title/
 
