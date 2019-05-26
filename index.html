@@ -33,6 +33,7 @@ ishomepage: true
     var show_more = document.getElementById("show_more");
     var posts_container = document.getElementById("posts_container");
     show_more.addEventListener('click', function(e){
+      e.preventDefault();
       addClass(posts_container, 'show_all');
       show_more.parentNode.removeChild(show_more);
     });
