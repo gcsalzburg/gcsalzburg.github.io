@@ -77,60 +77,80 @@
 }
   
 .posts{
-    padding: 20px 0 0 $leftmargin;
-    background-color: $white;
-    z-index: 30;
-    position: relative;
-    
-    @include mobile {
-      padding:0 20px;
-    }
+  padding: 20px 0 10px $leftmargin;
+  background-color: $white;
+  z-index: 30;
+  position: relative;
+  
+  @include mobile {
+    padding:0 20px;
+  }
 
-    .post_preview{
-      a{
-        display:block;
-        text-decoration: none;
-        max-width: $maxwidth;
-    
-        h2{
-          font-size:22px;
-          margin-bottom:0;
-          display:inline-block;
-    
-          .date{
-            display:block;
-            width:100px;
-            float:left;
-          }
-        }
-    
-        h3{
-          font-size: 16px;
-          margin-left:100px;
-          margin-top:0;
+  .post_preview{
+    a{
+      display:block;
+      text-decoration: none;
+      max-width: $maxwidth;
+  
+      h2{
+        font-size:22px;
+        margin-bottom:0;
+        display:inline-block;
+  
+        .date{
+          display:block;
+          width:100px;
+          float:left;
         }
       }
-      a:hover{
-        h2{
-          color: $linkhover;
-          background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
-          background-position: 0 1.3em;
-          background-repeat: repeat-x;
-          background-size: 1px 1px;
-          text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
-        }
-    
-        .date{
-          background-image: none;
-          color: $linkhover;
-          background-color: #fff;
-        }
-    
-        h3{
-          color: $linkhover;
-        }
+  
+      h3{
+        font-size: 16px;
+        margin-left:100px;
+        margin-top:0;
+        margin-bottom: 0;
+        padding-bottom: 10px;
       }
     }
+    a:hover{
+      h2{
+        color: $linkhover;
+        background-image: linear-gradient(to right, $linkhover 75%, transparent 75%);
+        background-position: 0 1.3em;
+        background-repeat: repeat-x;
+        background-size: 1px 1px;
+        text-shadow: 3px 3px $white, 3px -3px $white, -3px 3px $white, -3px -3px $white;
+      }
+  
+      .date{
+        background-image: none;
+        color: $linkhover;
+        background-color: #fff;
+      }
+  
+      h3{
+        color: $linkhover;
+      }
+    }
+  }
+}
+
+.show_more{
+  margin: 0 0 0 100px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 0.9em;
+
+  &:hover, &:active {
+    text-decoration:underline;
+  }
+}
+
+.post_preview:nth-of-type(n+4){
+  display:none;
+}
+.show_all .post_preview:nth-of-type(n+4){
+  display:block;
 }
 
 .posts > .post_preview:last-child {
