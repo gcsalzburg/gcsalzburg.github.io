@@ -34,6 +34,7 @@ url: https://www.designedbycave.co.uk
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Front matter defaults
 defaults:
   -
     scope:
