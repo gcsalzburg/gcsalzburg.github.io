@@ -25,11 +25,7 @@
   </header>
 
     {{ content }}
-
-    {% if page.ishomepage %}
-      {% include homepage_projects.html %}
-    {% endif %}
-
+    
     {% unless page.nofooter %}
     <div class="wrapper-footer">
       <span class="footer-spacer"></span>
