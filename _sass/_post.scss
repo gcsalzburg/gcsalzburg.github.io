@@ -11,6 +11,7 @@
     h1 {
       font-size: 48px;
       margin-top: 0.5em;
+      line-height: 1.3em;
 
       @include mobile{
         text-align:center;
