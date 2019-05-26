@@ -1,7 +1,7 @@
 ---
 layout: post
 folder: Interfaces
-short-title: Distributed interfaces
+short-title: Interfaces
 title: "Distributed interfaces: Think outside the screen"
 strapline: Think outside the screen
 tags: interface hmi distributed design technology 
