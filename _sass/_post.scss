@@ -42,12 +42,11 @@
     }
   
     blockquote {
-      margin: 1.8em .8em;
-      border-left: 2px solid $midgrey;
+      margin: 0 .8em;
+      border-left: 6px solid $lightgrey;
+      background: $footerbg;
       padding: 0.1em 1em;
       color: $copycolour;
-      font-size: 22px;
-      font-style: italic;
     }
   
     .published_date{

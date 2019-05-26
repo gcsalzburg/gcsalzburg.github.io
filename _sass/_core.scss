@@ -87,6 +87,13 @@ body {
     max-width: 100%;
   }
   
+  hr {
+    width: 50%;
+    border: none;
+    height: 1px;
+    background: $midgrey;
+    margin: 2em 0 2em;
+  }
   // Fixes images in popup boxes from Google Translate
   .gmnoprint img {
     max-width: none;
