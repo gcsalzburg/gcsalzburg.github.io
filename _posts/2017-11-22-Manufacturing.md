@@ -1,5 +1,7 @@
 ---
 layout: post
+folder: Manufacturing
+short-title: Manufacturing
 title: Manufacturing
 strapline: Learning DFMA from an old rotary dial telephone 
 tags: dfma dfm manufacturing assembly servicing repair telephones engineering

@@ -1,5 +1,7 @@
 ---
 layout: post
+folder: Orientation
+short-title: Orientation
 title: Orientation
 strapline: AHRS, calibration and quaternions
 tags: orientation electronics ahrs imu mems sensing arduino quaternions

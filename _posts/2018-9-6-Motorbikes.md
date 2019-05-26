@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Motorbikes
+folder: Motorbikes
+short-title: Motorbikes
+title: Designing for 250kph
 strapline: Designing for 250kph
-strapline2: Design that adapts to the context of use
 tags: interface hmi interaction design motorbikes context use-cases
 ---
 
 _This talk was given for [Kiska](https://www.kiska.com/), on the main Get Inspired stage at [Ars Electronica 2018](https://www.aec.at/error/en/get-inspired-presentations/)_
-
-## Designing for 250kph ##
 
 <video controls muted src="/images/posts/Motorbikes/Ars_Electronica_George_Cave.mp4" width="100%">
     Sorry, your browser doesn't support embedded videos.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interfaces
+folder: Interfaces
+short-title: Distributed interfaces
+title: "Distributed interfaces: Think outside the screen"
 strapline: Think outside the screen
 tags: interface hmi distributed design technology 
 ---
 
 _Originally posted at [Kiska.com](https://www.kiska.com/KISKA-exchange/distributed-interfaces/)_
-
-## Distributed interfaces: Think outside the screen ##
 
 Great interfaces are under threat. From screens. Think about every time you’ve tapped a screen and then looked elsewhere to check what happened. Recently I was driving an electric car and noticed exactly that: I went to charge it and plugged in the cable, only to turn around to check the connection was made. 
 
