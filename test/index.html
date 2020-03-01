@@ -19,7 +19,7 @@
             font-family: 'Lemon Milk';
             src: url('fonts/lemonmilkbold-webfont.woff2') format('woff2'),
                   url('fonts/lemonmilkbold-webfont.woff') format('woff');
-            font-weight: 9009;
+            font-weight: 900;
             font-style: normal;
 
          }
@@ -258,8 +258,16 @@
             position: relative;
             font-family: 'Source Sans Pro', sans-serif;
          }
+         main p{
+            font-size: 20px;
+            max-width: 90ch;
+            margin: 1em auto;
+            font-weight: 300;
+            line-height: 1.35em;
+         }
 
          .about_description{
+            margin: 60px 0;
          }
          .about_description h2{
             font-weight: 300;
@@ -267,15 +275,41 @@
             color: rgba(0,0,0,0.8);
             text-align: center;
          }
-         .about_description p{
-            font-size: 20px;
-            max-width: 90ch;
-            margin: 1em auto;
-            font-weight: 300;
-            line-height: 1.35em;
-         }
          .about_description p a{
             color: rgb(0,100,221);
+         }
+
+         .category_label{
+            font-family: "Lemon Milk", sans-serif;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            position: relative;
+         }
+         .category_label span{
+            background-color: rgb(255,255,255);
+            z-index: 30;
+            position: relative;
+            padding: 0 25px;
+         }
+         .category_label em{
+            font-weight: 500;
+            background-color: rgb(0,0,0);
+            color: rgb(255,255,255);
+            padding:2px 8px;
+            font-style: normal;
+         }
+         .category_label::after {
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: rgb(0,0,0);
+            top: 50%;
+            z-index: 10;
          }
          
          .projects{
@@ -293,14 +327,33 @@
            /* transform: translateY(100px);*/
          }
 
+         .project_card:hover .project_card_img img:nth-of-type(1){
+            opacity: 0;
+         }
+
          .project_card .project_card_img{
             max-width: 100%;
             position: relative;
+            height: 0;
+            overflow: hidden;
+            padding-top: calc(3 / 4 * 100%);
          }
          .project_card .project_card_img img{
             display: block;
             max-width: 100%;
+            filter: grayscale(50%) contrast(150%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            float: left;
+            z-index: 10;
+            transition: opacity 0.15s ease-in-out;
          }
+         
+         .project_card .project_card_img img:nth-of-type(1){
+            z-index: 20;
+         }
+
          .project_card h3 {
             font-size: 26px;
             font-weight: 300;
@@ -314,63 +367,52 @@
             margin: 1em 0;
             color: #333;
          }
+         
       </style>
       <main>
          <section class="about_description">
-            <h2>designing the interface.<br>engineering the experience.</h2>
             <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
             <p>The best engineer is the one having the most fun.</p>
          </section>
+         <h3 class="category_label"><span>Building <em>Serious</em> Things</span></h3>
+         <p>No pictures here, you'll have to use your imagination.</p>
+         <h3 class="category_label"><span>Building <em>Silly</em> Things</span></h3>
          <section class="projects">
-
             <div class="project_card">
                <div class="project_card_img">
                   <img src="images/projects/qr_lego.jpg">
+                  <img src="images/projects/qr_lego2.jpg">
                </div>
-               <h3>LEGO QR codes to join WiFi</h3>
-               <p>The latest iOS and Android variants allow automatic network connection. 1681 bricks and counting.</p>
+               <h3>LEGO QR codes</h3>
+               <p>The latest iOS and Android variants can detect QR codes natively through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later..</p>
             </div>
 
             <div class="project_card">
                <div class="project_card_img">
                   <img src="images/projects/instamatic.jpg">
+                  <img src="images/projects/instamatic2.jpg">
                </div>
-               <h3>Instamatic Instagram camera</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>
-            
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/weasley-clock.jpg">
-               </div>
-               <h3>Real-life Weasley Clock</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+               <h3>Physical Instagram camera</h3>
+               <p>Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a few other spare parts.</p>
             </div>
 
             <div class="project_card">
                <div class="project_card_img">
                   <img src="images/projects/weasley-clock.jpg">
+                  <img src="images/projects/weasley-clock2.jpg">
                </div>
                <h3>Real-life Weasley Clock</h3>
                <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>
+            </div>   
 
             <div class="project_card">
                <div class="project_card_img">
-                  <img src="images/projects/instamatic.jpg">
+                  <img src="images/projects/wedding_stamp.jpg">
+                  <img src="images/projects/wedding_stamp2.jpg">
                </div>
-               <h3>Instamatic Instagram camera</h3>
+               <h3>Watzmann Wedding Letterpress</h3>
                <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>
-
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/qr_lego.jpg">
-               </div>
-               <h3>LEGO QR codes to join WiFi</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>
-            
+            </div>               
       
          </section>
       </main>
