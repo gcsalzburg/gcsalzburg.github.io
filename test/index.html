@@ -90,7 +90,8 @@
 
          .intro_links h1{
             text-indent: -9485px;
-            background-image: url("images/cave_logo.svg");
+            background-image: url("images/cave_logo.svg?sanitize=true"); /* appended query needed for stupid Github bug */
+            /* https://stackoverflow.com/a/16462143/10240581 */
             background-size: contain;
             background-position: left bottom;
             background-repeat: no-repeat;
@@ -249,34 +250,118 @@
       </section>
 
       <style>
-         .projects{
-            display:grid;
+         main{
             width: 90%;
             max-width: 1200px;
-            margin: 25px auto;
+            margin: 10px auto;
+            z-index: 500;
+            position: relative;
+            font-family: 'Source Sans Pro', sans-serif;
+         }
+
+         .about_description{
+         }
+         .about_description h2{
+            font-weight: 300;
+            font-size: 34px;
+            color: rgba(0,0,0,0.8);
+            text-align: center;
+         }
+         .about_description p{
+            font-size: 20px;
+            max-width: 90ch;
+            margin: 0 auto;
+            font-weight: 300;
+            line-height: 1.35em;
+         }
+         .about_description p a{
+            color: rgb(0,100,221);
+         }
+         
+         .projects{
+            display:grid;
+            margin: 25px 0;
             grid-template-columns: 1fr 1fr;
             column-gap: 25px;
             row-gap: 25px;
-            position: relative;
-            z-index: 500;
          }
 
-         .projects .project{
-            background-color: rgba(0,0,0,0.05);
-            height: 400px;
+         .project_card{
+            min-height: 300px;
          }
-         .projects .project:nth-of-type(2n){
+         .project_card:nth-of-type(2n){
             transform: translateY(100px);
          }
+
+         .project_card .project_card_img{
+            max-width: 100%;
+            position: relative;
+         }
+         .project_card .project_card_img img{
+            display: block;
+            max-width: 100%;
+         }
+         .project_card .tags {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin: 3px;
+         }
+         .project_card .tags span {
+            background-color: rgba(255,255,255,1);
+            display: inline-block;
+            padding: 2px 5px;
+            font-size: 14px;
+            margin: 3px;
+            border-radius: 3px;
+         }
+         .project_card h3{
+            font-size: 20px;
+            font-weight: normal;
+            margin: 1em 0;
+         }
+         .project_card h3{
+            font-size: 20px;
+            font-weight: normal;
+            margin: 1em 0;
+         }
       </style>
-      <section class="projects">
-         <div class="project"></div>
-         <div class="project"></div>
-         <div class="project"></div>
-         <div class="project"></div>
-         <div class="project"></div>
-         <div class="project"></div>
-      </section>
+      <main>
+         <section class="about_description">
+            <h2>designing the interface.<br>engineering the experience.</h2>
+            <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
+         </section>
+         <section class="projects">
+
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/qr_lego.jpg">
+                  <div class="tags"><span>#qr</span><span>#lego</span><span>#art</span></div>
+               </div>
+               <h3>LEGO QR codes to join WiFi</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/instamatic.jpg">
+                  <div class="tags"><span>#instagram</span><span>#esp32</span><span>#haptics</span></div>
+               </div>
+               <h3>Instamatic Instagram camera</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+            
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/weasley-clock.jpg">
+                  <div class="tags"><span>#data</span><span>#harrypotter</span></div>
+               </div>
+               <h3>Real-life Weasley Clock</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+      
+         </section>
+      </main>
 	</body>
 
 </html>
