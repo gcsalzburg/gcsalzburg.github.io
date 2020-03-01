@@ -252,7 +252,7 @@
       <style>
          main{
             width: 90%;
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 10px auto;
             z-index: 500;
             position: relative;
@@ -270,7 +270,7 @@
          .about_description p{
             font-size: 20px;
             max-width: 90ch;
-            margin: 0 auto;
+            margin: 1em auto;
             font-weight: 300;
             line-height: 1.35em;
          }
@@ -282,15 +282,15 @@
             display:grid;
             margin: 25px 0;
             grid-template-columns: 1fr 1fr;
-            column-gap: 25px;
-            row-gap: 25px;
+            column-gap: 40px;
+            row-gap: 40px;
          }
 
          .project_card{
             min-height: 300px;
          }
          .project_card:nth-of-type(2n){
-            transform: translateY(100px);
+           /* transform: translateY(100px);*/
          }
 
          .project_card .project_card_img{
@@ -301,21 +301,25 @@
             display: block;
             max-width: 100%;
          }
-         .project_card h3{
-            font-size: 20px;
-            font-weight: normal;
-            margin: 1em 0;
+         .project_card h3 {
+            font-size: 26px;
+            font-weight: 300;
+            margin: 1em 0 0.5em;
+            color:#666;
+            font-family: "Lemon Milk", sans-serif;
          }
-         .project_card h3{
-            font-size: 20px;
-            font-weight: normal;
+         .project_card p {
+            font-size: 18px;
+            font-weight: 300;
             margin: 1em 0;
+            color: #333;
          }
       </style>
       <main>
          <section class="about_description">
             <h2>designing the interface.<br>engineering the experience.</h2>
             <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
+            <p>The best engineer is the one having the most fun.</p>
          </section>
          <section class="projects">
 
@@ -324,7 +328,7 @@
                   <img src="images/projects/qr_lego.jpg">
                </div>
                <h3>LEGO QR codes to join WiFi</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+               <p>The latest iOS and Android variants allow automatic network connection. 1681 bricks and counting.</p>
             </div>
 
             <div class="project_card">
@@ -342,6 +346,31 @@
                <h3>Real-life Weasley Clock</h3>
                <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
             </div>
+
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/weasley-clock.jpg">
+               </div>
+               <h3>Real-life Weasley Clock</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/instamatic.jpg">
+               </div>
+               <h3>Instamatic Instagram camera</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+
+            <div class="project_card">
+               <div class="project_card_img">
+                  <img src="images/projects/qr_lego.jpg">
+               </div>
+               <h3>LEGO QR codes to join WiFi</h3>
+               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+            </div>
+            
       
          </section>
       </main>
