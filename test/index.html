@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>George Cave</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Open+Sans:400,700|Source+Sans+Pro:300,400,600" rel="stylesheet">
+      <style>
+         @font-face {
+            font-family: 'Lemon Milk';
+            src: url('fonts/lemonmilk-webfont.woff2') format('woff2'),
+                  url('fonts/lemonmilk-webfont.woff') format('woff');
+            font-weight: 500;
+            font-style: normal;
+
+         }
+         @font-face {
+            font-family: 'Lemon Milk';
+            src: url('fonts/lemonmilkbold-webfont.woff2') format('woff2'),
+                  url('fonts/lemonmilkbold-webfont.woff') format('woff');
+            font-weight: 9009;
+            font-style: normal;
+
+         }
+         @font-face {
+            font-family: 'Lemon Milk';
+            src: url('fonts/lemonmilklight-webfont.woff2') format('woff2'),
+                  url('fonts/lemonmilklight-webfont.woff') format('woff');
+            font-weight: 300;
+            font-style: normal;
+
+         }
+
+         // Specify the color of the selection
+         ::-moz-selection{
+            background-color:#FB2E1D;
+            color: #FFF;
+            text-shadow:none;
+         }
+         ::selection{
+            background-color: #FB2E1D;
+            color: #FFF;
+            text-shadow:none;
+         }
+         
+
+         html, body{
+            width:100%;
+            min-height:100%;
+            margin:0;
+            height: 100%;
+         }
+
+         .intro_links{
+            background-color:rgb(255,255,255);
+            position: fixed;
+            z-index:200;
+            font-family: 'Source Sans Pro', sans-serif;
+            padding: 50px 0 0 50px;
+         }
+
+         .intro_links:after{
+            content: "";
+            background-color: rgb(255,255,255);
+            display:block;
+            position:absolute;
+            width: 2000px;
+            height: 400px;
+            bottom: 0px;
+            right: 0px;
+            transform: translateX(50%) rotate(-55deg);
+            transform-origin: center bottom;
+            z-index:10;
+         }
+
+         .intro_links:before{
+            content: "";
+            background-color: rgb(255,255,255);
+            display:block;
+            position:absolute;
+            width: 2000px;
+            height: 8px;
+            bottom: 0px;
+            right: 0px;
+            transform: translateX(50%) translateY(26px) rotate(-55deg);
+            transform-origin: center bottom;
+            z-index:10;
+         }
+
+         .intro_links h1{
+            text-indent: -9485px;
+            background-image: url("images/cave_logo.svg");
+            background-size: contain;
+            background-position: left bottom;
+            background-repeat: no-repeat;
+            display:block;
+            position: relative;
+            width:140px;
+            height:63px;
+            z-index:50;
+         }
+         .intro_links h3{
+            font-weight:300;
+            text-transform: lowercase;
+            line-height:1.3em;
+            position: relative;
+            z-index:50;
+            font-size: 18px;
+         }
+         .intro_links nav{
+            font-weight:300;
+            position: relative;
+            z-index:50;
+         }
+         .intro_links ul{
+            margin: 2em 0 0;
+            padding:0;
+            list-style:none;
+         }
+         .intro_links li{
+            line-height: 1.5em;
+            font-size: 18px;
+         }
+         .intro_links a{
+            text-decoration: none;
+            color: #000;
+         }
+         .intro_links a:hover{
+            text-decoration: underline;
+            color: rgb(0,100,221);
+         }
+
+         .intro_bg{
+            width:100%;
+            position: relative;
+            height: 100%;
+            background: url("images/backgrounds/wi-sculpting.jpg") no-repeat;
+            background-position: 60% center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+         .intro_bg:before{
+            content: "";
+            background-color: #7500DE;
+            mix-blend-mode: saturation;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display:block;
+         }
+
+         .tagline{
+            font-family: 'Lemon Milk', sans-serif;
+            font-size: 48px;
+            font-weight:500;
+            text-transform: uppercase;
+            color: rgb(255,255,255);
+            display: flex;
+            align-items: center;
+            z-index:50;
+         }
+         .tagline .links{
+            display: flex;
+            flex-direction:column;
+         }
+         .tagline a{
+            display: inline-block;
+            background-color: rgb(255,255,255);
+            color: rgb(0,0,0);
+            text-decoration: none;
+            text-align: center;
+            padding: 2px 15px;
+            margin: 10px 25px;
+            font-weight: 900;
+            align-self: center;
+            transition: all 0.1s ease-in-out;
+            animation: shake 3s linear 3s infinite; /*cubic-bezier(.36,.07,.19,.97) 3s;*/
+         }
+         .tagline a:nth-of-type(2){
+            animation: shake 3s linear 3.1s infinite; /*cubic-bezier(.36,.07,.19,.97) 3.1s;*/
+         }
+         .tagline a:hover{
+            background-color: rgb(0,0,0);
+            color: rgb(255,255,255);
+            animation: none;
+         }
+         .tagline a:focus{
+            outline-offset: 7px;
+            background-color: rgb(255,255,255);
+            color: rgb(0,0,0);
+            outline: 5px solid white;
+            animation: none;
+         }
+
+         @keyframes shake {
+            1%, 9% {
+               transform: translate3d(-1px, 0, 0);
+            }
+            
+            2%, 8% {
+               transform: translate3d(2px, 0, 0);
+            }
+
+            3%, 5%, 7% {
+               transform: translate3d(-3px, 0, 0);
+            }
+
+            4%, 6% {
+               transform: translate3d(3px, 0, 0);
+            }
+
+            0%, 10%, 100% {
+               transform: translate3d(0, 0, 0);
+            }
+         }
+
+
+
+      </style>
+		<script src="script.js"></script>
+	</head>
+	<body>
+
+      <section class="intro_links">
+         <h1>GEORGE CAVE</h1>
+         <h3>Designing the interface.<br>Engineering the experience.</h3>
+         <nav>
+            <ul>
+               <li><a href="#instagram">Instagram</a></li>
+               <li><a href="#linked">LinkedIn</a></li>
+               <li><a href="#twitter">Twitter</a></li>
+               <li><a href="#github">Github</a></li>
+            </ul>
+         </nav>
+      </section>
+
+		<section class="intro_bg">
+         <h2 class="tagline">
+            <span>Building</span>
+            <span class="links">
+               <a href="#serious">serious</a>
+               <a href="#silly">silly</a>
+            </span>
+            <span>things</span>
+         </h2>
+      </section>
+
+      <style>
+         .projects{
+            display:grid;
+            width: 90%;
+            max-width: 1200px;
+            margin: 25px auto;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 25px;
+            row-gap: 25px;
+            position: relative;
+            z-index: 500;
+         }
+
+         .projects .project{
+            background-color: rgba(0,0,0,0.05);
+            height: 400px;
+         }
+         .projects .project:nth-of-type(2n){
+            transform: translateY(100px);
+         }
+      </style>
+      <section class="projects">
+         <div class="project"></div>
+         <div class="project"></div>
+         <div class="project"></div>
+         <div class="project"></div>
+         <div class="project"></div>
+         <div class="project"></div>
+      </section>
+	</body>
+
+</html>
