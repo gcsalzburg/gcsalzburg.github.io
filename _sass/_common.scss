@@ -1,0 +1,11 @@
+
+::-moz-selection{
+   background-color: $colour_highlight;
+   color: $colour_highlight_text;
+   text-shadow:none;
+}
+::selection{
+   background-color: $colour_highlight;
+   color: $colour_highlight_text;
+   text-shadow:none;
+}
