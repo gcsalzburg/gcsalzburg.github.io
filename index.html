@@ -3,77 +3,59 @@ layout: default
 ishomepage: true
 ---
 
-<div class="top_banner image_snapshots clearfix">
-  {% for image in site.static_files %}
-    {% if image.path contains 'images/thumbnails' %}
-        <img src="{{ site.baseurl }}{{ image.path }}" />
-    {% endif %}
-  {% endfor %} 
-</div>
+<section class="intro_bg">
+   <h2 class="tagline">
+      <span>Building</span>
+      <span class="links">
+         <a href="#serious">serious</a>
+         <a href="#silly">silly</a>
+      </span>
+      <span>things</span>
+   </h2>
+</section>
 
-<div class="posts" id="posts_container">
-  <div class="homepage_intro">
-      <h2>I'm a design engineer at heart.<br>Curious about how things work and how they are made.</h2>
-      <p>Based in Salzurg, Austria, I work as a <a href="http://www.vanschneider.com/get-job-kiska">Senior Creative Technologist</a> at <a href="https://www.kiska.com/">KISKA</a>. I build and deliver complex connected products for global brands, bringing to life visions of the future with hardware, software, electro-mechanical design, digital technology and magic.</p>
+<main>
+   <section class="about_description">
+      <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
       <p>The best engineer is the one having the most fun.</p>
-  </div>
+   </section>
+   <h3 class="category_label"><span>Showing <a href="#serious" class="selected">Serious</a><a href="#silly">Silly</a>Things</span></h3>
+   <section class="projects">
+      <article class="project_card">
+         <div class="project_card_img">
+            <img src="images/projects/qr_lego.jpg">
+            <img src="images/projects/qr_lego2.jpg">
+         </div>
+         <h3>LEGO QR codes</h3>
+         <p>The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.</p>
+      </article>
 
-  {% for post in site.posts %}
-    <article class="post_preview">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h2><span class="date">{{ post.date | date: "%Y / %m" }}</span>{{ post.short-title }}</h2>
-        <h3>{{ post.strapline }}</h3>
-      </a>
-    </article>
-  {% endfor %}
-  {% if site.posts.size > 3 %}
-    <a href="#showmore" id="show_more" class="show_more">↓ Show older posts</a>
+      <article class="project_card">
+         <div class="project_card_img">
+            <img src="images/projects/instamatic.jpg">
+            <img src="images/projects/instamatic2.jpg">
+         </div>
+         <h3>Physical Instagram camera</h3>
+         <p>Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and lot of mechanical.</p>
+      </article>
 
-    <script>
-    var show_more = document.getElementById("show_more");
-    var posts_container = document.getElementById("posts_container");
-    show_more.addEventListener('click', function(e){
-      e.preventDefault();
-      addClass(posts_container, 'show_all');
-      show_more.parentNode.removeChild(show_more);
-    });
-    </script>
-  {% endif %}
-</div>
+      <article class="project_card">
+         <div class="project_card_img">
+            <img src="images/projects/weasley-clock.jpg">
+            <img src="images/projects/weasley-clock2.jpg">
+         </div>
+         <h3>Real-life Weasley Clock</h3>
+         <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+      </article>   
 
-<div class="wrapper-homepage-lower">
-  <div class="container">
-    <div class="projects">
-        <figure class="project">
-          <img src="images/projects/uvx.jpg">
-          <figcaption>UVX R-1 (2017)</figcaption>
-        </figure>
-        <figure class="project">
-          <img src="images/projects/den.jpg">
-          <figcaption>The DEN (2016)</figcaption>
-        </figure>
-        <figure class="project video">
-          <a href="https://www.youtube.com/watch?v=B87Tg2BkyW4"><img src="images/projects/tedx.jpg"></a>
-          <figcaption>Mountaineering and technology (2013)</figcaption>
-        </figure>
-        <figure class="project">
-          <img src="images/projects/greenland.jpg">
-          <figcaption>E-tracers Project, Greenland (2011)</figcaption>
-        </figure>
-        <figure class="project">
-          <img src="images/projects/skank.jpg">
-          <figcaption>Skid-steer vehicle design (2006)</figcaption>
-        </figure>
-        <figure class="project">
-          <img src="images/projects/wii.jpg">
-          <figcaption>Gestural interface for 3D CAD (2012)</figcaption>
-        </figure>
-    </div>
-    <nav class="homepage-nav">
-      <a href="https://www.instagram.com/{{ site.footer-links.instagram }}/"> Instagram</a>
-      <a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"> LinkedIn</a>
-      <a href="https://twitter.com/{{ site.footer-links.twitter }}">          Twitter</a>
-      <a href="https://github.com/{{ site.footer-links.github }}">            Github</a>
-    </nav>
-  </div>
-</div>
+      <article class="project_card">
+         <div class="project_card_img">
+            <img src="images/projects/wedding_stamp.jpg">
+            <img src="images/projects/wedding_stamp2.jpg">
+         </div>
+         <h3>Watzmann Wedding Letterpress</h3>
+         <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
+      </article>               
+
+   </section>
+</main>

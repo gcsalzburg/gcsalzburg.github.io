@@ -73,6 +73,7 @@ html, body{
    position: relative;
    z-index:50;
    font-size: 18px;
+   margin: 1em 0;
 }
 .intro_links nav{
    font-weight:300;
@@ -159,6 +160,7 @@ html, body{
    align-self: center;
    transition: all 0.1s ease-in-out;
    animation: shake 3s linear 3s infinite; /*cubic-bezier(.36,.07,.19,.97) 3s;*/
+   line-height: normal;
 }
 .tagline a:nth-of-type(2){
    animation: shake 3s linear 3.1s infinite; /*cubic-bezier(.36,.07,.19,.97) 3.1s;*/

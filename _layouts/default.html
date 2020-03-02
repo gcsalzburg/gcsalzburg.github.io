@@ -16,7 +16,12 @@
       <!-- <script src="{{ site.baseurl }}/scripts/code.js"></script> -->
    </head>
 
-   <body>
+
+  {% if page.ishomepage %}
+  <body class="homepage">
+  {% else %}
+  <body>
+  {% endif %}
       <section class="intro_links">
          <header>
             <h1>George Cave / designedbycave.co.uk</h1>
@@ -28,115 +33,18 @@
                <li><a href="#linked">Tech</a></li>
             </ul>
             <ul class="social">
-               <li><a href="#instagram">Instagram</a></li>
-               <li><a href="#linked">Linkedin</a></li>
-               <li><a href="#twitter">Twitter</a></li>
-               <li><a href="#github">Github</a></li>
+               <li><a href="https://www.instagram.com/{{ site.footer-links.instagram }}/"> Instagram</a></li>
+               <li><a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"> LinkedIn</a></li>
+               <li><a href="https://twitter.com/{{ site.footer-links.twitter }}">          Twitter</a></li>
+               <li><a href="https://github.com/{{ site.footer-links.github }}">            Github</a></li>
             </ul>
          </nav>
       </section>
 
-		<section class="intro_bg">
-         <h2 class="tagline">
-            <span>Building</span>
-            <span class="links">
-               <a href="#serious">serious</a>
-               <a href="#silly">silly</a>
-            </span>
-            <span>things</span>
-         </h2>
-      </section>
-
-      <main>
-         <section class="about_description">
-            <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
-            <p>The best engineer is the one having the most fun.</p>
-         </section>
-         <h3 class="category_label"><span>Showing <a href="#serious" class="selected">Serious</a><a href="#silly">Silly</a>Things</span></h3>
-         <p>No pictures here, you'll have to use your imagination.</p>
-         <section class="projects">
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/qr_lego.jpg">
-                  <img src="images/projects/qr_lego2.jpg">
-               </div>
-               <h3>LEGO QR codes</h3>
-               <p>The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.</p>
-            </div>
-
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/instamatic.jpg">
-                  <img src="images/projects/instamatic2.jpg">
-               </div>
-               <h3>Physical Instagram camera</h3>
-               <p>Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and lot of mechanical.</p>
-            </div>
-
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/weasley-clock.jpg">
-                  <img src="images/projects/weasley-clock2.jpg">
-               </div>
-               <h3>Real-life Weasley Clock</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>   
-
-            <div class="project_card">
-               <div class="project_card_img">
-                  <img src="images/projects/wedding_stamp.jpg">
-                  <img src="images/projects/wedding_stamp2.jpg">
-               </div>
-               <h3>Watzmann Wedding Letterpress</h3>
-               <p>The latest iOS and Android variants allow . 1681 bricks and counting.</p>
-            </div>               
+      {{ content }}
       
-         </section>
-      </main>
-      
+
       {% include analytics.html %}
 
    </body>
-
-
-
-
-
-
-<!--
-  {% if page.ishomepage %}
-  <body class="homepage">
-  {% else %}
-  <body>
-  {% endif %}
-
-  <header class="masthead">
-    <a href="{{ site.baseurl }}/" class="cave-logo"><img src="{{ site.baseurl }}/images/cave_logo.png" /></a>
-  </header>
-
-    {{ content }}
-    
-    {% unless page.nofooter %}
-    <div class="wrapper-footer">
-      <span class="footer-spacer"></span>
-      <footer class="footer">
-          <a href="{{ site.baseurl }}/" class="footer_logo"><img src="/images/cave_logo.png"></a>
-          <h4>“I’m sorry I made you such a complex design, I didn’t have time to make a simple one”</h4>
-          <p class="quote_attribution">Blaise Pascal / Elliott Baxter</p>
-        
-          <nav class="social_links">
-            <ul>
-              <li>George Cave (c){{ site.time | date: '%Y' }}</li>
-              <li><a href="https://www.instagram.com/{{ site.footer-links.instagram }}/"> Instagram</a></li>
-              <li><a href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}"> LinkedIn</a></li>
-              <li><a href="https://twitter.com/{{ site.footer-links.twitter }}">          Twitter</a></li>
-              <li><a href="https://github.com/{{ site.footer-links.github }}">            Github</a></li>
-              <li><a href="mailto:hello@designedbycave.co.uk">                            Email</a></li>
-            </ul>
-          </nav>
-        </footer>
-    </div>
-    {% endunless %}
-    
-   -->
 </html>

@@ -1,0 +1,57 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+
+$bgcolour: #FFF;
+
+$headingcolour: #222;
+$copycolour: #222;
+
+$footerbg: #F5F5F5;
+$footerborder: #E1E1E1;
+
+// Brand colours (borders, lines etc)
+$lightgrey: #ddd;
+$midgrey: #666;
+$white: #FFF;
+
+// Links & text selection
+$linknormal: rgb(65, 131, 196);
+$linkhover: rgb(0, 105, 211);
+$textselection: rgba(244,185,179,0.8);
+
+// Code block
+$codeborder: #bbb;
+$codebg: #fff;
+$codelinksbg: #ddd;
+
+// Font stacks
+$headingfont: 'Source Sans Pro', sans-serif;
+$navfont:     'Source Sans Pro', sans-serif;
+$copyfont:    'Source Sans Pro', sans-serif;
+$postfont:    'Open Sans', sans-serif;
+$codefont:    Consolas, monaco, 'IBM Plex Mono', monospace;
+
+// Layout dimensions
+$topmargin: 65px;
+$leftmargin: 180px;
+$maxwidth: 840px;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+/* USAGE:
+ *
+ *   @include mobile {
+ *     display: block;
+ *     margin: 0 auto;
+ *   }
+ *
+ */
