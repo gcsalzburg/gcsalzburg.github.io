@@ -2,4 +2,6 @@
 
 Repo for technical blog, rendered on `Github pages` using `Jekyll`.
 
-https://designedbycave.co.uk
+https://www.designedbycave.co.uk
+
+> Run `bundle exec jekyll serve` in terminal to run local server
