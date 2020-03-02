@@ -53,39 +53,38 @@
          }
 
          .intro_links{
-            background-color:rgb(255,255,255);
             position: fixed;
             z-index:200;
             font-family: 'Source Sans Pro', sans-serif;
             padding: 50px 0 0 50px;
          }
 
-         .intro_links:after{
+         .intro_links header{
+            position: relative;
+            z-index:200;
+            background-color:rgb(255,255,255);
+         }
+         .intro_links header:after{
             content: "";
             background-color: rgb(255,255,255);
             display:block;
             position:absolute;
             width: 2000px;
-            height: 400px;
-            bottom: 0px;
+            transform-origin: center bottom;
+            z-index:10;
+            bottom: -25px;
             right: 0px;
             transform: translateX(50%) rotate(-55deg);
-            transform-origin: center bottom;
-            z-index:10;
+            height: 400px;
+            outline-offset: 10px;
+            outline: 8px solid rgb(255,255,255);
+            transition: all 0.2s cubic-bezier(.26,1.91,.8,.73); 
          }
-
-         .intro_links:before{
-            content: "";
-            background-color: rgb(255,255,255);
-            display:block;
-            position:absolute;
-            width: 2000px;
-            height: 8px;
-            bottom: 0px;
-            right: 0px;
-            transform: translateX(50%) translateY(26px) rotate(-55deg);
-            transform-origin: center bottom;
-            z-index:10;
+         .intro_links:hover header:after{
+            transform: translateX(50%) rotate(-65deg);
+         }
+         .intro_links:hover header:before{
+            transform: translateX(50%) translateY(26px) rotate(-65deg);
          }
 
          .intro_links h1{
@@ -112,10 +111,11 @@
          .intro_links nav{
             font-weight:300;
             position: relative;
-            z-index:50;
+            z-index:500;
+            float: left;
          }
          .intro_links ul{
-            margin: 2em 0 0;
+            margin: 1em 0 0;
             padding:0;
             list-style:none;
          }
@@ -124,12 +124,25 @@
             font-size: 18px;
          }
          .intro_links a{
-            text-decoration: none;
             color: #000;
+            text-decoration: none;
+            transition: margin 0.15s cubic-bezier(.26,1.91,.8,.73);
          }
          .intro_links a:hover{
             text-decoration: underline;
             color: rgb(0,100,221);
+            margin-left: 4px;
+         }
+
+         .intro_links ul.social{
+            opacity: 0;
+            transition: all 0.2s cubic-bezier(.26,1.91,.8,.73); 
+         }
+         .intro_links:hover ul.social{
+            opacity: 1;
+         }
+         .intro_links:hover a{
+            text-decoration: underline;
          }
 
          .intro_bg{
@@ -226,12 +239,18 @@
 	<body>
 
       <section class="intro_links">
-         <h1>GEORGE CAVE</h1>
-         <h3>Designing the interface.<br>Engineering the experience.</h3>
+         <header>
+            <h1>George Cave / designedbycave.co.uk</h1>
+            <h3>Designing the interface.<br>Engineering the experience.</h3>
+         </header>
          <nav>
             <ul>
+               <li><a href="#instagram">Opinions</a></li>
+               <li><a href="#linked">Tech</a></li>
+            </ul>
+            <ul class="social">
                <li><a href="#instagram">Instagram</a></li>
-               <li><a href="#linked">LinkedIn</a></li>
+               <li><a href="#linked">Linkedin</a></li>
                <li><a href="#twitter">Twitter</a></li>
                <li><a href="#github">Github</a></li>
             </ul>
@@ -254,10 +273,20 @@
             width: 90%;
             max-width: 1000px;
             margin: 10px auto;
+            max-width: calc(100% - 300px - 300px);
             z-index: 500;
             position: relative;
             font-family: 'Source Sans Pro', sans-serif;
          }
+
+         @media screen and (max-width: 1500px) {
+            main{
+               margin-left: 300px;
+               margin-right: 30px; 
+               max-width: calc(100% - 300px - 30px);
+            }
+         }
+
          main p{
             font-size: 20px;
             max-width: 90ch;
@@ -278,39 +307,6 @@
          .about_description p a{
             color: rgb(0,100,221);
          }
-
-         .category_label{
-            font-family: "Lemon Milk", sans-serif;
-            font-weight: 300;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 24px;
-            position: relative;
-         }
-         .category_label span{
-            background-color: rgb(255,255,255);
-            z-index: 30;
-            position: relative;
-            padding: 0 25px;
-         }
-         .category_label em{
-            font-weight: 500;
-            background-color: rgb(0,0,0);
-            color: rgb(255,255,255);
-            padding:2px 8px;
-            font-style: normal;
-         }
-         .category_label::after {
-            content: "";
-            display: block;
-            height: 1px;
-            position: absolute;
-            left: 0;
-            right: 0;
-            background-color: rgb(0,0,0);
-            top: 50%;
-            z-index: 10;
-         }
          
          .projects{
             display:grid;
@@ -324,7 +320,7 @@
             min-height: 300px;
          }
          .project_card:nth-of-type(2n){
-           /* transform: translateY(100px);*/
+            transform: translateY(100px);
          }
 
          .project_card .project_card_img:hover img:nth-of-type(1){
@@ -367,6 +363,64 @@
             margin: 1em 0;
             color: #333;
          }
+
+
+
+
+         .category_label{
+            font-family: "Lemon Milk", sans-serif;
+            font-weight: 300;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 24px;
+            position: relative;
+         }
+         .category_label span{
+            background-color: rgb(255,255,255);
+            z-index: 30;
+            position: relative;
+            padding: 0 15px;
+         }
+         .category_label::after {
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            background-color: rgb(0,0,0);
+            top: 50%;
+            z-index: 10;
+         }
+
+         .category_label a{
+            display: inline-block;
+            background-color: rgb(255,255,255);
+            color: rgb(0,0,0);
+            text-decoration: none;
+            text-align: center;
+            padding: 1px 10px;
+            margin: 0px 8px;
+            font-weight: 500;
+            align-self: center;
+            transition: all 0.1s ease-in-out;
+         }
+         .category_label a:hover{
+            background-color: rgb(0,0,0);
+            color: rgb(255,255,255);
+         }
+         .category_label a.selected{
+            background-color: rgb(0,0,0);
+            color: rgb(255,255,255);
+            outline-offset: 3px;
+            outline: 3px solid rgb(0,0,0);
+         }
+
+
+
+
+
+
          
       </style>
       <main>
@@ -374,9 +428,8 @@
             <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
             <p>The best engineer is the one having the most fun.</p>
          </section>
-         <h3 class="category_label"><span>Building <em>Serious</em> Things</span></h3>
+         <h3 class="category_label"><span>Showing <a href="#serious" class="selected">Serious</a><a href="#silly">Silly</a>Things</span></h3>
          <p>No pictures here, you'll have to use your imagination.</p>
-         <h3 class="category_label"><span>Building <em>Silly</em> Things</span></h3>
          <section class="projects">
             <div class="project_card">
                <div class="project_card_img">
