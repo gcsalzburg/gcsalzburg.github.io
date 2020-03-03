@@ -79,21 +79,67 @@ header{
    li{
       line-height: 1.5em;
       font-size: 18px;
+      transition: transform 0.15s $transition_quiver;
+
+      &:hover{
+         transform: translateX(4px);
+      }
    }
    a{
       color: #000;
       text-decoration: none;
-      transition: margin 0.15s $transition_quiver;
    }
    a:hover{
       text-decoration: underline;
       color: rgb(0,100,221);
-      margin-left: 4px;
    }
 
    ul.social{
       opacity: 0;
       transition: all 0.2s $transition_quiver; 
+
+      li{
+         position: relative;
+
+         &:before{
+            background-image: url("images/icons/instagram.svg");
+            background-repeat: no-repeat;
+            background-position: left 60%;
+            background-size: auto 75%;
+            content: "";
+            display: block;
+            position:absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            z-index: 10;
+            filter:grayscale(100%);
+            transition: filter 0.2s ease-in-out;  
+         }
+
+         &.instagram:before{ background-image: url("images/icons/instagram.svg"); }
+         &.linkedin:before{ background-image: url("images/icons/linkedin.svg"); }
+         &.twitter:before{ background-image: url("images/icons/twitter.svg"); }
+         &.github:before{ background-image: url("images/icons/github.svg"); }
+         &.email:before{ background-image: url("images/icons/email.svg"); }
+
+         &:hover:before{
+            filter:grayscale(0%);
+         }
+
+         a{
+            text-decoration: none;
+            z-index: 20;
+            padding-left: 1.5em;
+            position: relative;
+
+            &:hover{
+               text-decoration: underline;
+            }
+         }
+      }
    }
 }
 
