@@ -4,7 +4,7 @@ html, body{
    min-height:100%;
    margin:0;
    height: 100%;
-   background-color: $color_page;
+   background-color: $colour_page;
 }
 
 /* ****************************** */
@@ -20,11 +20,11 @@ header{
    .site_name{
       position: relative;
       z-index:200;
-      background-color:$color_page;
+      background-color:$colour_page;
    }
    .site_name:after{
       content: "";
-      background-color: $color_page;
+      background-color: $colour_page;
       display:block;
       position:absolute;
       width: 2000px;
@@ -35,7 +35,7 @@ header{
       transform: translateX(50%) rotate(-55deg);
       height: 400px;
       outline-offset: 10px;
-      outline: 8px solid $color_page;
+      outline: 8px solid $colour_page;
       transition: all 0.2s $transition_quiver; 
    }
 
@@ -132,4 +132,117 @@ header:hover{
    width: 100%;
    height: 100%;
    display:block;
+}
+
+.tagline{
+   font-size: 48px;
+   font-weight:500;
+
+   a{
+      animation: shake 3s linear 3s infinite;
+      padding: 2px 15px;
+      margin: 10px 25px;
+      font-weight: 900;
+   }
+   a:nth-of-type(2){
+      animation: shake 3s linear 3.1s infinite;
+   }
+   a:focus, a.selected{
+      outline-offset: 7px;
+      outline: 5px solid white;
+   }
+}
+
+
+/* ****************************** */
+/* ****    Main page body    ****
+/* ****************************** */
+
+main{
+   width: 90%;
+   max-width: 1000px;
+   margin: 10px auto;
+   max-width: calc(100% - 300px - 300px);
+   z-index: 500;
+   position: relative;
+   font-family: $font_body;
+
+   .panel_full_width{
+      margin: 60px 0;
+   }
+}
+
+@media screen and (max-width: 1500px) {
+   main{
+      margin-left: 300px;
+      margin-right: 30px; 
+      max-width: calc(100% - 300px - 30px);
+   }
+}
+
+
+/* ****************************** */
+/* **  Grid of project cards   **
+/* ****************************** */
+
+
+.projects{
+   display:grid;
+   margin: 25px 0;
+   grid-template-columns: 1fr 1fr;
+   column-gap: 40px;
+   row-gap: 40px;
+}
+
+.project_card{
+
+   min-height: 300px;
+
+   &:nth-of-type(2n){
+      transform: translateY(100px);
+   }
+   
+   .project_card_img{
+      max-width: 100%;
+      position: relative;
+      height: 0;
+      overflow: hidden;
+      padding-top: calc(3 / 4 * 100%);
+
+      img{
+         display: block;
+         max-width: 100%;
+         filter: grayscale(50%) contrast(150%);
+         position: absolute;
+         top: 0;
+         left: 0;
+         float: left;
+         z-index: 10;
+         transition: opacity 0.15s ease-in-out;
+
+         &:nth-of-type(1){
+            z-index: 20;
+         }
+      }
+
+      &:hover{
+         img:nth-of-type(1){
+            opacity: 0;
+         }
+      }
+   }
+
+   h3 {
+      font-size: 26px;
+      font-weight: 300;
+      margin: 1em 0 0.5em;
+      color:#666;
+      font-family: "Lemon Milk", sans-serif;
+   }
+   p {
+      font-size: 18px;
+      font-weight: 300;
+      margin: 1em 0;
+      color: #333;
+   }
 }

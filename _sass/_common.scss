@@ -9,3 +9,143 @@
    color: $colour_highlight_text;
    text-shadow:none;
 }
+
+/* ****************************** */
+/* ****   Core text styles   ****
+/* ****************************** */
+
+p{
+   font-size: 20px;
+   max-width: 90ch;
+   margin: 1em auto;
+   font-weight: 300;
+   line-height: 1.35em;
+
+   a{
+      color: $colour_link_active;
+   }
+}
+
+
+.about_description{
+   margin: 60px 0;
+}
+.about_description h2{
+   font-weight: 300;
+   font-size: 34px;
+   color: rgba(0,0,0,0.8);
+   text-align: center;
+}
+.about_description p a{
+   color: rgb(0,100,221);
+}
+
+
+/* ****************************** */
+/* ****  Black line headers  ****
+/* ****************************** */
+
+.black_line_behind{
+   text-align: center;
+   position: relative;
+   
+   &:after {
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      background-color: black;
+      top: 50%;
+      z-index: 10;
+   }
+
+   > *{
+      background: white;
+      z-index: 50;
+   }
+}
+
+/* ****************************** */
+/* **** Serious/Silly Toggle ****
+/* ****************************** */
+
+.ss_toggle{
+   font-family: $font_special;
+   text-transform: uppercase;
+   color: white;
+   display: flex;
+   align-items: center;
+   z-index:50;
+   justify-content: center;
+
+   .links{
+      display: flex;
+      flex-direction:column;
+   }
+
+   a{
+      display: inline-block;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      text-align: center;
+      align-self: center;
+      transition: all 0.1s ease-in-out;
+      line-height: normal;
+   }
+
+   a:hover{
+      background-color: black;
+      color: white;
+      animation: none;
+   }
+
+   a:focus, a.selected{
+      background-color: white;
+      color: black;
+      animation: none;
+   }
+}
+@keyframes shake {
+   1%, 9%        {transform: translate3d(-1px, 0, 0);}
+   2%, 8%        {transform: translate3d(2px,  0, 0);}
+   3%, 5%, 7%    {transform: translate3d(-3px, 0, 0);}
+   4%, 6%        {transform: translate3d(3px,  0, 0);}
+   0%, 10%, 100% {transform: translate3d(0,    0, 0);}
+}
+
+
+.category_label{
+   font-weight: 300;
+   font-size: 24px;
+
+   span{
+      color: black;
+
+      &:first-of-type{
+         padding-left: 10px;      
+      }
+      &:last-of-type{
+         padding-right: 10px;
+      }
+   }
+
+   a{
+      text-align: center;
+      padding: 1px 10px;
+      margin: 4px 12px;
+      font-weight: 500;
+   }
+   a.selected{
+      background: black;
+      color: white;
+   }
+   a:focus{
+      outline-offset: 3px;
+      outline: 3px solid black;
+   }
+}
+
+
