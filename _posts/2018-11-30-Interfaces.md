@@ -4,6 +4,8 @@ folder: Interfaces
 short-title: Interfaces
 title: "Distributed interfaces: Think outside the screen"
 strapline: Think outside the screen
+
+categories: [opinions]
 tags: interface hmi distributed design technology 
 ---
 

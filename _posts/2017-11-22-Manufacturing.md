@@ -4,7 +4,10 @@ folder: Manufacturing
 short-title: Manufacturing
 title: Manufacturing
 strapline: Learning DFMA from an old rotary dial telephone 
+
+categories: [tech]
 tags: dfma dfm manufacturing assembly servicing repair telephones engineering
+
 ---
 
 DFMA stands for Design for Manufacturing and Assembly. In a traditional model of engineering development, DFMA is the act of converting concepts and prototype designs into finished designs suitable for mass-manufacture. An understanding of manufacturing processes is critical, to ensure the process is appropriate for the desired production volumes, cost target and quality.

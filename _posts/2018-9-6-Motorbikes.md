@@ -4,6 +4,8 @@ folder: Motorbikes
 short-title: Motorbikes
 title: Designing for 250kph
 strapline: Designing for 250kph
+
+categories: [opinions]
 tags: interface hmi interaction design motorbikes context use-cases
 ---
 
