@@ -39,19 +39,21 @@ header{
       transition: all 0.2s $transition_quiver; 
    }
 
-   h1{
-      text-indent: -9485px;
-      background-image: url("images/cave_logo.svg?sanitize=true"); /* appended query needed for stupid Github bug */
-      /* https://stackoverflow.com/a/16462143/10240581 */
-      background-size: contain;
-      background-position: left bottom;
-      background-repeat: no-repeat;
-      display:block;
-      position: relative;
-      width:140px;
-      height:63px;
-      z-index:50;
+   h1 {
       margin: 0;
+      a{
+         text-indent: -9485px;
+         background-image: url("images/cave_logo.svg?sanitize=true"); /* appended query needed for stupid Github bug */
+         /* https://stackoverflow.com/a/16462143/10240581 */
+         background-size: contain;
+         background-position: left bottom;
+         background-repeat: no-repeat;
+         display:block;
+         position: relative;
+         width:140px;
+         height:63px;
+         z-index:50;
+      }
    }
    h3{
       font-weight:300;

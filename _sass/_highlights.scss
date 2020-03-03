@@ -1,12 +1,12 @@
-/*
+
 .highlighter-rouge{
   font-weight: 400;
   font-size: 0.8em;
   padding: 2px;
-  border: 1px solid $codeborder;
-  background-color: $codebg;
+  border: 1px solid $colour_code_border;
+  background-color: $colour_code_bg;
   box-sizing: border-box;
-  font-family: $codefont;
+  font-family: $font_code;
   line-height: 1.2em;
   position:relative;
   overflow:hidden;
@@ -24,8 +24,8 @@
   top: 0;
   right: 0;
   display: block;
-  background: $codelinksbg;
-  font-family: $copyfont;
+  background: $colour_code_links_bg;
+  font-family: $font_body;
   border-bottom-left-radius: 8px;
   a{
     display: block;
@@ -39,7 +39,7 @@
     }
   }
 }
-*/
+
 
 .highlight .hll { background-color: #ffffcc }
 .highlight  { background: #ffffff; }
