@@ -4,7 +4,7 @@ ishomepage: true
 ---
 
 <section class="intro_bg">
-   <h2 class="tagline">
+   <h2 class="tagline ss_toggle">
       <span>Building</span>
       <span class="links">
          <a href="#serious">serious</a>
@@ -15,47 +15,30 @@ ishomepage: true
 </section>
 
 <main>
-   <section class="about_description">
+   <section class="panel_full_width">
       <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
       <p>The best engineer is the one having the most fun.</p>
    </section>
-   <h3 class="category_label"><span>Showing <a href="#serious" class="selected">Serious</a><a href="#silly">Silly</a>Things</span></h3>
+   <h3 class="ss_toggle black_line_behind category_label">
+      <span>Showing</span>
+      <span class="links">
+         <a href="#serious" class="selected">Serious</a>
+         <a href="#silly">Silly</a>
+      </span>
+      <span>things</span>
+   </h3>
+
    <section class="projects">
+   {% for project in site.data.silly_projects %}
       <article class="project_card">
          <div class="project_card_img">
-            <img src="images/projects/qr_lego.jpg">
-            <img src="images/projects/qr_lego2.jpg">
+            <img src="images/projects/{{ project.image1 }}">
+            <img src="images/projects/{{ project.image2 }}">
          </div>
-         <h3>LEGO QR codes</h3>
-         <p>The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.</p>
+         <h3>{{ project.title }}</h3>
+         <p>{{ project.description }}</p>
       </article>
-
-      <article class="project_card">
-         <div class="project_card_img">
-            <img src="images/projects/instamatic.jpg">
-            <img src="images/projects/instamatic2.jpg">
-         </div>
-         <h3>Physical Instagram camera</h3>
-         <p>Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a lot of mechanical modifications. The original advance film & shutter mechanism triggers a new photo capture, which is instantly uploaded to Instagram. For added effect, the poor low-light performance of the cameras provides stylistically blurred images.</p>
-      </article>
-
-      <article class="project_card">
-         <div class="project_card_img">
-            <img src="images/projects/weasley-clock.jpg">
-            <img src="images/projects/weasley-clock2.jpg">
-         </div>
-         <h3>Real-life Weasley Clock</h3>
-         <p>Most large companies log entry & exit using keycard fobs. Using data scraped from our corporate intranet, I built a working version of the Weasley Family's Clock from the Harry Potter series. The servo motor control for the hand is very limited, which fortunately means I'll never end up in Mortal Peril.</p>
-      </article>   
-
-      <article class="project_card">
-         <div class="project_card_img">
-            <img src="images/projects/wedding_stamp.jpg">
-            <img src="images/projects/wedding_stamp2.jpg">
-         </div>
-         <h3>Watzmann Wedding Letterpress</h3>
-         <p>A small favour for some close friends in Salzburg.</p>
-      </article>               
-
+   {% endfor %}    
    </section>
+
 </main>

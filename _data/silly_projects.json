@@ -1,0 +1,24 @@
+[{
+   "title":       "LEGO QR codes",
+   "description": "The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.",
+   "image1":      "qr_lego.jpg",
+   "image2":      "qr_lego2.jpg"
+ },
+ {
+   "title":       "Physical Instagram camera",
+   "description": "Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a lot of mechanical modifications. The original advance film & shutter mechanism triggers a new photo capture, which is instantly uploaded to Instagram. For added effect, the poor low-light performance of the cameras provides stylistically blurred images.",
+   "image1":      "instamatic.jpg",
+   "image2":      "instamatic2.jpg"
+ },
+ {
+   "title":       "Real-life Weasley Clock",
+   "description": "Most large companies log entry & exit using keycard fobs. Using data scraped from our corporate intranet, I built a working version of the Weasley Family's Clock from the Harry Potter series. The servo motor control for the hand is very limited, which fortunately means I'll never end up in Mortal Peril.",
+   "image1":      "weasley-clock.jpg",
+   "image2":      "weasley-clock2.jpg"
+ },
+ {
+   "title":       "Watzmann Wedding Letterpress",
+   "description": "A small favour for some close friends in Salzburg.",
+   "image1":      "wedding_stamp.jpg",
+   "image2":      "wedding_stamp2.jpg"
+ }]
