@@ -55,21 +55,9 @@ p, ol, ul{
 ol, ul{
    margin-left: 2em;
 }
-
-
-.about_description{
-   margin: 60px 0;
+mark{
+   background-color: $colour_mark;
 }
-.about_description h2{
-   font-weight: 300;
-   font-size: 34px;
-   color: rgba(0,0,0,0.8);
-   text-align: center;
-}
-.about_description p a{
-   color: rgb(0,100,221);
-}
-
 
 /* ****************************** */
 /* ****  Black line headers  ****
