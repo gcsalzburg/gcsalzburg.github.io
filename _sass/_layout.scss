@@ -216,7 +216,9 @@ main{
    font-family: $font_body;
 
    .panel_full_width{
-      margin: 60px 0;
+      margin: 60px auto;
+      max-width: 90ch;
+      font-size: 20px;
    }
 }
 
