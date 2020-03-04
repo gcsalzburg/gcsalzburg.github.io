@@ -1,0 +1,25 @@
+---
+layout: page
+---
+
+<section class="articles">
+   {% for cat in {{site.categories}} %}
+      {% if cat[0] == page.list_category %}
+         {% for post in cat[1] %}
+            {% if post.url %}
+               <article class="article_card" href="{{ post.url }}">
+                  <a class="article_card_img" href="{{ post.url }}">
+                     <img src="/images/posts/{{ post.folder }}/header.jpg">
+                  </a>
+                  <header>
+                     <h3>{{ post.title }}</h3>
+                     <h4>{{ post.date | date: "%B %Y" }}</h4>
+                  </header>
+                  <p>{{ post.excerpt | newlines_to_br }}</p>
+                  <p>[<a href="{{ post.url }}">Keep reading...</a>]</p>
+               </article>
+            {% endif %}
+         {% endfor %}  
+      {% endif %}
+   {% endfor %}    
+</section>
