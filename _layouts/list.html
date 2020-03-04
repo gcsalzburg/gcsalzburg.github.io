@@ -15,7 +15,7 @@ layout: page
                      <h3>{{ post.title }}</h3>
                      <h4>{{ post.date | date: "%B %Y" }}</h4>
                   </header>
-                  <p>{{ post.excerpt | newlines_to_br }}</p>
+                  <p>{{ post.excerpt | strip_html | newlines_to_br }}</p>
                   <p>[<a href="{{ post.url }}">Keep reading...</a>]</p>
                </article>
             {% endif %}
