@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Opinions
+header_img: header_tedx.jpg
 ---
 
 <section class="projects">

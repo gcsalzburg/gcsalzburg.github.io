@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tech
+header_img: header_arduino.jpg
 ---
 
 <section class="projects">
