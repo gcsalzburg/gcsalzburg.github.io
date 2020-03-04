@@ -3,7 +3,7 @@ layout: page
 ---
 
 <section class="articles">
-   {% for cat in {{site.categories}} %}
+   {% for cat in site.categories %}
       {% if cat[0] == page.list_category %}
          {% for post in cat[1] %}
             {% if post.url %}

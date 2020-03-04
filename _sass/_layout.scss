@@ -235,6 +235,20 @@ main.text_column{
    max-width: 90ch;
 }
 
+main.article{
+   h1{
+      margin-bottom:0.755em;
+   }
+
+   h4{
+      font-family: $font_special; 
+      font-size: 18px;
+      margin: 0.5em 0 2em;
+      font-weight: 500;
+      color: $colour_card_title;
+   }
+}
+
 
 /* ****************************** */
 /* ****      Articles        ****
