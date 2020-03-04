@@ -1,7 +1,7 @@
 ---
 layout: post
 folder: Manufacturing
-title: Improving DFMA from a telephone
+title: Better DFMA, with a telephone
 
 categories: [tech]
 tags: dfma dfm manufacturing assembly servicing repair telephones engineering
