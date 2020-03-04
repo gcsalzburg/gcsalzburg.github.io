@@ -62,7 +62,8 @@ kramdown:
 sass:
   style: :expanded # You might prefer to minify using :compressed
 
-  
+excerpt_separator: "<!-- more -->"
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile

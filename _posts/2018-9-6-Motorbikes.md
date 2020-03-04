@@ -1,12 +1,16 @@
 ---
 layout: post
 folder: Motorbikes
-short-title: Motorbikes
 title: Designing for 250kph
-strapline: Designing for 250kph
 
 categories: [opinions]
 tags: interface hmi interaction design motorbikes context use-cases
+
+excerpt:
+   One of the most dangerous places in the world today are the roads.  
+   And the fastest you can ride on these roads is on the German autobahn.
+
+   You are most likely familiar with the current trend inside cars to include expansive, interactive touchscreens. But I'd like to show you a glimpse of a very different sort of interface challenge.
 ---
 
 _This talk was given for [Kiska](https://www.kiska.com/), on the main Get Inspired stage at [Ars Electronica 2018](https://www.aec.at/error/en/get-inspired-presentations/)_
@@ -19,6 +23,8 @@ One of the most dangerous places in the world today are the roads.
 And the fastest you can ride on these roads is on the German autobahn.
 
 You are most likely familiar with the current trend inside cars to include expansive, interactive touchscreens. But I'd like to show you a glimpse of a very different sort of interface challenge.
+
+<!-- more -->
 
 ### Motorbikes ###
 
