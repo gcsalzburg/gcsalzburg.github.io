@@ -34,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function(){
    for (var link of serious_links) {
       link.addEventListener('click', () => {
 
-         window.scrollTo({top: y, behavior: 'smooth'});
-
          for(var link2 of serious_links){
             link2.classList.add("selected");
          }
@@ -45,12 +43,13 @@ document.addEventListener('DOMContentLoaded', function(){
    
          serious_silly_toggle.classList.remove("silly");
          serious_silly_toggle.classList.add("serious");
+
+         window.scrollTo({top: y, behavior: 'smooth'});
       });
    }
    for (var link of silly_links) {
       link.addEventListener('click', () => {
          
-         window.scrollTo({top: y, behavior: 'smooth'});
 
          for(var link2 of serious_links){
             link2.classList.remove("selected");
@@ -61,6 +60,8 @@ document.addEventListener('DOMContentLoaded', function(){
 
          serious_silly_toggle.classList.remove("serious");
          serious_silly_toggle.classList.add("silly");
+
+         window.scrollTo({top: y, behavior: 'smooth'});
       });
    }
 
