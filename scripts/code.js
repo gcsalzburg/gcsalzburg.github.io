@@ -1,4 +1,6 @@
 
+
+/*
 function hasClass(el, className) {
     return el.classList ? el.classList.contains(className) : new RegExp('\\b'+ className+'\\b').test(el.className);
     }
@@ -12,12 +14,59 @@ function hasClass(el, className) {
     if (el.classList) el.classList.remove(className);
     else el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
     }
+*/
 
 
-// Add options links in to corner of each highlighted code block (not inline highlights)
+
+
+
 document.addEventListener('DOMContentLoaded', function(){
-    var code_blocks = document.querySelectorAll('div.highlighter-rouge');
 
+   var intro_blurb = document.getElementById("intro_blurb");
+   var serious_silly_toggle = document.getElementById("serious_silly_toggle");
+   var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
+
+   
+   // Serious / silly toggle
+   var serious_links = document.querySelectorAll("[href='#serious']");
+   var silly_links = document.querySelectorAll("[href='#silly']");
+
+   for (var link of serious_links) {
+      link.addEventListener('click', () => {
+
+         window.scrollTo({top: y, behavior: 'smooth'});
+
+         for(var link2 of serious_links){
+            link2.classList.add("selected");
+         }
+         for(var link2 of silly_links){
+            link2.classList.remove("selected");
+         }
+   
+         serious_silly_toggle.classList.remove("silly");
+         serious_silly_toggle.classList.add("serious");
+      });
+   }
+   for (var link of silly_links) {
+      link.addEventListener('click', () => {
+         
+         window.scrollTo({top: y, behavior: 'smooth'});
+
+         for(var link2 of serious_links){
+            link2.classList.remove("selected");
+         }
+         for(var link2 of silly_links){
+            link2.classList.add("selected");
+         }
+
+         serious_silly_toggle.classList.remove("serious");
+         serious_silly_toggle.classList.add("silly");
+      });
+   }
+
+
+   // Add options links in to corner of each highlighted code block (not inline highlights)
+    var code_blocks = document.querySelectorAll('div.highlighter-rouge');
     for (var i=0; i<code_blocks.length; i++){
         var links_block = document.createElement('div');
         links_block.innerHTML = '<div class="code-links"><a href="#Copy_All" onclick="selectText(event, this)">Copy All</a></div>';

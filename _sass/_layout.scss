@@ -5,6 +5,7 @@ html, body{
    margin:0;
    height: 100%;
    background-color: $colour_page;
+   scroll-behavior: smooth;
 }
 
 /* ****************************** */
@@ -196,7 +197,7 @@ header:hover{
    a:nth-of-type(2){
       animation: shake 3s linear 3.1s infinite;
    }
-   a:focus, a.selected{
+   a:focus{
       outline-offset: 7px;
       outline: 5px solid white;
    }
@@ -268,68 +269,144 @@ main.article{
 
 
 /* ****************************** */
-/* **  Grid of project cards   **
+/* **  Homepage serious/silly  **
 /* ****************************** */
 
+.projects.serious{
+   margin: 25px 0;
+   display: flex;
+   flex-direction: column;
 
-.projects{
+   .project_card{
+      position:relative;
+      margin-bottom: 80px;
+      width: 80%;
+
+      &:nth-of-type(2n){
+         align-self: flex-end;
+      }
+
+      .project_card_img{
+         max-width: 100%;
+         
+         img{
+            display: block;
+            max-width: 100%;
+            filter: grayscale(50%) contrast(150%);
+            transition: opacity 0.15s ease-in-out;
+
+            &:nth-of-type(1){
+               z-index: 20;
+            }
+         }
+      }
+
+      &.text_right{
+         h3{
+            left: auto;
+            right: -5px;
+            text-align: right;
+         }
+      }
+
+      &.no_filter{
+         img{
+            filter: none;
+         }
+      }
+
+      h3 {
+         font-size: 80px;
+         font-weight: 500;
+         margin: 0;
+         color:white;
+         font-family: "Lemon Milk", sans-serif;
+         position: absolute;
+         bottom: -10px;
+         left: -5px;
+         z-index: 30;
+         line-height: 1em;
+      }
+   }
+}
+
+.serious_footnote{
+   text-align: center;
+   margin-bottom: 6em;
+   font-size: 18px;
+   text-transform: uppercase;
+}
+
+
+.projects.silly{
    display:grid;
    margin: 25px 0;
    grid-template-columns: 1fr 1fr;
    column-gap: 40px;
    row-gap: 40px;
+
+   .project_card{
+
+      min-height: 300px;
+
+      &:nth-of-type(2n){
+         transform: translateY(100px);
+      }
+      
+      .project_card_img{
+         max-width: 100%;
+         position: relative;
+         height: 0;
+         overflow: hidden;
+         padding-top: calc(3 / 4 * 100%);
+
+         img{
+            display: block;
+            max-width: 100%;
+            filter: grayscale(50%) contrast(150%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            float: left;
+            z-index: 10;
+            transition: opacity 0.15s ease-in-out;
+
+            &:nth-of-type(1){
+               z-index: 20;
+            }
+         }
+
+         &:hover{
+            img:nth-of-type(1){
+               opacity: 0;
+            }
+         }
+      }
+
+      h3 {
+         font-size: 26px;
+         font-weight: 300;
+         margin: 1em 0 0.5em;
+         color:$colour_card_title;
+         font-family: "Lemon Milk", sans-serif;
+      }
+      p {
+         font-size: 18px;
+         font-weight: 300;
+         margin: 1em 0;
+         color: $colour_card_body;
+      }
+   }
 }
 
-.project_card{
-
-   min-height: 300px;
-
-   &:nth-of-type(2n){
-      transform: translateY(100px);
+.serious_silly_toggle.serious{
+   .silly_container{
+      display:none;
    }
-   
-   .project_card_img{
-      max-width: 100%;
-      position: relative;
-      height: 0;
-      overflow: hidden;
-      padding-top: calc(3 / 4 * 100%);
-
-      img{
-         display: block;
-         max-width: 100%;
-         filter: grayscale(50%) contrast(150%);
-         position: absolute;
-         top: 0;
-         left: 0;
-         float: left;
-         z-index: 10;
-         transition: opacity 0.15s ease-in-out;
-
-         &:nth-of-type(1){
-            z-index: 20;
-         }
-      }
-
-      &:hover{
-         img:nth-of-type(1){
-            opacity: 0;
-         }
-      }
-   }
-
-   h3 {
-      font-size: 26px;
-      font-weight: 300;
-      margin: 1em 0 0.5em;
-      color:$colour_card_title;
-      font-family: "Lemon Milk", sans-serif;
-   }
-   p {
-      font-size: 18px;
-      font-weight: 300;
-      margin: 1em 0;
-      color: $colour_card_body;
+}
+.serious_silly_toggle.silly{
+   .serious_container{
+      display:none;
    }
 }
 

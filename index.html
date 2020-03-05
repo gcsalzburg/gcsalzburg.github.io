@@ -7,7 +7,7 @@ ishomepage: true
    <h2 class="tagline ss_toggle">
       <span>Building</span>
       <span class="links">
-         <a href="#serious">serious</a>
+         <a href="#serious" class="selected">serious</a>
          <a href="#silly">silly</a>
       </span>
       <span>things</span>
@@ -15,30 +15,56 @@ ishomepage: true
 </section>
 
 <main>
-   <section class="panel_full_width">
+   <section class="panel_full_width" id="intro_blurb">
       <p>Based in Salzurg, Austria, I work as a <a href="https://vanschneider.com/get-job-kiska">Senior Interaction Technologist</a> at <a href="https://www.kiska.com">KISKA</a>.<br>I build and deliver complex connected products, bringing to life future ideas with a chaotic mix of hardware, software, electro-mechanical design, digital technology and magic.</p>
       <p>The best engineer is the one having the most fun.</p>
    </section>
-   <h3 class="ss_toggle black_line_behind category_label">
-      <span>Showing</span>
-      <span class="links">
-         <a href="#serious">Serious</a>
-         <a href="#silly" class="selected">Silly</a>
-      </span>
-      <span>things</span>
-   </h3>
 
-   <section class="projects">
-   {% for project in site.data.silly_projects %}
-      <article class="project_card">
-         <div class="project_card_img">
-            <img src="images/silly/{{ project.image1 }}">
-            <img src="images/silly/{{ project.image2 }}">
-         </div>
-         <h3>{{ project.title }}</h3>
-         <p>{{ project.description }}</p>
-      </article>
-   {% endfor %}    
+   <section class="serious_silly_toggle serious" id="serious_silly_toggle">
+
+      <h3 class="ss_toggle black_line_behind category_label">
+         <span>Showing</span>
+         <span class="links">
+            <a href="#serious" class="selected">Serious</a>
+            <a href="#silly">Silly</a>
+         </span>
+         <span>things</span>
+      </h3>
+
+      <div class="serious_container">
+         <section class="projects serious">
+            {% for project in site.data.projects.serious %}
+               {% if project.hidden %}
+               {% else %}
+               <article class="project_card {{project.card_class}}">
+                  <div class="project_card_img">
+                     <img src="images/serious/{{ project.image }}">
+                  </div>
+                  <h3>{{ project.title }}</h3>
+               </article>
+               {% endif %}
+            {% endfor %}    
+         </section>
+         <p class="serious_footnote">
+            Ssssssh!<br>
+            Serious projects = secret projects.<br>
+            Now show me some <a href="#silly">silly</a> things.
+         </p>
+      </div>
+   
+      <section class="silly_container projects silly">
+      {% for project in site.data.projects.silly %}
+         <article class="project_card">
+            <div class="project_card_img">
+               <img src="images/silly/{{ project.image1 }}">
+               <img src="images/silly/{{ project.image2 }}">
+            </div>
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.description }}</p>
+         </article>
+      {% endfor %}    
+      </section>
+
    </section>
 
 </main>
