@@ -304,7 +304,7 @@ main.article{
       &.text_right{
          h3{
             left: auto;
-            right: -5px;
+            right: -25px;
             text-align: right;
          }
       }
@@ -319,13 +319,24 @@ main.article{
          font-size: 80px;
          font-weight: 500;
          margin: 0;
-         color:white;
+         color:black;
          font-family: "Lemon Milk", sans-serif;
          position: absolute;
-         bottom: -10px;
-         left: -5px;
+         bottom: -30px;
+         left: -25px;
          z-index: 30;
          line-height: 1em;
+         mix-blend-mode: soft-light;
+         padding: 4px 10px;
+         transition: 0.3s all ease-in-out;
+         cursor: default;
+      }
+
+      &:hover{
+         h3{
+            color: $colour_highlight_text;
+            background: $colour_highlight;
+         }
       }
    }
 }
