@@ -273,14 +273,15 @@ main.article{
 /* ****************************** */
 
 .projects.serious{
-   margin: 25px 0;
+   margin: 25px auto;
    display: flex;
    flex-direction: column;
+   font-size: 20px;
+   max-width: 90ch;
 
    .project_card{
       position:relative;
-      margin-bottom: 80px;
-      width: 80%;
+      margin-bottom: 20px;
 
       &:nth-of-type(2n){
          align-self: flex-end;
@@ -301,13 +302,6 @@ main.article{
          }
       }
 
-      &.text_right{
-         h3{
-            left: auto;
-            right: -25px;
-            text-align: right;
-         }
-      }
 
       &.no_filter{
          img{
@@ -316,26 +310,25 @@ main.article{
       }
 
       h3 {
-         font-size: 80px;
+         font-size: 40px;
          font-weight: 500;
          margin: 0;
          color:black;
          font-family: "Lemon Milk", sans-serif;
          position: absolute;
-         bottom: -30px;
-         left: -25px;
+         bottom: 20px;
+         left: 25px;
          z-index: 30;
          line-height: 1em;
          mix-blend-mode: soft-light;
-         padding: 4px 10px;
          transition: 0.3s all ease-in-out;
          cursor: default;
       }
-
-      &:hover{
+      &.text_right{
          h3{
-            color: $colour_highlight_text;
-            background: $colour_highlight;
+            left: auto;
+            right: 25px;
+            text-align: right;
          }
       }
    }
