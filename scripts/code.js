@@ -18,7 +18,8 @@ function hasClass(el, className) {
 
 
 
-
+var serious_links;
+var silly_links;
 
 document.addEventListener('DOMContentLoaded', function(){
 
@@ -26,45 +27,26 @@ document.addEventListener('DOMContentLoaded', function(){
    var serious_silly_toggle = document.getElementById("serious_silly_toggle");
    var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
 
+   // Simple grab for #silly on page load
+   if(window.location.hash == "#silly"){
+      set_ss("silly");
+   }
    
-   // Serious / silly toggle
-   var serious_links = document.querySelectorAll("[href='#serious']");
-   var silly_links = document.querySelectorAll("[href='#silly']");
+   serious_links = document.querySelectorAll("[href='#serious']");
+   silly_links = document.querySelectorAll("[href='#silly']");
 
    for (var link of serious_links) {
-      link.addEventListener('click', () => {
-
-         for(var link2 of serious_links){
-            link2.classList.add("selected");
-         }
-         for(var link2 of silly_links){
-            link2.classList.remove("selected");
-         }
-   
-         serious_silly_toggle.classList.remove("silly");
-         serious_silly_toggle.classList.add("serious");
-
+      link.addEventListener('click', function(e){
+         set_ss("serious");
          window.scrollTo({top: y, behavior: 'smooth'});
       });
    }
    for (var link of silly_links) {
-      link.addEventListener('click', () => {
-         
-
-         for(var link2 of serious_links){
-            link2.classList.remove("selected");
-         }
-         for(var link2 of silly_links){
-            link2.classList.add("selected");
-         }
-
-         serious_silly_toggle.classList.remove("serious");
-         serious_silly_toggle.classList.add("silly");
-
+      link.addEventListener('click', function(e){
+         set_ss("silly");
          window.scrollTo({top: y, behavior: 'smooth'});
       });
    }
-
 
    // Add options links in to corner of each highlighted code block (not inline highlights)
     var code_blocks = document.querySelectorAll('div.highlighter-rouge');
@@ -74,6 +56,35 @@ document.addEventListener('DOMContentLoaded', function(){
         code_blocks[i].innerHTML = links_block.innerHTML + code_blocks[i].innerHTML;
     }
 });
+
+
+// Serious / silly toggle
+function set_ss(word){
+   
+   var serious_links = document.querySelectorAll("[href='#serious']");
+   var silly_links = document.querySelectorAll("[href='#silly']");
+
+   if(word == "silly"){         
+      for(var link of serious_links){
+         link.classList.remove("selected");
+      }
+      for(var link of silly_links){
+         link.classList.add("selected");
+      }
+      serious_silly_toggle.classList.remove("serious");
+      serious_silly_toggle.classList.add("silly");
+   }else if(word == "serious"){
+      for(var link of serious_links){
+         link.classList.add("selected");
+      }
+      for(var link of silly_links){
+         link.classList.remove("selected");
+      }
+
+      serious_silly_toggle.classList.remove("silly");
+      serious_silly_toggle.classList.add("serious");    
+   }
+}
 
 // Select text inside parent code block
 function selectText(e, div) {
