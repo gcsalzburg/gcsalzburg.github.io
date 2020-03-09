@@ -1,0 +1,85 @@
+
+main.article{
+   h1{
+      margin-bottom:0.755em;
+   }
+
+   h4{
+      font-family: $font_special; 
+      font-size: 18px;
+      margin: 0.5em 0 2em;
+      font-weight: 500;
+      color: $colour_card_title;
+   }
+}
+
+/* ****************************** */
+/* ****      Articles        ****
+/* ****************************** */
+
+.article_header{
+   width: 100%;
+
+   img{
+      width: 100%;
+   }
+}
+.published_date{
+   font-size: 0.8em;
+   text-align: right;
+}
+
+
+/* ****************************** */
+/* **    List of Articles      **
+/* ****************************** */
+
+
+.articles{
+   margin: 25px 0;
+}
+
+.article_card{
+
+   text-decoration: none;
+   display: block;
+   margin-bottom: 3em;
+   
+   .article_card_img{
+      max-width: 100%;
+      position: relative;
+    /*  padding-top: calc(3 / 4 * 100%); */
+
+      img{
+         display: block;
+         max-width: 100%;
+         filter: grayscale(50%) contrast(150%);
+      }
+   }
+
+   header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3, h4 {
+         font-weight: 300;
+         margin: 1em 0 0.5em;
+         color: $colour_card_title;
+         font-family: "Lemon Milk", sans-serif;
+      }
+      h3{
+         font-size: 26px;
+      }
+      h4 {
+         font-size: 16px;
+      }
+
+   }
+   p {
+      font-size: 20px;
+      font-weight: 300;
+      margin: 1em 0;
+      color: $colour_card_body;
+   }
+}
