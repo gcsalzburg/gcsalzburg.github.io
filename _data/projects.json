@@ -51,7 +51,8 @@
       "title":       "Austrian Radiation",
       "description": "Realtime <a href='https://www.designedbycave.co.uk/austrian-radiation/'>monitoring and visualisation</a> of the 111 Austrian Strahlenfrühwarnsystem (radiation early warning system). Background radiation across Austria varies for many reasons, but rarely goes much higher than 1 BED (banana equivalent dose) per hour.",
       "image1":      "radiation1.jpg",
-      "image2":      "radiation2.jpg"
+      "image2":      "radiation2.jpg",
+      "card_class":  "no_filter"
    },
    {
       "title":       "Tracking Greenland's Glaciers",

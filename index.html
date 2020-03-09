@@ -54,7 +54,7 @@ ishomepage: true
    
       <section class="silly_container projects silly">
       {% for project in site.data.projects.silly %}
-         <article class="project_card">
+         <article class="project_card {{project.card_class}}">
             <div class="project_card_img">
                <img src="images/silly/{{ project.image1 }}">
                <img src="images/silly/{{ project.image2 }}">

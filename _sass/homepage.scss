@@ -120,6 +120,11 @@
             }
          }
       }
+      &.no_filter{
+         img{
+            filter: none;
+         }
+      }
 
       h3 {
          font-size: 26px;
