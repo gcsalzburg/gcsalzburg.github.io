@@ -48,9 +48,19 @@ $mobile_width_start: 640px;
      @content;
    }
 }
+@mixin not-small-desktop {
+   @media screen and (min-width: $min_desktop_width) {
+     @content;
+   }
+}
 
 @mixin mobile {
    @media screen and (max-width: $mobile_width_start) {
+     @content;
+   }
+}
+@mixin not-mobile {
+   @media screen and (min-width: $mobile_width_start) {
      @content;
    }
 }

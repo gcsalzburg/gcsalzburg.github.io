@@ -4,6 +4,24 @@ var silly_links;
 
 document.addEventListener('DOMContentLoaded', function(){
 
+   var page_nav = document.getElementById("page_nav");
+   var open_menu_link = document.getElementById("open_menu");
+
+   ['click', 'touchend'].forEach(function(event) {
+      open_menu_link.addEventListener(event, function(e){
+         e.preventDefault();
+         page_nav.classList.add("open");
+         open_menu_link.classList.add("open");
+      });
+   });
+   ['click', 'touchend'].forEach(function(event) {
+      document.getElementById("close_menu").addEventListener(event, function(e){
+         e.preventDefault();
+         page_nav.classList.remove("open");
+         open_menu_link.classList.remove("open");
+      });
+   });
+
    var intro_blurb = document.getElementById("intro_blurb");
    var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
 
