@@ -37,14 +37,18 @@ body{
       background-color:$colour_page;
 
       @include small-desktop{
-         background: white;
          padding: 40px 25px 0;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         background: none;
       }
    }
 
    h1 {
       margin: 0;
       display:inline-block;
+      z-index:100;
       a{
          text-indent: -9485px;
          background-image: url("images/cave_logo.svg?sanitize=true"); /* appended query needed for stupid Github bug */
@@ -76,6 +80,19 @@ body{
       @include small-desktop{
          margin-bottom: 0;
          padding-bottom: 1em;
+
+         /* Cover for pop down menu */
+         &:after{
+            content: "";
+            display: block;
+            background: white;
+            width: 150%;
+            height: 1000px;
+            position: absolute;
+            bottom: 0;
+            z-index: -10;
+            left: -25%;
+         }
       }
    }
 
@@ -261,6 +278,9 @@ body{
    }
 }
 
+/* ****************************** */
+/* ** Angled background effect **
+/* ****************************** */
    
 .site_name:after, nav:after{
    content: "";
@@ -287,7 +307,7 @@ nav:after{
    display: none; 
    transform: translateX(50%) rotate(-10deg);
    z-index: -10;
-   bottom: 0px;
+   right: 50%;
 
    @include small-desktop{
       display: block;
