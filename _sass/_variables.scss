@@ -29,3 +29,38 @@ $font_code: 'IBM Plex Mono', monospace;
 // Transitions
 
 $transition_quiver: cubic-bezier(.26,1.91,.8,.73);
+
+// Page size cut-offs
+
+$break1: 1500px;
+
+$min_desktop_width: 1000px;
+$mobile_width_start: 640px;
+
+@mixin column-margin-collapse-right {
+   @media screen and (max-width: $break1) {
+      @content;
+   }
+}
+
+@mixin small-desktop {
+   @media screen and (max-width: $min_desktop_width) {
+     @content;
+   }
+}
+
+@mixin mobile {
+   @media screen and (max-width: $mobile_width_start) {
+     @content;
+   }
+}
+
+ 
+ /* USAGE:
+  *
+  *   @include mobile {
+  *     display: block;
+  *     margin: 0 auto;
+  *   }
+  *
+  */

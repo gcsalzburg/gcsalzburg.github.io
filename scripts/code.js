@@ -1,30 +1,10 @@
 
-
-/*
-function hasClass(el, className) {
-    return el.classList ? el.classList.contains(className) : new RegExp('\\b'+ className+'\\b').test(el.className);
-    }
-
-    function addClass(el, className) {
-    if (el.classList) el.classList.add(className);
-    else if (!hasClass(el, className)) el.className += ' ' + className;
-    }
-
-    function removeClass(el, className) {
-    if (el.classList) el.classList.remove(className);
-    else el.className = el.className.replace(new RegExp('\\b'+ className+'\\b', 'g'), '');
-    }
-*/
-
-
-
 var serious_links;
 var silly_links;
 
 document.addEventListener('DOMContentLoaded', function(){
 
    var intro_blurb = document.getElementById("intro_blurb");
-   var serious_silly_toggle = document.getElementById("serious_silly_toggle");
    var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
 
    // Simple grab for #silly on page load
@@ -37,13 +17,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
    for (var link of serious_links) {
       link.addEventListener('click', function(e){
+         e.preventDefault();
          set_ss("serious");
+         console.log(y);
          window.scrollTo({top: y, behavior: 'smooth'});
       });
    }
    for (var link of silly_links) {
       link.addEventListener('click', function(e){
+         e.preventDefault();
          set_ss("silly");
+         console.log(y);
          window.scrollTo({top: y, behavior: 'smooth'});
       });
    }

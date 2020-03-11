@@ -41,6 +41,10 @@ p, ol, ul{
    font-weight: 300;
    line-height: 1.35em;
 
+   @include mobile{
+      font-size: 18px;
+   }
+
    a{
       color: $colour_link_active;
 
@@ -139,6 +143,10 @@ mark{
    font-weight: 300;
    font-size: 24px;
 
+   @include mobile{
+      font-size: 20px;
+   }
+
    span{
       color: black;
 
@@ -155,6 +163,10 @@ mark{
       padding: 1px 10px;
       margin: 4px 12px;
       font-weight: 500;
+
+      @include mobile{
+         margin: 4px 8px;
+      }
    }
    a.selected{
       background: black;
@@ -163,6 +175,11 @@ mark{
    a:focus{
       outline-offset: 3px;
       outline: 3px solid black;
+
+      @include mobile{
+         outline: none;
+         outline-offset: 0px;
+      }
    }
 }
 
