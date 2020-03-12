@@ -30,11 +30,14 @@ main.article{
 
    @include small-desktop{
       height: 40%;
-      margin-top: 20%;
+      margin-top: 10%;
       position: relative;
       width: auto;
       display: flex;
       align-content: center;
+   }
+   @include mobile{
+      margin-top: 20%;
    }
 
    img{
