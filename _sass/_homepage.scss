@@ -19,6 +19,7 @@
 
    @include mobile{
       background-position: 50% center;
+      align-items: end;
    }
 }
 .intro_bg:before{
@@ -38,8 +39,7 @@
    @include mobile{
       font-size: 36px;
       flex-direction: column;
-      margin-top: 50%;
-
+      margin-bottom: 20%;
    }
    .links{
       @include mobile{
