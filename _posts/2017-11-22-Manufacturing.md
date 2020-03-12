@@ -18,7 +18,7 @@ This is a subject for a future discussion however.
 
 ![Opened telephone](/images/posts/Manufacturing/outside.jpg)
 
-## Design for repair and serving ##
+## Design for repair and servicing ##
 
 Last week I bought a wonderful old rotary dial telephone from a flea market in Germany. The original intent was to gut the insides and refit it for a more digital future, however the internal design is such a masterclass in design for repair, servicing and documentation that I haven't yet had the heart to butcher it. 
 
