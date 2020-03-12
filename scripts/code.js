@@ -22,31 +22,26 @@ document.addEventListener('DOMContentLoaded', function(){
       });
    });
 
-   var intro_blurb = document.getElementById("intro_blurb");
-   var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
-
    // Simple grab for #silly on page load
    if(window.location.hash == "#silly"){
       set_ss("silly");
    }
    
+   // Add event listnerers to links
    serious_links = document.querySelectorAll("[href='#serious']");
    silly_links = document.querySelectorAll("[href='#silly']");
-
    for (var link of serious_links) {
       link.addEventListener('click', function(e){
          e.preventDefault();
          set_ss("serious");
-         console.log(y);
-         window.scrollTo({top: y, behavior: 'smooth'});
+         scroll_to_ss();
       });
    }
    for (var link of silly_links) {
       link.addEventListener('click', function(e){
          e.preventDefault();
          set_ss("silly");
-         console.log(y);
-         window.scrollTo({top: y, behavior: 'smooth'});
+         scroll_to_ss();
       });
    }
 
@@ -58,6 +53,24 @@ document.addEventListener('DOMContentLoaded', function(){
         code_blocks[i].innerHTML = links_block.innerHTML + code_blocks[i].innerHTML;
     }
 });
+
+function scroll_to_ss(){
+ 
+   var rect = document.getElementById("ss_toggle").getBoundingClientRect();
+   var in_viewport = (
+         rect.top >= 0 &&
+         rect.left >= 0 &&
+         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+   );
+   console.log(in_viewport);
+
+   if(!in_viewport){
+      var intro_blurb = document.getElementById("intro_blurb");
+      var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
+      window.scrollTo({top: y, behavior: 'smooth'});
+   }
+}
 
 
 // Serious / silly toggle
