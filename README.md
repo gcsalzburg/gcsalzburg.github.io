@@ -1,6 +1,6 @@
-# <img src="https://www.designedbycave.co.uk/images/cave_logo.png"> #
+# <img src="https://www.designedbycave.co.uk/images/cave_logo.svg?sanitize=true" width="100"> #
 
-Repo for technical blog, rendered on `Github pages` using `Jekyll`.
+Repo for blog, rendered on `Github pages` using `Jekyll`.
 
 https://www.designedbycave.co.uk
 
