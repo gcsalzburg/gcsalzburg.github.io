@@ -68,7 +68,7 @@ function scroll_to_ss(){
    if(!in_viewport){
       var intro_blurb = document.getElementById("intro_blurb");
       var y = intro_blurb.getBoundingClientRect().top + window.pageYOffset - 60;
-      window.scrollTo({top: y, behavior: 'smooth'});
+      document.body.scrollTo({top: y, behavior: 'smooth'});
    }
 }
 
