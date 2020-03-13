@@ -1,13 +1,11 @@
 
 html, body{
-   width:100%;
    min-height:100%;
    margin:0;
    height: 100%;
    background-color: $colour_page;
    scroll-behavior: smooth;
-}
-body{
+   max-width: 100%;
    overflow-x: hidden;
 }
 
