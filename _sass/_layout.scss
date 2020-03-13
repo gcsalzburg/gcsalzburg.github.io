@@ -6,10 +6,10 @@ html, body{
    background-color: $colour_page;
   /* scroll-behavior: smooth; */
    max-width: 100%;
-   overflow-x: hidden;
    position: relative;
 }
-body{
+html{
+   overflow-x: hidden;
 }
 
 /* ****************************** */
