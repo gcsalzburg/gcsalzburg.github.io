@@ -6,6 +6,8 @@ html, body{
    background-color: $colour_page;
   /* scroll-behavior: smooth; */
    max-width: 100%;
+}
+body{
    overflow-x: hidden;
 }
 
