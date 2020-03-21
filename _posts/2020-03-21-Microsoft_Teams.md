@@ -14,7 +14,7 @@ tags: microsoft teams video effects zoom conference-call working-from-home
 
 This week, offices across Europe and North America had their first taste of remote working thanks to COVID-19. For many, this meant learning to use Microsoft Teams, which saw almost [40% more traffic this week than last](https://www.theverge.com/2020/3/19/21186452/microsoft-teams-new-features-noise-supression-user-increase-coronavirus).
 
-I wanted to experiment with making the video chat in Teams a bit more...fun. Zoom, the big rival to Teams, already lets you [select virtual backgrounds](https://support.zoom.us/hc/en-us/articles/210707503-Virtual-Background). But the method here goes much, more further and it's suprisingly easy to do.
+I wanted to experiment with making the video chat in Teams a bit more...fun. Zoom, the big rival to Teams, already lets you [select virtual backgrounds](https://support.zoom.us/hc/en-us/articles/210707503-Virtual-Background). But the method here goes much, much further and it's suprisingly easy to do.
 
 I'll show you how!
 
@@ -50,7 +50,7 @@ We'll use a simple Webcam software called [Webcamoid](https://webcamoid.github.i
 
    ![Adding a virtual camera](/images/posts/Microsoft_Teams/add-virtual-camera.jpg)
 
-4. To get the camera to show up in Teams, youu'll want to restart it. Use the taskbar icon to select `Quit`, then re-launch Teams.
+4. To get the camera to show up in Teams, you'll want to restart it. Use the taskbar icon to select `Quit`, then re-launch Teams.
 
    ![Quit Teams from the Taskbar](/images/posts/Microsoft_Teams/quit-teams.jpg)
 
