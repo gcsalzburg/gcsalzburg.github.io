@@ -6,6 +6,7 @@ strapline: Adding crazy video effects to your Microsoft Teams calls
 
 header_img: header-2.gif
 article_class: no_filter
+og_image: header-1.gif
 
 categories: [tech]
 tags: microsoft teams video effects zoom conference-call working-from-home 
