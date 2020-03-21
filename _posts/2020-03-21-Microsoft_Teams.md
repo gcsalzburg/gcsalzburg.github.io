@@ -1,7 +1,7 @@
 ---
 layout: post
 folder: Microsoft_Teams
-title: Microsoft Teams Video Effects
+title: Microsoft Teams video effects
 strapline: Adding crazy video effects to your Microsoft Teams calls
 
 header_img: header-2.gif
