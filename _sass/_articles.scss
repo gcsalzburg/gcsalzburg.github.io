@@ -57,6 +57,80 @@ main.article{
    text-align: right;
 }
 
+/* ****************************** */
+/* ****      Comments        ****
+/* ****************************** */
+
+.comments{
+   .comment_new{
+      textarea{
+         width: 80%;
+         height: 9em;
+         line-height: 1.25em;
+         font-size: 16px;
+         font-family: "Source Sans Pro";
+         padding: 0.5em;
+      }
+      .button{
+         font-size: 0.9em;
+         font-weight: 300;
+         display: inline-block;
+         border: 1px solid #ccc;
+         padding: 0.5em 1em;
+         cursor: pointer;
+
+         &:hover{
+            border-color: $colour_highlight;
+         }
+      }
+   }
+   h3{
+      span{
+         padding-left: 0.5em;
+         padding-right: 0.5em;
+      }
+   }
+
+   .comment{
+      border-left: 3px solid #eee;
+      padding: 0 1em;
+      margin-bottom: 1em;
+
+      &:hover{
+         border-color: $colour_highlight;
+      }
+      
+      .comment_body{
+      }
+      .comment_author{
+         font-size: 0.8em;
+         font-family: $font_body;
+         font-weight: 300;
+         margin: 1em 0;
+
+         a{
+            color: black;
+         }
+      }
+      .comment_reply-link{
+         font-size: 0.9em;
+         font-weight: 300;
+         display: inline-block;
+         border: 1px solid #ccc;
+         padding: 0.5em 1em;
+         cursor: pointer;
+
+         &:hover{
+            border-color: $colour_highlight;
+         }
+      }
+   }
+   .comment_child{
+      margin-left: 2em;
+   }
+}
+
+
 
 /* ****************************** */
 /* **    List of Articles      **
