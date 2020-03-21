@@ -3,7 +3,11 @@ layout: default
 ---
 
 <div class="article_header">
-    <img src="/images/posts/{{ page.folder }}/header.jpg">
+   {% if page.header_img %}
+      <img src="/images/backgrounds/{{ page.folder }}/{{ page.header_img }}">
+   {% else %}
+      <img src="/images/posts/{{ page.folder }}/header.jpg">
+   {% endif %}
 </div>
 
 
