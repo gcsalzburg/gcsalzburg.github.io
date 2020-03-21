@@ -44,6 +44,10 @@ p, ol, ul{
       font-size: 18px;
    }
 
+   strong{
+      font-weight: bold;
+   }
+
    a{
       color: $colour_link_active;
 
@@ -60,6 +64,17 @@ ol, ul{
 }
 mark{
    background-color: $colour_mark;
+}
+
+blockquote{
+   margin-left: 2em;
+   background: rgb(245,245,245);
+   border-left: 6px solid rgb(230,230,230);
+   padding: 0 1em;
+
+   p{
+      padding: 0.8em 0;
+   }
 }
 
 /* ****************************** */
