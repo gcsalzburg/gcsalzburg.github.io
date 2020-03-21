@@ -61,6 +61,27 @@ sass:
 
 excerpt_separator: "<!-- more -->"
 
+
+# The URL for the staticman API bridge endpoint
+# You will want to modify some of the values:
+#  ${github-username}: the username of the account with which you publish your blog
+#  ${blog-repo}: the name of your blog repository in github
+#  master: this the branch out of which your blog is published, often master or gh-pages
+#  ${bridge_app_name}: the name you chose in Heroku for your bridge API
+#  comments: the so-called property, this defines the key in staticman.yml where the configuration is found
+#
+# for me, this line reads:
+# https://staticman-travisdownsio.herokuapp.com/v2/entry/travisdowns/travisdowns.github.io/master/comments
+staticman_url: https://comments.designedbycave.co.uk/v2/entry/gcsalzburg/gcsalzburg.github.io/master/comments
+
+# reCaptcha configuration info: the exact same site key and *encrypted* secret that you used in staticman.yml
+# I personally don't think the secret needs to be included in the generated site, but the staticman API bridge uses
+# it to ensure the site configuration and bridge configuration match (but why not just compare the site key?)
+reCaptcha:
+  siteKey: 6LdKAuMUAAAAAPVPI566t4UUmtKs_12BeHDrySud
+  secret: Xvg29Jh+6pjvf39h4p0PTNC5e/xRAcF+IHAOHaJmVG09P1A3yvxvvrpmLQHSLOPFbLQP77NzPIwIPmzJ3JAITayIVPSN47iAPGt79Fzd59oiO3Pwu4wP/bxi8ZZtmj9MGo7hdNifZPJ3yiF+7SM5jvv/nHzLp8XgyYnGb+JRj4XKfIheeoSwXTcV87V4U6gH+3ECGO3rfGlCGA4mux3xhUFT12Ob/DJLEFOjmxMQV/4zCj6pA5c5ifb1MDTzjxw5c3psb1lg9sDoJZXvMDUSz+nGf23f4jDYCO3XAEOiOHsb8ACcOO2E8ZN1XXAVFRJIT72XHlN0b5/nQbmDViwlRwGPB/SyIpPl8gQWAyMV56pHgbQlr3oywFiQB72Y2t1UChqWNxr87ss7ztEKrRLpfJm5Bp+AAS0PixcXZIza5roTEtarWswmVO5D+5pNbjyu9NX8toqAktnIbhJcpKDRK6ehroD7MDPVWEtcDaDJ0EUI0/3WojiX/0JZn+1U9qE7191lPYYrEJODnZ5j3OSfzcnqCQiAwfZKrpgZd0DGbtYwrL7iXPW5WILGA+y4nvlzwtdu9iltqFvZWVMnaiPMf9ekiReqojMHj686EazpT6TCezyBLMUgpSthNZqQEqy9Ev9Z05z28CtC7TB7WgUsZ3b7RQWMu5amziL/TbdmJLc=
+
+  
 # Exclude these files from your production _site
 exclude:
   - Gemfile
