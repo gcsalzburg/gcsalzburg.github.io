@@ -91,6 +91,10 @@ main.article{
       }
    }
 
+   &.no_filter img{
+      filter: none;
+   }
+
    header{
       display: flex;
       justify-content: space-between;
