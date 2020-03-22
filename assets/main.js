@@ -1,60 +1,48 @@
-// Static comments
-// from: https://github.com/eduardoboucas/popcorn/blob/gh-pages/js/main.js
-(function ($) {
-   var $comments = $('.js-comments');
- 
-   $('.js-form').submit(function () {
-     var form = this;
- 
- 
-     $("#comment-form-submit").html(
-       '<svg class="icon spin"><use xlink:href="#icon-loading"></use></svg> Sending...'
-     );
-     $(form).addClass('disabled');
- 
-     $.ajax({
-       type: $(this).attr('method'),
-       url:  $(this).attr('action'),
-       data: $(this).serialize(),
-       contentType: 'application/x-www-form-urlencoded',
-       success: function (data) {
-         showModal('Comment submitted', 'Thanks! Your comment is <a href="https://github.com/travisdowns/travisdowns.github.io/pulls">pending</a>. It will appear when approved.');
- 
-         $("#comment-form-submit")
-           .html("Submit");
- 
-         $(form)[0].reset();
-         $(form).removeClass('disabled');
-         grecaptcha.reset();
-       },
-       error: function (err) {
-         console.log(err);
-         var ecode = (err.responseJSON || {}).errorCode || "unknown";
-         showModal('Error', 'An error occured.<br>[' + ecode + ']');
-         $("#comment-form-submit").html("Submit")
-         $(form).removeClass('disabled');
-         grecaptcha.reset();
-       }
-     });
-     return false;
+
+
+comment_form.onsubmit = async (e) => {
+   e.preventDefault();
+
+   let response = await fetch(comment_form.action, {
+      method: comment_form.method,
+      headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: serialize(comment_form)
    });
+
+   if (response.ok) {
+      showMsg('Thanks for you comment! It will appear below shortly.');
+      comment_form.classList.remove("msg_failure");
+      comment_form.classList.add("msg_success");
+      comment_form.reset();
+    } else {
+      let json = await response.json();
+       
+      console.log(json);
+      var ecode = (json.responseJSON || {}).errorCode || "unknown";
+
+      showMsg('Sorry, there was a problem: [' + ecode + ']');
+      comment_form_submit.removeAttribute("disabled");
+      comment_form_submit.innerHTML = "Post comment";
+      comment_form.classList.add("msg_failure");
+
+      grecaptcha.reset();
+    }
+};
  
-   $('.js-close-modal').click(function () {
-     $('body').removeClass('show-modal');
-   });
+function showMsg(msg) {
+   document.getElementById("message_back").innerHTML = msg;
+   comment_form.classList.add("show_msg");
+}
+
  
-   function showModal(title, message) {
-     $('.js-modal-title').text(title);
-     $('.js-modal-text').html(message);
-     $('body').addClass('show-modal');
-   }
- })(jQuery);
  
- // Staticman comment replies, from https://github.com/mmistakes/made-mistakes-jekyll
- // modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
- // Released under the GNU General Public License - https://wordpress.org/about/gpl/
- // addComment.moveForm is called from comment.html when the reply link is clicked.
- var addComment = {
+// Staticman comment replies, from https://github.com/mmistakes/made-mistakes-jekyll
+// modified from Wordpress https://core.svn.wordpress.org/trunk/wp-includes/js/comment-reply.js
+// Released under the GNU General Public License - https://wordpress.org/about/gpl/
+// addComment.moveForm is called from comment.html when the reply link is clicked.
+var addComment = {
    // commId - the id attribute of the comment replied to (e.g., "comment-10")
    // parentId - the numeric index of comment repleid to (e.g., 10)
    // respondId - the string 'respond', I guess
@@ -156,4 +144,50 @@
    I: function( id ) {
      return document.getElementById( id );
    }
- };
+};
+
+
+
+
+
+
+
+
+
+
+/*!
+ * Serialize all form data into a query string
+ * (c) 2018 Chris Ferdinandi, MIT License, https://gomakethings.com
+ * @param  {Node}   form The form to serialize
+ * @return {String}      The serialized form data
+ */
+var serialize = function (form) {
+
+	// Setup our serialized data
+	var serialized = [];
+
+	// Loop through each field in the form
+	for (var i = 0; i < form.elements.length; i++) {
+
+		var field = form.elements[i];
+
+		// Don't serialize fields without a name, submits, buttons, file and reset inputs, and disabled fields
+		if (!field.name || field.disabled || field.type === 'file' || field.type === 'reset' || field.type === 'submit' || field.type === 'button') continue;
+
+		// If a multi-select, get all selections
+		if (field.type === 'select-multiple') {
+			for (var n = 0; n < field.options.length; n++) {
+				if (!field.options[n].selected) continue;
+				serialized.push(encodeURIComponent(field.name) + "=" + encodeURIComponent(field.options[n].value));
+			}
+		}
+
+		// Convert field data to a query string
+		else if ((field.type !== 'checkbox' && field.type !== 'radio') || field.checked) {
+			serialized.push(encodeURIComponent(field.name) + "=" + encodeURIComponent(field.value));
+		}
+	}
+
+	return serialized.join('&');
+
+};
