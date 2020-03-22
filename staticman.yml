@@ -41,7 +41,7 @@ comments:
   # Whether entries need to be appproved before they are published to the main
   # branch. If set to `true`, a pull request will be created for your approval.
   # Otherwise, entries will be published to the main branch automatically.
-  moderation: false
+  moderation: true
 
   # Name of the site. Used in notification emails.
   name: "designedbycave.co.uk"
@@ -61,6 +61,6 @@ comments:
     email: md5
 
   reCaptcha:
-    enabled: true
+    enabled: false
     siteKey: 6LdKAuMUAAAAAPVPI566t4UUmtKs_12BeHDrySud
     secret: Xvg29Jh+6pjvf39h4p0PTNC5e/xRAcF+IHAOHaJmVG09P1A3yvxvvrpmLQHSLOPFbLQP77NzPIwIPmzJ3JAITayIVPSN47iAPGt79Fzd59oiO3Pwu4wP/bxi8ZZtmj9MGo7hdNifZPJ3yiF+7SM5jvv/nHzLp8XgyYnGb+JRj4XKfIheeoSwXTcV87V4U6gH+3ECGO3rfGlCGA4mux3xhUFT12Ob/DJLEFOjmxMQV/4zCj6pA5c5ifb1MDTzjxw5c3psb1lg9sDoJZXvMDUSz+nGf23f4jDYCO3XAEOiOHsb8ACcOO2E8ZN1XXAVFRJIT72XHlN0b5/nQbmDViwlRwGPB/SyIpPl8gQWAyMV56pHgbQlr3oywFiQB72Y2t1UChqWNxr87ss7ztEKrRLpfJm5Bp+AAS0PixcXZIza5roTEtarWswmVO5D+5pNbjyu9NX8toqAktnIbhJcpKDRK6ehroD7MDPVWEtcDaDJ0EUI0/3WojiX/0JZn+1U9qE7191lPYYrEJODnZ5j3OSfzcnqCQiAwfZKrpgZd0DGbtYwrL7iXPW5WILGA+y4nvlzwtdu9iltqFvZWVMnaiPMf9ekiReqojMHj686EazpT6TCezyBLMUgpSthNZqQEqy9Ev9Z05z28CtC7TB7WgUsZ3b7RQWMu5amziL/TbdmJLc=
