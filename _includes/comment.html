@@ -23,11 +23,13 @@
    </div>
 
 
+   {% comment %}
    {% unless include.replying_to != 0 %}
       <div class="comment_meta">
       <a rel="nofollow" class="comment_reply-link" onclick="return addComment.moveForm('comment-{{ include.index }}', '{{ include.index }}', 'respond', '{{ page.slug }}', '{{ include.uid }}')">↪ Reply to {{ include.name }}</a>
       </div>
    {% endunless %}
+   {% endcomment %}
 </article>
 
 {% capture i %}{{ include.index }}{% endcapture %}

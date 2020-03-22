@@ -8,7 +8,7 @@
    <input type="hidden" name="options[reCaptcha][secret]"  value="{{ site.reCaptcha.secret }}">
  
    <label for="comment-form-message">
-      <h4>Add your comment<a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></h4>
+      <h4>Leave a comment<a rel="nofollow" id="cancel-comment-reply-link" href="{{ page.url | absolute_url }}#respond" style="display:none;">(cancel reply)</a></h4>
    </label>
    <fieldset>
       <textarea class="textfield_box" name="fields[message]" type="text" id="comment-form-message" placeholder="Add your comment here. You can use markdown to format" required></textarea>
@@ -28,15 +28,17 @@
       <label for="hp"></label>
       <input class="textfield_input" name="fields[hp]" id="hp" type="text" placeholder="Leave blank">
    </fieldset>
- 
+
+   {% comment %}
    <fieldset class="right_align">
       <div id  ="reCaptcha" class="g-recaptcha" data-sitekey="{{ site.reCaptcha.siteKey }}"></div>
    </fieldset>
+   {% endcomment %}
 
    <p class="message_back" id="message_back"></p>
  
    <fieldset class="right_align">
-      <button class="button comment-form-submit" id="comment_form_submit">Post comment</button>
+      <button class="button comment-form-submit" id="comment_form_submit">Add comment</button>
    </fieldset>
  
  </form>
