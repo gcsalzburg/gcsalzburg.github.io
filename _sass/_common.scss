@@ -47,14 +47,6 @@ p, ol, ul{
    strong{
       font-weight: bold;
    }
-
-   a{
-      color: $colour_link_active;
-
-      &:hover{
-         color: $colour_link_hover;
-      }
-   }
    img{
       max-width: 100%;
    }
@@ -64,6 +56,39 @@ ol, ul{
 }
 mark{
    background-color: $colour_mark;
+}
+
+a{
+   color: $colour_link_active;
+
+   &:hover{
+      color: $colour_link_hover;
+   }
+}
+
+/* Tables */
+
+table{
+   border-spacing: 0;
+ /*  width: 100%; */
+}
+td, th{
+   border-bottom: 0.1rem solid #e1e1e1;
+   padding: 0.5rem 1rem;
+   text-align: left;
+   font-size: 20px;
+   font-weight: 300;
+   line-height: 1.35em;
+}
+th{
+   font-weight: 500;
+   background-color: #e1e1e1;
+}
+td:first-child, th:first-child{
+   padding-left: 0.5rem;
+}
+td:last-child, th:last-child{
+   padding-right: 0.5rem;
 }
 
 blockquote{
