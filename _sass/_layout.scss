@@ -57,66 +57,57 @@ html, body{
          background-repeat: no-repeat;
          display:block;
          position: relative;
-         width:140px;
+         width:115px;
          height:63px;
          z-index:50;
+         margin-right: 40px;
+
+         &:hover{
+            background-color:transparent;
+         }
 
          @include small-desktop{
             width: 120px;
             height: auto;
-         }
-      }
-   }
-   h3{
-      font-weight:300;
-      text-transform: lowercase;
-      font-family: $font_title;
-      line-height:1.3em;
-      position: relative;
-      z-index:50;
-      font-size: 18px;
-      margin: 1em 0;
-
-      @include small-desktop{
-         margin-bottom: 0;
-         padding-bottom: 1em;
-
-         /* Cover for pop down menu */
-         &:after{
-            content: "";
-            display: block;
-            background: white;
-            width: 150%;
-            height: 1000px;
-            position: absolute;
-            bottom: 0;
-            z-index: -10;
-            left: -25%;
+            margin-right: 0px;
+            margin-bottom: 10px;
          }
       }
    }
 
-   .open_menu{
-      display: none;
-      position: absolute;
-      width: 150px;
-      margin-left: -75px;
-      bottom: -30px;
-      z-index: 700;
-      padding: 0 10px;
-      line-height: 30px;
-      left: 50%;
-      text-transform: uppercase;
-
-      @include small-desktop{
-         display: block;
-      }
-
-      &.open{
-         display: none;
-      }
-   }
    
+   a{
+      color: #000;
+      text-decoration: none;
+      text-transform: lowercase;
+      padding: 2px 7px;
+
+      @include small-desktop{
+         display: inline-block;
+      }
+
+      &.open_menu{
+         display: none;
+         width: auto;
+         padding: 0 10px;
+         line-height: 30px;
+         text-transform: uppercase;
+         margin-top: 10px;
+   
+         @include small-desktop{
+            display: block;
+         }
+   
+         &.open{
+            display: none;
+         }
+      }
+   }
+   a:hover{
+      color: white;
+      background-color: black;
+   }
+
    nav{
       font-weight:300;
       position: relative;
@@ -127,7 +118,7 @@ html, body{
          float: none;
          text-align: center;
          z-index: 150;
-         transform: translateY(-100%);
+         transform: translateY(-120%);
          transition: transform 0.35s $transition_quiver;
 
          > * {
@@ -149,128 +140,31 @@ html, body{
             display: none;
          }
       }
-   }
 
-   a{
-      color: #000;
-      text-decoration: none;
-      padding: 2px 10px;
-
-      @include small-desktop{
-         display: inline-block;
-      }
-   }
-   a:hover{
-      text-decoration: underline;
-      color: rgb(0,100,221);
-
-      @include small-desktop{
-         text-decoration: none;
-      }
-   }
-
-   ul{
-      margin: 1em 0 0;
-      padding:0;
-      list-style:none;
-      transition: transform 0.15s $transition_quiver;
-
-      @include small-desktop{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-      }
-
-      li{
-         line-height: 1.5em;
-         font-size: 18px;
+      ul{
+         margin: 1em 0 0;
+         padding:0;
+         list-style:none;
          transition: transform 0.15s $transition_quiver;
 
          @include small-desktop{
-            display: inline-block;
-         }
-
-         a{
-            padding-left: 0px;
-         }
-
-         &:hover{
-            transform: translateX(4px);
-
-            @include small-desktop{
-               transform: none;
-            }
-         }
-      }
-
-      &.social{
-         opacity: 0;
-         transition: all 0.2s $transition_quiver; 
-
-         @include small-desktop{
-            opacity: 1;
-            flex-direction: row;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
          }
 
          li{
-            position: relative;
+            line-height: 1.5em;
+            font-size: 18px;
+            transition: transform 0.15s $transition_quiver;
 
-            &:before{
-               background-image: none;
-               background-repeat: no-repeat;
-               background-position: left 60%;
-               background-size: auto 75%;
-               content: "";
-               display: block;
-               position:absolute;
-               left: 0;
-               top: 0;
-               right: 0;
-               bottom: 0;
-               height: 100%;
-               z-index: 10;
-               filter:grayscale(100%);
-               transition: filter 0.2s ease-in-out;  
+            @include small-desktop{
+               display: inline-block;
+            }
 
+            &:hover{
                @include small-desktop{
-                  background-position: center center;
-               }
-            }
-
-            &.instagram:before{ background-image: url("images/icons/instagram.svg"); }
-            &.linkedin:before{ background-image: url("images/icons/linkedin.svg"); }
-            &.twitter:before{ background-image: url("images/icons/twitter.svg"); }
-            &.github:before{ background-image: url("images/icons/github.svg"); }
-            &.email:before{ background-image: url("images/icons/email.svg"); }
-
-            &.close_menu{
-               margin-top: 20px;
-            }
-
-
-            &:hover:before{
-               filter:grayscale(0%);
-            }
-
-            a{
-               text-decoration: none;
-               z-index: 20;
-               position: relative;
-
-               &:not(.close_menu){
-                  padding-left: 1.5em;
-               }
-
-               &:hover{
-                  text-decoration: underline;
-               }
-
-               @include small-desktop{
-                  width: 30px;
-                  height: 30px;
-                  padding: 4px;
-                  text-indent: -9384px;
+                  transform: none;
                }
             }
          }
@@ -314,89 +208,12 @@ nav:after{
    }
 }
 
-header:hover{
-   .site_name:after{
-      transform: translateX(50%) rotate(-65deg);
-   }
-   
-   ul.social{
-      opacity: 1;
-   }
-   a{
-      @include not-small-desktop{
-         text-decoration: underline;
-      }
-   }
-}
-
-
-/* ****************************** */
-/* **** Homepage Background ****
-/* ****************************** */
-
-.intro_bg{
-   width:100%;
-   position: relative;
-   height: 100%;
-   background: url("images/backgrounds/wi-sculpting.jpg") no-repeat;
-   /* hmi pic: color-burn / burlywood */
-   background-position: 60% center;
-   background-size: cover;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-.intro_bg:before{
-   content: "";
-   background-color: #7500DE;
-   mix-blend-mode: saturation;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   display:block;
-}
-
-.tagline{
-   font-size: 48px;
-   font-weight:500;
-
-   @include small-desktop{
-      font-size: 36px;
-      flex-direction: column;
-
-   }
-   .links{
-      @include small-desktop{
-         flex-direction: row;
-         margin: 15px 0;
-      }
-   }
-
-   a{
-      animation: shake 3s linear 3s infinite;
-      padding: 2px 15px;
-      margin: 10px 25px;
-      font-weight: 900;
-
-      @include small-desktop{
-         margin: 10px 10px;
-      }
-   }
-   a:nth-of-type(2){
-      animation: shake 3s linear 3.1s infinite;
-   }
-   a:focus{
-      outline-offset: 7px;
-      outline: 5px solid white;
-   }
-}
-
 
 /* ****************************** */
 /* ****    Main page body    ****
 /* ****************************** */
 
-main{
+main, footer{
    max-width: 1000px;
    margin: 10px auto;
    max-width: calc(100% - 300px - 300px);
@@ -434,4 +251,67 @@ main{
 main.text_column{
    font-size: 20px;
    max-width: 90ch;
+}
+
+/* SOCIAL LINKS *********** */
+
+ul.social{
+   list-style: none;
+   margin:0;
+   display:flex;
+   justify-content: center;
+
+   &:hover{
+      a{
+         opacity:0.6;
+
+         &:hover{
+            opacity:1;
+         }
+      }
+   }
+
+   a{
+      display:block;
+      width: 1.5em;
+      height: 1.5em;
+      position:relative;
+      background-size:contain;
+      background-position:50% 50%;
+      text-indent: -9384px;
+      margin: 0.5em 0.2em;
+
+      &.instagram{ background-image: url("images/social_icons/instagram.svg"); }
+      &.linkedin{ background-image: url("images/social_icons/linkedin.svg"); }
+      &.twitter{ background-image: url("images/social_icons/twitter.svg"); }
+      &.github{ background-image: url("images/social_icons/github.svg"); }
+   }
+}
+
+/* ****************************** */
+/* ****        Footer        ****
+/* ****************************** */
+
+footer{
+   margin-top: 3em;
+   margin-bottom: 3em;
+
+   img{
+      display:block;
+      margin: 0 auto 0.8em;
+      width: 4em;
+   }
+
+   h5{
+      text-align: center;
+      font-size: 16px;
+      text-transform: lowercase;
+      font-family: $font_body;
+      font-weight: 300;
+      line-height: 1.3em;
+   }
+
+   ul.social a{
+      filter: invert(100%);
+   }
 }
