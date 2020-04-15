@@ -14,9 +14,8 @@ $colour_mark: rgb(255,252,206);
 $colour_card_title: #333;
 $colour_card_body: #333;
 
-$colour_code_border: #bbb;
-$colour_code_bg: #fff;
-$colour_code_links_bg: #ddd;
+$colour_code_bg: hsl(0,0%,92%);
+$colour_code_links_bg: hsl(0,0%,92%);
 
 // Fonts
 
@@ -24,7 +23,7 @@ $font_title: 'Source Sans Pro', sans-serif;
 $font_body: 'Source Sans Pro', sans-serif;
 $font_special: 'Lemon Milk', sans-serif;
 
-$font_code: 'IBM Plex Mono', monospace;
+$font_code: 'Inconsolata', monospace;
 
 // Transitions
 
