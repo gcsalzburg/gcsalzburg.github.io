@@ -134,6 +134,44 @@ blockquote{
    }
 }
 
+
+/* ****************************** */
+/* ****    Social links      ****
+/* ****************************** */
+
+ul.social{
+   list-style: none;
+   margin:0;
+   display:flex;
+   justify-content: center;
+
+   &:hover{
+      a{
+         opacity:0.6;
+
+         &:hover{
+            opacity:1;
+         }
+      }
+   }
+
+   a{
+      display:block;
+      width: 1.5em;
+      height: 1.5em;
+      position:relative;
+      background-size:contain;
+      background-position:50% 50%;
+      text-indent: -9384px;
+      margin: 0.5em 0.2em;
+
+      &.instagram{ background-image: url("images/social_icons/instagram.svg"); }
+      &.linkedin{ background-image: url("images/social_icons/linkedin.svg"); }
+      &.twitter{ background-image: url("images/social_icons/twitter.svg"); }
+      &.github{ background-image: url("images/social_icons/github.svg"); }
+   }
+}
+
 /* ****************************** */
 /* **** Serious/Silly Toggle ****
 /* ****************************** */
