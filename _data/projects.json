@@ -24,15 +24,15 @@
    }],
 
    "silly": [{
-      "title":       "LEGO QR codes",
+      "title":       "LEGO QR",
       "description": "Automatic login WiFi network login using a 1681 stud LEGO QR code",
       "description_long": "The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.",
       "image1":      "qr_lego.jpg",
       "image2":      "qr_lego2.jpg"
    },
    {
-      "title":       "Physical Instagram camera",
-      "description": "Reinventing the analog magic of the Kodak Instamatic for the digital age",
+      "title":       "Instamatic",
+      "description": "Reinventing the analog magic of the Kodak Instamatic for the Instagram age",
       "description_long": "Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a lot of mechanical modifications. The original advance film & shutter mechanism triggers a new photo capture, which is instantly uploaded to Instagram. For added effect, the poor low-light performance of the cameras provides stylistically blurred images.",
       "image1":      "instamatic.jpg",
       "image2":      "instamatic2.jpg"
@@ -60,7 +60,7 @@
       "card_class":  "no_filter"
    },
    {
-      "title":       "Tracking Greenland's Glaciers",
+      "title":       "Glacial Research",
       "description": "Field project on Greenland ice sheet deploying and tracking of pressure-logging radio beacon tracers",
       "description_long": "Four weeks living at the edge of the Leverett glacier in Greenland, <a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/hyp.9451'>conducting research</a> into the flow of super-glacial meltwater using pressure logging electronic tracers equipped with radio beacons.",
       "image1":      "greenland1.jpg",
@@ -74,8 +74,8 @@
       "image2":      "skank3.jpg"
    },
    {
-      "title":       "Watzmann Wedding Letterpress",
-      "description": "A small favour for some close friends in Salzburg",
+      "title":       "Watzmann Letterpress",
+      "description": "A small wedding favour for some close friends in Salzburg",
       "description_long": "A small favour for some close friends in Salzburg.",
       "image1":      "wedding_stamp.jpg",
       "image2":      "wedding_stamp2.jpg"

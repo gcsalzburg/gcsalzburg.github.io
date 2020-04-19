@@ -226,6 +226,11 @@
          color: #bbb;
          font-family: "Lemon Milk", sans-serif;
          transition: all 0.15s ease-in-out;
+
+         @include mobile{
+            font-size: 22px;
+            color: $colour_card_title;
+         }
       }
       &:hover{
          h3{
