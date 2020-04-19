@@ -38,6 +38,14 @@
       "image2":      "instamatic2.jpg"
    },
    {
+      "title":       "Gestural Sculpting",
+      "description": "Virtual IR potters wheel for SolidWorks",
+      "description_long": "xxx",
+      "image1":      "wii2.jpg",
+      "image2":      "wii1.jpg",
+      "card_class":  "no_filter"
+   },
+   {
       "title":       "Weasley Clock",
       "description": "Location driven clock from the Harry Potter series using scraped data from company intranet",
       "description_long": "Most large companies log entry & exit using keycard fobs. Using data scraped from our corporate intranet, I built a working version of the Weasley Family's Clock from the Harry Potter series. The rotational range of servo motor for the hand is very limited, which fortunately means I'll never end up in Mortal Peril.",
