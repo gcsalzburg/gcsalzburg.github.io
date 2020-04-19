@@ -4,23 +4,16 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
-
-@import "fonts";
+@import "_fonts";
+@import "_mobile";
+@import "_core";
 
 // Setup and layout for pages
-@import "common";
-@import "layout";
-
+@import "_layout";
 
 // Page specific settings
-@import "homepage";
-@import "articles";
-
+@import "_home";
+@import "_articles";
 
 // Syntax highlighting
-@import "highlights";
-
-
-// @import "comment-styles";
+@import "_code_highlighting";

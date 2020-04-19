@@ -78,6 +78,8 @@ main.article{
       fieldset{
          margin: 0.5em 0;
          display: flex;
+         border: 0;
+         padding: 0;
 
          &.hidden_input{
             display: none;

@@ -1,10 +1,43 @@
 
-::-moz-selection{
-   background-color: $colour_highlight;
-   color: $colour_highlight_text;
-   text-shadow:none;
-}
-::selection{
+// 
+// ***** Variables *****
+// 
+
+// Colours
+
+$colour_highlight: #FB2E1D;
+$colour_highlight_text: white;
+
+$colour_page: white;
+
+$colour_link_active: rgb(0,100,221);
+$colour_link_hover: rgb(0,57,128);
+
+$colour_mark: rgb(255,252,206);
+
+$colour_card_title: #333;
+$colour_card_body: #333;
+
+$colour_code_bg: hsl(0,0%,92%);
+$colour_code_links_bg: hsl(0,0%,92%);
+
+// Fonts
+
+$font_title: 'Source Sans Pro', sans-serif;
+$font_body: 'Source Sans Pro', sans-serif;
+$font_special: 'Lemon Milk', sans-serif;
+
+$font_code: 'Inconsolata', monospace;
+
+// Transitions
+
+$transition_quiver: cubic-bezier(.26,1.91,.8,.73);
+
+// 
+// ***** Base Styles *****
+// 
+
+::-moz-selection, ::selection{
    background-color: $colour_highlight;
    color: $colour_highlight_text;
    text-shadow:none;
@@ -14,24 +47,15 @@
 /* ****   Core text styles   ****
 /* ****************************** */
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
    font-family: $font_special;
    margin: 2em 0 1em;
    font-weight: 500;
 }
-h1{
-   font-size: 48px;
-   margin: 1em 0;
-}
-h2{
-   font-size: 26px;
-}
-h3{
-   font-size: 22px;
-}
-h4{
-   font-size: 20px;
-}
+h1{font-size: 48px; margin: 1em 0;}
+h2{font-size: 26px;}
+h3{font-size: 22px;}
+h4{font-size: 20px;}
 
 
 p, ol, ul{
@@ -39,41 +63,29 @@ p, ol, ul{
    margin: 1em auto;
    font-weight: 300;
    line-height: 1.35em;
+   padding: 0;
 
    @include mobile{
       font-size: 18px;
    }
 
-   strong{
-      font-weight: bold;
-   }
-   img{
-      max-width: 100%;
-   }
+   strong{font-weight: bold;}
+   img{max-width: 100%;}
 }
-ol, ul{
-   margin-left: 2em;
-}
-mark{
-   background-color: $colour_mark;
-}
+ol, ul{margin-left: 2em;}
+mark{background-color: $colour_mark;}
 
-a{
-   color: $colour_link_active;
-
-   &:hover{
-      color: $colour_link_hover;
-   }
-}
+a{color: $colour_link_active;}
+a:hover{color: $colour_link_hover;}
 
 /* Tables */
 
 table{
    border-spacing: 0;
- /*  width: 100%; */
+   border-collapse: collapse;
 }
 td, th{
-   border-bottom: 0.1rem solid #e1e1e1;
+   border: 0.1rem solid #e1e1e1;
    padding: 0.5rem 1rem;
    text-align: left;
    font-size: 20px;
@@ -108,40 +120,13 @@ blockquote{
 }
 
 /* ****************************** */
-/* ****  Black line headers  ****
-/* ****************************** */
-
-.black_line_behind{
-   text-align: center;
-   position: relative;
-   
-   &:after {
-      content: "";
-      display: block;
-      height: 1px;
-      position: absolute;
-      left: 0;
-      right: 0;
-      background-color: black;
-      top: 50%;
-      z-index: 10;
-   }
-
-   > *{
-      background: white;
-      z-index: 50;
-      position: relative;
-   }
-}
-
-
-/* ****************************** */
 /* ****    Social links      ****
 /* ****************************** */
 
 ul.social{
    list-style: none;
    margin:0;
+   padding:0;
    display:flex;
    justify-content: center;
 
@@ -265,5 +250,3 @@ ul.social{
       }
    }
 }
-
-

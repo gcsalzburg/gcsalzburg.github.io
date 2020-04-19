@@ -25,50 +25,58 @@
 
    "silly": [{
       "title":       "LEGO QR codes",
-      "description": "The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.",
+      "description": "Automatic login WiFi network login using a 1681 stud LEGO QR code",
+      "description_long": "The latest iOS and Android variants can detect QR codes automatically through the installed camera apps. I built a QR code containing the credentials for our home WiFi, thanks to a bulk purchase of 1x1 stud bricks from Bricklink. 1681 bricks later and my wife has to tolerate this artwork on our living room wall.",
       "image1":      "qr_lego.jpg",
       "image2":      "qr_lego2.jpg"
    },
    {
       "title":       "Physical Instagram camera",
-      "description": "Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a lot of mechanical modifications. The original advance film & shutter mechanism triggers a new photo capture, which is instantly uploaded to Instagram. For added effect, the poor low-light performance of the cameras provides stylistically blurred images.",
+      "description": "Reinventing the analog magic of the Kodak Instamatic for the digital age",
+      "description_long": "Reinventing the analog magic of the Kodak Instamatic for the digital age. Using an ESP32 camera module and a lot of mechanical modifications. The original advance film & shutter mechanism triggers a new photo capture, which is instantly uploaded to Instagram. For added effect, the poor low-light performance of the cameras provides stylistically blurred images.",
       "image1":      "instamatic.jpg",
       "image2":      "instamatic2.jpg"
    },
    {
-      "title":       "Real-life Weasley Clock",
-      "description": "Most large companies log entry & exit using keycard fobs. Using data scraped from our corporate intranet, I built a working version of the Weasley Family's Clock from the Harry Potter series. The rotational range of servo motor for the hand is very limited, which fortunately means I'll never end up in Mortal Peril.",
-      "image1":      "weasley-clock.jpg",
-      "image2":      "weasley-clock2.jpg"
+      "title":       "Weasley Clock",
+      "description": "Location driven clock from the Harry Potter series using scraped data from company intranet",
+      "description_long": "Most large companies log entry & exit using keycard fobs. Using data scraped from our corporate intranet, I built a working version of the Weasley Family's Clock from the Harry Potter series. The rotational range of servo motor for the hand is very limited, which fortunately means I'll never end up in Mortal Peril.",
+      "image1":      "weasley-clock2.jpg",
+      "image2":      "weasley-clock.jpg"
    },
    {
       "title":       "DEN",
-      "description": "Front-end development of an integrated content capture and sharing tool. Complete design and implementation for web interface, Chrome plugin and supporting back-end architecture",
+      "description": "One-click content capture and sharing knowledge base for design teams",
+      "description_long": "Front-end development of an integrated content capture and sharing tool. Complete design and implementation for web interface, Chrome plugin and supporting back-end architecture",
       "image1":      "den1.jpg",
       "image2":      "den2.jpg"
    },
    {
       "title":       "Austrian Radiation",
-      "description": "Realtime <a href='https://www.designedbycave.co.uk/austrian-radiation/'>monitoring and visualisation</a> of the 111 Austrian Strahlenfrühwarnsystem (radiation early warning system). Background radiation across Austria varies for many reasons, but rarely goes much higher than 1 BED (banana equivalent dose) per hour.",
+      "description": "Realtime monitoring and visualisation of the 111 Austrian radiation early warning system",
+      "description_long": "Realtime <a href='https://www.designedbycave.co.uk/austrian-radiation/'>monitoring and visualisation</a> of the 111 Austrian Strahlenfrühwarnsystem (radiation early warning system). Background radiation across Austria varies for many reasons, but rarely goes much higher than 1 BED (banana equivalent dose) per hour.",
       "image1":      "radiation1.jpg",
       "image2":      "radiation2.jpg",
       "card_class":  "no_filter"
    },
    {
       "title":       "Tracking Greenland's Glaciers",
-      "description": "Four weeks living at the edge of the Leverett glacier in Greenland, <a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/hyp.9451'>conducting research</a> into the flow of super-glacial meltwater using pressure logging electronic tracers equipped with radio beacons.",
+      "description": "Field project on Greenland ice sheet deploying and tracking of pressure-logging radio beacon tracers",
+      "description_long": "Four weeks living at the edge of the Leverett glacier in Greenland, <a href='https://onlinelibrary.wiley.com/doi/abs/10.1002/hyp.9451'>conducting research</a> into the flow of super-glacial meltwater using pressure logging electronic tracers equipped with radio beacons.",
       "image1":      "greenland1.jpg",
       "image2":      "greenland3.jpg"
    },
    {
       "title":       "SKANK",
-      "description": "Year long project to strip down and re-build a Suzuki 4x4 into a skid-steer vehicle. Mechanical design, fabrication and construction of all components. The resulting turning circle was wider than a football pitch.",
+      "description": "Strip-down and conversion of Suzuki 4x4 into a skid-steer vehicle",
+      "description_long": "Year long project to strip down and re-build a Suzuki 4x4 into a skid-steer vehicle. Mechanical design, fabrication and construction of all components. The resulting turning circle was wider than a football pitch.",
       "image1":      "skank1.jpg",
       "image2":      "skank3.jpg"
    },
    {
       "title":       "Watzmann Wedding Letterpress",
-      "description": "A small favour for some close friends in Salzburg.",
+      "description": "A small favour for some close friends in Salzburg",
+      "description_long": "A small favour for some close friends in Salzburg.",
       "image1":      "wedding_stamp.jpg",
       "image2":      "wedding_stamp2.jpg"
    }]
