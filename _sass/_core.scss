@@ -241,12 +241,7 @@ ul.social{
       color: white;
    }
    a:focus{
-      outline-offset: 3px;
-      outline: 3px solid black;
-
-      @include mobile{
-         outline: none;
-         outline-offset: 0px;
-      }
+      outline: none;
+      outline-offset: 0px;
    }
 }
