@@ -48,6 +48,11 @@ html, body{
       margin: 0;
       display:inline-block;
       z-index:100;
+      
+      @include mobile{
+         font-size: 30px;
+      }
+
       a{
          text-indent: -9485px;
          background-image: url("images/cave_logo.svg?sanitize=true"); /* appended query needed for stupid Github bug */
@@ -64,6 +69,10 @@ html, body{
 
          &:hover{
             background-color:transparent;
+         }
+
+         @include mobile{
+            background-position: center center;
          }
 
          @include small-desktop{
