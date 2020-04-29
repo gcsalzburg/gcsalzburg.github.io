@@ -33,15 +33,16 @@ main.article{
    width: 100%;
 
    @include small-desktop{
-      height: 40%;
-      margin-top: 10%;
+      height: 40vh;
+      margin-top: 10vh;
       position: relative;
       width: auto;
       display: flex;
       align-content: center;
    }
    @include mobile{
-      margin-top: 20%;
+      margin-top: 15vh;
+      height: 30vh;
    }
 
    img{
