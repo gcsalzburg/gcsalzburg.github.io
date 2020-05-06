@@ -89,17 +89,19 @@
    }
 }
 
+main .intro_blurb{
+   margin-top: 60px;
+}
+
 
 /* ****************************** */
 /* **         Serious          **
 /* ****************************** */
 
 .projects.serious{
-   margin: 25px auto;
+   margin-top: 25px;
    display: flex;
    flex-direction: column;
-   font-size: 20px;
-   max-width: 90ch;
 
    .project_card{
       position:relative;
@@ -178,10 +180,10 @@
 
 .projects.silly{
    display:grid;
-   margin: 25px 0;
+   margin-top: 25px;
    grid-template-columns: 1fr 1fr;
-   column-gap: 30px;
-   row-gap: 80px;
+   column-gap: 20px;
+   row-gap: 20px;
 
    @include mobile {
       display: block;
