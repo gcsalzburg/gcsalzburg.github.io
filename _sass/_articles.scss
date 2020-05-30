@@ -226,8 +226,17 @@ main.article{
       margin-bottom: 1em;
       text-decoration: none;
 
+      @include mobile{
+         flex-direction: column;
+      }
+
       time{
          width: 90px;
+
+         @include mobile{
+            font-size: 16px;
+            margin-bottom: 0.3em;
+         }
       }
       h3{
          font-family: $font_body;
@@ -237,7 +246,11 @@ main.article{
       .tags{
          font-size: 14px;
          opacity: 0.4;
-         margin: 0.5em 0 0;
+         margin: 0.5em 0 0 0;
+
+         @include mobile{
+            display:none;
+         }
 
          span{
             background:rgba(0,0,0,0.05);
