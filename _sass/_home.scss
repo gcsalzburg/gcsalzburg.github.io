@@ -194,16 +194,10 @@ main .intro_blurb{
    row-gap: 20px;
 
    @include mobile {
-      display: block;
+      grid-template-columns: 1fr;
    };
 
    .project_card{
-
-      min-height: 300px;
-
-      @include small-desktop {
-        margin-bottom: 40px;
-      };   
       
       .project_card_img{
          max-width: 100%;
