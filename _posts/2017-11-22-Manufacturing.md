@@ -4,7 +4,7 @@ folder: Manufacturing
 title: Better DFMA, with a telephone
 
 categories: [tech]
-tags: dfma dfm manufacturing assembly servicing repair telephones engineering
+tags: manufacturing assembly engineering
 
 excerpt: Last week I bought a wonderful old rotary dial telephone from a flea market in Germany. The original intent was to gut the insides and refit it for a more digital future, however the internal design is such a masterclass in design for repair, servicing and documentation that I haven't yet had the heart to butcher it. 
 

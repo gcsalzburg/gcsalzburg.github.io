@@ -218,6 +218,43 @@ main.article{
 /* **    List of Articles      **
 /* ****************************** */
 
+.article_list{
+   .article_card{
+      display:flex;
+      color:black;
+      margin-bottom: 1em;
+      text-decoration: none;
+
+      time{
+         width: 90px;
+      }
+      h3{
+         font-family: $font_body;
+         margin: 0;
+         font-size: 20px;
+      }
+      .tags{
+         font-size: 14px;
+         opacity: 0.4;
+         margin: 0.5em 0 0;
+
+         span{
+            background:rgba(0,0,0,0.05);
+            border-radius: 4px;
+            padding: 2px 6px;
+         }
+      }
+      &:hover{
+         h3{
+            text-decoration: underline;
+         }
+         .tags{
+            opacity: 0.7;
+         }
+      }
+   }
+}
+
 
 .articles{
    margin: 25px 0;

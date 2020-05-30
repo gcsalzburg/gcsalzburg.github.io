@@ -7,7 +7,7 @@ strapline: A library of common parts for electronics prototyping
 published: true
 
 categories: [tech]
-tags: electronics prototyping arduino raspberry-pi
+tags: electronics arduino
 ---
 
 I bought 22x Adafruit ItsyBitsy 32u4 5v boards this week. Two of them didn't identify when plugged in, instead registering as an error in Device Manager (I had a `libusb-win32 devices` device called `ATm32U4DFU`).
