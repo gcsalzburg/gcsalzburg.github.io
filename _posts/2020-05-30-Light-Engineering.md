@@ -68,7 +68,7 @@ Three basic design principles:
 1. Bend radii should be large and smooth, to avoid breaking the TIR.
 1. Tight coupling of the LED into the light pipe helps to capture a higher percentage of the light output.
 
-Light pipes need a high reflectance at the light pipe boundaries. Every surface has some roughness, so higher polish on the mold tool the better (e.g. [SPI-A1 or A2](https://www.protolabs.com/resources/design-tips/sorting-through-surface-finishes/)). Reflective paint will keep the light in but also introduce significant losses, especially on a long pipe. Let the TIR do the work for you!
+Light pipes need a high reflectance at the light pipe boundaries. All surfaces will have some level of roughness, so the more polished the mold tool is, the better (e.g. [SPI-A1 or A2](https://www.protolabs.com/resources/design-tips/sorting-through-surface-finishes/)). Note that adding reflective paint will keep the light in, but also introduce significant losses, especially on a long pipe. Let the TIR do the work for you!
 
 One counter-intuitive point is that a polished exit surface can lead to TIR where the light oscillates back and forth between the entrance and exit surfaces.
 
