@@ -14,7 +14,25 @@ layout: default
 <main class="text_column article">
 
    <h1>{{ page.title }}</h1>
-   <h4>{{ page.date | date: "%B %Y"  }}</h4>
+   <time>{{ page.date | date: "%B %Y"  }}</time>
+
+   {% if page.publishing %}
+      <p class="publishing_credits">
+      {% if page.publishing.type == "article" %}
+         Originally published at
+      {% else %}
+         This talk was given at
+      {% endif %}
+      <a href="{{ page.publishing.link}}">{{ page.publishing.name}}</a>
+      {% if page.publishing.for_name %}
+         for <a href="{{ page.publishing.for_link}}">{{ page.publishing.for_name}}</a>
+      {% endif %}
+      </p>
+   {% endif %}
+
+   {% if page.video %}
+      <video controls muted src="{{ page.video }}" width="100%"></video>
+   {% endif %}
 
    {{ content }}
 
