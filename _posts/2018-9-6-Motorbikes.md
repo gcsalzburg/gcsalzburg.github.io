@@ -17,7 +17,7 @@ publishing:
 
 video: "/images/posts/Motorbikes/Ars_Electronica_George_Cave.mp4"
 
-excerpt: Motorbikes are the least autonomous vehicles in the world. You're probably familiar with the current trend of expansive, interactive touchscreens in cars, but I'd like to show you a glimpse of a very different sort of interface challenge.
+excerpt: From the stage of Ars Electronica 2018, a look at the unique challenges of designing interfaces for the fastest vehicles on the roads.
 ---
 
 One of the most dangerous places in the world today are the roads.  

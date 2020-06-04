@@ -14,7 +14,7 @@ publishing:
    name: vanschneider.com
    is_direct_link: true
 
-excerpt: Interview with Tobias van Schneider for DESK magazine
+excerpt: Fancy working at KISKA in Salzburg? Interview with Tobias van Schneider for DESK magazine
 ---
 
 Read the interview here: https://vanschneider.com/get-job-kiska
