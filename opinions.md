@@ -9,7 +9,13 @@ list_category: opinions
 <section class="articles">
    {% for post in site.categories.opinions %}
       {% if post.url %}
-         <a class="article_card {{post.article_class}}" href="{{ post.url }}">
+         <a class="article_card {{post.article_class}}" href="
+            {% if post.publishing.is_direct_link %}
+               {{ post.publishing.link }}
+            {% else %}
+               {{ post.url }}
+            {% endif %}
+         ">
             <header style="background-image:url(
                {% if post.teaser_img %}
                   '/images/posts/{{ post.folder }}/{{ post.teaser_img }}'
