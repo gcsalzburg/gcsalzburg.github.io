@@ -1,0 +1,20 @@
+---
+layout: post
+folder: TEDx
+title: "TEDx: Hi-tech Mountaineering"
+
+categories: [opinions]
+tags: tedx mountaineering google-earth
+
+teaser_img: teaser_img.jpg
+
+publishing:
+   type: talk
+   link: https://www.youtube.com/watch?v=B87Tg2BkyW4
+   name: TEDx Talks
+   is_direct_link: true
+
+excerpt: How Google Earth and Soviet cartographers are enabling a new era of mountaineering exploration
+---
+
+Watch the talk here: https://www.youtube.com/watch?v=B87Tg2BkyW4
