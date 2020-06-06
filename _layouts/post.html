@@ -24,6 +24,9 @@ layout: default
          This talk was given at
       {% endif %}
       <a href="{{ page.publishing.link}}">{{ page.publishing.name}}</a>
+      {% if page.publishing.with_name %}
+         with <a href="{{ page.publishing.with_link}}">{{ page.publishing.with_name}}</a>
+      {% endif %}
       {% if page.publishing.for_name %}
          for <a href="{{ page.publishing.for_link}}">{{ page.publishing.for_name}}</a>
       {% endif %}
