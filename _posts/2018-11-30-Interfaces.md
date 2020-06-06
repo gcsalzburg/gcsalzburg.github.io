@@ -13,7 +13,7 @@ publishing:
    link: https://kiska.com/exchange/distributed-interfaces/
    name: Kiska.com
 
-excerpt: Nobody likes stroking a pane of glass, so why do we love touchscreens so much? Let's build distributed interfaces that work!
+excerpt: Nobody likes stroking a pane of glass, so why do we love touchscreens so much? Let's build distributed interfaces that work.
 ---
 
 Great interfaces are under threat. From screens. Think about every time you’ve tapped a screen and then looked elsewhere to check what happened. Recently I was driving an electric car and noticed exactly that: I went to charge it and plugged in the cable, only to turn around to check the connection was made. 
