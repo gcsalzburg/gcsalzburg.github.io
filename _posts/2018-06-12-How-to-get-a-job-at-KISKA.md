@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: How-to-get-a-job-at-KISKA
+folder: 2018-06-How-to-get-a-job-at-KISKA
 title: How to get a job at KISKA
 
 categories: [opinions]

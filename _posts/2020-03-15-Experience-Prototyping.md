@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: Experience-Prototyping
+folder: 2020-03-Experience-Prototyping
 title: Experience prototyping builds better products
 
 categories: [opinions]

@@ -61,6 +61,7 @@ sass:
 
 excerpt_separator: "<!-- more -->"
 
+# https://github.com/jekyll/jekyll-redirect-from#usage
 plugins:
   - jekyll-redirect-from
 

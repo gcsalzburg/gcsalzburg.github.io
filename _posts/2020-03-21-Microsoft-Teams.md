@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: Microsoft_Teams
+folder: 2020-03-Microsoft-Teams
 title: Microsoft Teams video effects
 strapline: Adding crazy video effects to your Microsoft Teams calls
 

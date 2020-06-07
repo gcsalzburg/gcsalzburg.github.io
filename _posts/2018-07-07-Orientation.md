@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: Orientation
+folder: 2018-07-Orientation
 title: Orientation
 strapline: AHRS, calibration and quaternions
 

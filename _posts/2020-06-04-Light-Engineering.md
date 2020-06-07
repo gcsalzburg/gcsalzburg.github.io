@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: Light-Engineering
+folder: 2020-06-Light-Engineering
 title: Light Engineering
 strapline: Exploring light pipes in consumer electronics
 

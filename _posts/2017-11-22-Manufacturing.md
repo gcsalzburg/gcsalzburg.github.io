@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: Manufacturing
+folder: 2017-11-Manufacturing
 title: Better DFMA, with a telephone
 
 categories: [tech]
