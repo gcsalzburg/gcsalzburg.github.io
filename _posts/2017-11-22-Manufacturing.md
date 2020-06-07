@@ -16,7 +16,7 @@ Over time I've become especially wary of conversations which begin "we need to a
 
 This is a subject for a future discussion however.
 
-![Opened telephone](/images/posts/Manufacturing/outside.jpg)
+![Opened telephone](outside.jpg)
 
 ## Design for repair and servicing ##
 
@@ -36,9 +36,9 @@ No matter how difficult you try to make it, somebody will one day [dismantle you
 
 The telephone has a single flat-head screw, with a wide uniform slot which means any flat sided object can be used to open it - no need for a screwdriver let alone a bespoke tool. The use of a captive screw here is genius too, slightly higher cost but it will never be lost. Note the turned end to aid alignment during [re-assembly](#5-design-for-re-assembly).
 
-![Single flathead screw for access](/images/posts/Manufacturing/access.jpg)
+![Single flathead screw for access](access.jpg)
 
-![Captive screw](/images/posts/Manufacturing/screw.jpg)
+![Captive screw](screw.jpg)
 
 ### 2. Design for repair ###
 
@@ -46,13 +46,13 @@ Open a typical car engine today and the components under the bonnet lie flush to
 
 This telephone uses a common screw size, with all the mounting points fixed in a common plane. The product doesn't need to be re-orientated or inverted in order to open and inspect it in the first place and the sealant dap of Loctite on the screws also serves a useful dual function as tamper-evidence.
 
-![Hand drawn schematic](/images/posts/Manufacturing/insides.jpg)
+![Hand drawn schematic](insides.jpg)
 
 ### 3. Design for (re-)assembly ###
 
 Aggressive snap-fits, ultrasonic welding and heat staked plastic casings are just a few examples of one-time assembly techniques commonly used in automated assembly lines. I don't have a strong argument against the obvious economic benefits of these techniques.   
 
-![Hand drawn schematic](/images/posts/Manufacturing/open.jpg)
+![Hand drawn schematic](open.jpg)
 
 ### 4. Self-documenting designs ###
 
@@ -60,13 +60,13 @@ In programming we talk about [self-documenting code](https://www.amazon.com/Clea
 
 These wiring looms might not have much colour variety in the cabling, but they are retained on elegant support trusses. The logic and connections between components is easy to see at a glance, with no hidden return paths or meshes of wiring.
 
-![Beautiful internal wiring looms](/images/posts/Manufacturing/wiring.jpg)
+![Beautiful internal wiring looms](wiring.jpg)
 
 ### 5. Accessible documentation ###
 
 Projects such as [iFixit](https://www.ifixit.com/) collate [community sourced wikis](https://www.youtube.com/watch?v=dMwLUnd_ydI) for all manner of repair tasks on consumer electronics, typically where no manual or supplier information exists. On a component level, services like [AllDataSheet](https://www.alldatasheet.com/) and [Octopart](https://octopart.com/) fill the void. But what's one better than shipping your product with a [technical support manual](https://archive.org/details/computermanuals)? A printed schematic to aid fault finding included inside the casework! Bonus points for being hand drawn.
 
-![Hand drawn schematic](/images/posts/Manufacturing/label.jpg)
+![Hand drawn schematic](label.jpg)
 
 ## What now?
 
@@ -74,4 +74,4 @@ I was very pleased to learn recently that much of this advice is also captured i
 
 We can learn so much from the masters of old.
 
-![Maker's Bill of Rights](/images/posts/Manufacturing/makers-rights.jpg)
+![Maker's Bill of Rights](makers-rights.jpg)

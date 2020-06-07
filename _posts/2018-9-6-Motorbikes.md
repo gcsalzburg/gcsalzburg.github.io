@@ -15,7 +15,7 @@ publishing:
    for_link: https://www.kiska.com/
    for_name: Kiska.com
 
-video: "/images/posts/Motorbikes/Ars_Electronica_George_Cave.mp4"
+video: "Ars_Electronica_George_Cave.mp4"
 
 excerpt: From the stage of Ars Electronica 2018, a look at the unique challenges of designing interfaces for the fastest vehicles on the roads.
 ---
@@ -35,7 +35,7 @@ You have only a fraction of a second to read the information you need from the d
 
 In a car it doesn't matter where or how you're driving - the interface presents all possible interactions and settings to you at all times. But on a bike we don't have this option - this just won't work!
 
-![Too many screens](/images/posts/Motorbikes/bike-crazy.jpg)
+![Too many screens](bike-crazy.jpg)
 
 At extreme speeds, every extra icon, menu option or pixel will increase the cognitive load on the rider. With a very limited display size with which to keep people safe, the design of the interfaces for these bikes must take a radically different approach.
 
@@ -49,4 +49,4 @@ We start by observing every possible riding scenario to determine the key intera
 
 Don't think of this as just copying some minimalistic design trend. Building interfaces for these sorts of situations is only possible when the design is directly driven by the context in which it will be used. After all, at 250kph, nobody ever wonders if their heated seat is turned on, but everyone should know their speed.
 
-![On stage at Ars Electronica](/images/posts/Motorbikes/on-stage.jpg)
+![On stage at Ars Electronica](on-stage.jpg)

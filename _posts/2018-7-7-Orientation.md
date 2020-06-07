@@ -14,7 +14,7 @@ The primary output from any one of the many 9DOF (degree of freedom) boards avai
 
 <!-- more -->
 
-![Various 9DOF sensors](/images/posts/Orientation/dof_sensors.jpg)
+![Various 9DOF sensors](dof_sensors.jpg)
 
 ## Basic data capture ##
 
@@ -129,7 +129,7 @@ public:
 
 Calibration is used to account for errors in the magnetometer output. I use the [MotionCal tool](https://www.pjrc.com/store/prop_shield.html) from PJRC and suggest you do the same. 
 
-![Various 9DOF sensors](/images/posts/Orientation/motioncal.png)
+![Various 9DOF sensors](motioncal.png)
 
 Upload the test sketch to the board and then wave it around for a while until the red dots look nice and round. The sensor reading function then becomes a little larger as shown below: 
 
@@ -176,7 +176,7 @@ I use a small set of libraries for vector, quaternion and matrix manipulation wh
 
 The video below shows a test of the orientation code running on a 32u4 development board. The button saves the quaternion for the board at the moment it is pressed, and the lights then display the roll/pitch away from that position. I can use this to detects if an object has toppled over. 
 
-<video controls muted src="/images/posts/Orientation/orientation-test.mp4" width="100%">
+<video controls muted src="orientation-test.mp4" width="100%">
     Sorry, your browser doesn't support embedded videos.
 </video>
 

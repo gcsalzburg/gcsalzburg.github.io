@@ -22,7 +22,7 @@ excerpt: Let people believe in your wild ideas by experiencing them first hand. 
 
 When you’re excited about a new product experience design, there’s nothing more disappointing than it not working. Not because the idea is bad, but because it’s not usable, or doesn’t live up to the brand. That’s where experience prototyping comes in. It closes the gap between idea and final product and gets decisionmakers in a business excited in the process. 
 
-![Vehicle interface prototype testing](/images/posts/Experience-Prototyping/protos2.jpg)
+![Vehicle interface prototype testing](protos2.jpg)
 
 AI assistants that don’t understand your accent. Touchscreens too small, or out of place, to let you select the right option. Menus that seem simple, but you get lost in when under pressure. There’s lots to consider when executing new product experiences.
 
@@ -30,7 +30,7 @@ It takes a lot of confidence to say “Yes!” to an idea when it only exists as
 
 That’s because you can’t get a gut feeling for a product if there’s nothing to actually feel. Especially when faced with big decisions in new product and experience development. We know the hardest thing a decisionmaker in a business must do is predict how something they’re creating will make consumers feel. This is where experience prototypes are the answer. They provide the proof needed to get a new product design off the ground.
 
-![Riding motorbikes, powered by Javascript](/images/posts/Experience-Prototyping/protos4.jpg)
+![Riding motorbikes, powered by Javascript](protos4.jpg)
 
 ## So what is an experience prototype?
 
@@ -38,7 +38,7 @@ We explain it as an interactive and real-world simulation focussed on the most r
 
 It’s also important to prototype contexts as much as we design a product experience prototype. At night, on the highway, or in the rain – that’s where the best feedback comes from. And as an idea evolves, so do the prototypes. Accurate components like displays and sensors are added, bringing richer detail and less ambiguity. At each stage of the design there’s no need to second-guess. You know how ideas will be received, because you’ve already experienced them firsthand. 
 
-![Testing and repairing handheld protos](/images/posts/Experience-Prototyping/protos3.jpg)
+![Testing and repairing handheld protos](protos3.jpg)
 
 ## Confidence
 
@@ -48,4 +48,4 @@ Particularly with user tests you get less confusion, clearer ideas, and better d
 
 In the end, the further we design a brand into an ecosystem of products and services, the more we must experience new ideas to understand them. So, we need to keep encouraging decisionmakers to put a prototype in someone’s hands, smile, and say, “Off you go, then. Try that”.
 
-![Magnús and I, looking particularly attractive](/images/posts/Experience-Prototyping/protos1.jpg)
+![Magnús and I, looking particularly attractive](protos1.jpg)

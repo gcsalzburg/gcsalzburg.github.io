@@ -58,4 +58,4 @@ I thought maybe the bootloader was the issue. Here's how to burn it using an Ard
 
 In theory, its also [possible to use the Arduino IDE to do this](https://coytar.wordpress.com/2013/04/27/use-arduino-uno-as-an-avr-isp-to-burn-the-bootloader-to-a-sparkfun-pro-micro-5v/), but I didn't have much success (it worked once, then gave me repeated errors).
 
-![Adafruit ItsyBitsy 32u4 plugged into the Uno](/images/posts/ItsyBitsy-Bootloader/plugged_to_uno.jpg)
+![Adafruit ItsyBitsy 32u4 plugged into the Uno](plugged_to_uno.jpg)

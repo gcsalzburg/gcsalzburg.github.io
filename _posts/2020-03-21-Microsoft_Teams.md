@@ -18,7 +18,7 @@ I wanted to experiment with making the video chat in Teams a bit more...fun. Zoo
 
 I'll show you how!
 
-![Screen capture of the Microsoft Teams start chat view with the Distort effect](/images/posts/Microsoft_Teams/join-chat-demo.gif)
+![Screen capture of the Microsoft Teams start chat view with the Distort effect](join-chat-demo.gif)
 
 <!-- more -->
 
@@ -38,33 +38,33 @@ We'll use a simple Webcam software called [Webcamoid](https://webcamoid.github.i
 
    On Windows or Mac, select the option under `Installable` and `64bits`. Open up the program.
 
-   ![Webcamoid software installed](/images/posts/Microsoft_Teams/installed.jpg)
+   ![Webcamoid software installed](installed.jpg)
 
 2. From the menu at the bottom, select the `Preferences` option.
 
-   ![Selecting preferences from the bottom menu](/images/posts/Microsoft_Teams/preferences.jpg)
+   ![Selecting preferences from the bottom menu](preferences.jpg)
 
 3. On the top left menu, you'll see the `Output` tab is already selected. So on the right, click `Add` and give your new Virtual Camera a name you'll recognise. And click `Ok`. You might get a popup from Windows asking if you're ok making changes to your PC. Obviously, say yes.
 
    You should close and re-open Webcamoid at this point. Not sure why, just seemed to help the Virtual Camera show up.
 
-   ![Adding a virtual camera](/images/posts/Microsoft_Teams/add-virtual-camera.jpg)
+   ![Adding a virtual camera](add-virtual-camera.jpg)
 
 4. To get the camera to show up in Teams, you'll want to restart it. Use the taskbar icon to select `Quit`, then re-launch Teams.
 
-   ![Quit Teams from the Taskbar](/images/posts/Microsoft_Teams/quit-teams.jpg)
+   ![Quit Teams from the Taskbar](quit-teams.jpg)
 
 5. To select your Virtual Webcam in Teams, right-click on your face in the top right corner and select `Settings`.
 
-   ![Opening Settings in Teams](/images/posts/Microsoft_Teams/teams-settings.jpg)
+   ![Opening Settings in Teams](teams-settings.jpg)
 
    Then under the `Devices` menu at the bottom, you can change your `Camera` in the dropdown menu to your new Virtual Camera.
 
-   ![Selecting the Virtual Camera in Teams](/images/posts/Microsoft_Teams/devices-camera.jpg)
+   ![Selecting the Virtual Camera in Teams](devices-camera.jpg)
 
 6. If it works, you'll see a video feed of either your existing webcam, or if Webcamoid is not open then it will be an inverted image of the Webcamoid logo (as shown below). The easiest way to test the video feed in Teams is to select `Calendar` and then `Meet Now`, which opens a new video call immediately. Success! 
 
-   ![Webcamoid Default Screen](/images/posts/Microsoft_Teams/webcam-working.jpg)
+   ![Webcamoid Default Screen](webcam-working.jpg)
 
 ## Playing with the filters ##
 
@@ -72,9 +72,9 @@ Just setting your Virtual Camera to the same feed as your normal camera is fairl
 
 Back in the Webcamoid program, the `Filters` tab lets you select a filter. Distort and Psychadelic were particularly fun. Filters apply to the video feed selected in the `Source` tab and are rendered instantly - you can switch between effects mid-call with ease!
 
-![Selecting a filter in Webcamoid](/images/posts/Microsoft_Teams/filters-panel.jpg)
+![Selecting a filter in Webcamoid](filters-panel.jpg)
 
-![Animation of the effect applied in Teams](/images/posts/Microsoft_Teams/effect-join1.gif)
+![Animation of the effect applied in Teams](effect-join1.gif)
 
 ### Hints and Tips ###
 
