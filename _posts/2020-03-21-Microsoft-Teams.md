@@ -10,6 +10,9 @@ og_image: header-1.gif
 
 categories: [tech]
 tags: teams conference-call working-from-home 
+
+redirect_from:
+   - /2020/Microsoft_Teams/
 ---
 
 This week, offices across Europe and North America had their first taste of remote working thanks to COVID-19. For many, this meant learning to use Microsoft Teams, which saw almost [40% more traffic this week than last](https://www.theverge.com/2020/3/19/21186452/microsoft-teams-new-features-noise-supression-user-increase-coronavirus).

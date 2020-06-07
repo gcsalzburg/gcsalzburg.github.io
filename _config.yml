@@ -61,6 +61,8 @@ sass:
 
 excerpt_separator: "<!-- more -->"
 
+plugins:
+  - jekyll-redirect-from
 
 # The URL for the staticman API bridge endpoint
 # You will want to modify some of the values:
