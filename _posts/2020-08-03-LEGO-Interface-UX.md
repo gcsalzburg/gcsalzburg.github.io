@@ -4,7 +4,7 @@ folder: 2020-08-Lego-Interface-UX
 title: The UX of LEGO Interface Panels
 strapline: The design, layout and organisation of 52 different LEGO control panel bricks
 
-published: false
+published: true
 
 og_image: og_image.jpg
 
@@ -49,7 +49,7 @@ We can compare the three interfaces below to see this in action. Ignore the over
 
 {% include image.html url="differentiation.jpg" description="Left to right: terrible, poor and better input differentiation" %}
 
-Differentiation like this is a still a very real problem today. In 2015, [Ford recalled 13,500 Lincoln SUVs](https://money.cnn.com/2015/01/06/autos/ford-push-button-ignition-recall/index.html) because drivers were mistakenly shutting off the engine whilst speeding down the motorway when they tried to activate sport mode. See if you can spot why:
+Differentiation like this is a still a very real problem today. In 2015, [Ford recalled 13,500 Lincoln SUVs](https://money.cnn.com/2015/01/06/autos/ford-push-button-ignition-recall/index.html) because drivers speeding down the motorway were mistakenly shutting off the engine when they tried to activate sport mode. See if you can spot why:
 
 {% include image.html url="ford-lincoln.jpg" description="Ford Lincoln MKC before the Engine start/stop button was moved. Source: CNN" %}
 
@@ -57,11 +57,11 @@ Shape coding is one approach to differentiation, but there are many others. Colo
 
 {% include image.html url="codings.jpg" description="The 6 basic codings. Notice that many of these examples actually combine multiple codings in one." %}
 
-Size, shape and colour-coding are the fundamentals: quick-wins that can fix a lot of interface problems. Texture is a also great differentiator for blind operation, particularly on small dials requiring precise control.
+Size, shape and colour-coding are the fundamentals: quick-wins that can fix a lot of interface problems. Texture is also a great differentiator for blind operation, particularly on small dials requiring precise control.
 
 Position-coding is seemingly straightforward but is often under used. Products with a clear default ergonomic position (like binoculars or a gaming console) can exploit the natural position of the hand to differentiate between primary and secondary actions.
 
-Finally, operation-coding ascribes different movements (like a twist or vertical slide) to different types of movements. This can be immensely powerful when the switch motion reinforces the operation behind it, e.g. a crane lever which raises the crane when the lever is raised.
+Finally, operation-coding ascribes different types of movements (like a twist or vertical slide) to different inputs. This can be immensely powerful when the switch motion reinforces the operation behind it, e.g. a crane lever which raises the crane when the lever is raised.
 
 {% include image.html url="lego-codings.jpg" description="The six different codings in use in the LEGO interfaces: size, shape, colour, texture, position, operation" %}
 
