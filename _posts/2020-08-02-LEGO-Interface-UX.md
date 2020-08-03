@@ -1,6 +1,6 @@
 ---
 layout: post
-folder: 2020-08-Lego-Interface-UX
+folder: 2020-08-LEGO-Interface-UX
 title: The UX of LEGO Interface Panels
 strapline: The design, layout and organisation of 52 different LEGO control panel bricks
 
