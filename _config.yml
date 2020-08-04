@@ -64,6 +64,7 @@ excerpt_separator: "<!-- more -->"
 # https://github.com/jekyll/jekyll-redirect-from#usage
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
 
 # The URL for the staticman API bridge endpoint
 # You will want to modify some of the values:
