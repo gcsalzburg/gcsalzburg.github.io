@@ -41,7 +41,7 @@ What could cause 400 WWII pilots to raise the landing gear on their B-17 bomber 
 
 It was the psychologist Alphonsis Chapanis who first suggested that the high rate of crash landings might be the fault of poor interface design. The adjacent landing gear and flap control knobs were identically shaped. The pilots never stood a chance.
 
-{% include image.html url="landing.jpg" description="B-17 belly landing, and the shape coding that helped to irradiate the problem. Source: Wikipedia" %}
+{% include image.html url="landing.jpg" description="B-17 belly landing, and the shape coding that helped to eradicate the problem. Source: Wikipedia" %}
 
 His temporary solution was to glue differently shaped strips of rubber to each switch, enabling blind operation by touch alone. This gave rise to the idea of shape coding and a system of differentiation still being followed in aircraft cockpits today.
 
