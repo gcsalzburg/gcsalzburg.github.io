@@ -10,6 +10,8 @@ categories: [tech]
 tags: light-pipes mechanical optics
 ---
 
+<div class="interaction_magic_notice"><strong>January 2021 update</strong><br>You can also read this article, and others, on my new site at:<br><a href="https://interactionmagic.com/Light-Engineering">https://interactionmagic.com/Light-Engineering</a></div>
+
 Light travels in [straight lines](https://physics.stackexchange.com/questions/71544/why-does-light-always-travel-in-a-straight-line). This is fortunate, since it allows us to precisely engineer light pipes that manipulate, re-direct and disperse the light in a controlled manner. Light pipe engineering is where optics and mechanical design meet.
 
 Why use light pipes? It's hard to find a piece of consumer electronics without a status LED or two. The wireless charger below is typical. It uses a long, molded light pipe to join the LEDs mounted on the rear PCB to the small front casing aperture. Doing so saves the cost and manufacturing complexity of using a much larger, or secondary, PCB. Light pipes are cheap and versatile, enabling the light to be [routed in 3D anywhere](https://www.fictiv.com/hwg/design/learn-by-example-how-to-design-light-pipes) within the product.

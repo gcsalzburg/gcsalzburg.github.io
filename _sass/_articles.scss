@@ -29,8 +29,22 @@ main.article{
       text-align:center;
       display:block;
    }
-}
 
+	.interaction_magic_notice{
+		padding: 1em 1em 1em calc(2em + 70px);
+		font-size: 20px;
+		font-weight: 300;
+		line-height: 1.4em;
+		background-color: aliceblue;
+		border-style: solid none;
+		border-color: cornflowerblue;
+		border-width: 2px;
+		background-image: url(/images/interaction_magic_logo_square_black_trans.png);
+		background-size: 70px;
+		background-repeat: no-repeat;
+		background-position: 1em 50%;
+	}
+}
 .article_header{
    width: 100%;
 

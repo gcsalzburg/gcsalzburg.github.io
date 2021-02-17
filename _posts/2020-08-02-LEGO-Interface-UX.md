@@ -12,6 +12,8 @@ categories: [tech]
 tags: lego ux interface-design
 ---
 
+<div class="interaction_magic_notice"><strong>January 2021 update</strong><br>You can also read this article, and others, on my new site at:<br><a href="https://interactionmagic.com/UX-LEGO-Interfaces">https://interactionmagic.com/UX-LEGO-Interfaces</a></div>
+
 Piloting an [ocean exploration ship](https://www.lego.com/en-de/product/ocean-exploration-ship-60266) or [Martian research shuttle](https://www.lego.com/en-de/product/mars-research-shuttle-60226) is serious business. Let's hope the control panel is up to scratch. Two studs wide and angled at 45°, the ubiquitous "2x2 decorated slope" is a LEGO minifigure's interface to the world. 
 
 These iconic, low-resolution designs are the perfect tool to learn the basics of physical interface design. Armed with 52 different bricks, let's see what they can teach us about the design, layout and organisation of complex interfaces. 
