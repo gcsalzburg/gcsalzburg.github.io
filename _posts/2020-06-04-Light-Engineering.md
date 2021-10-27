@@ -1,4 +1,6 @@
 ---
+redirect_new_url: https://interactionmagic.com/Light-Engineering
+
 layout: post
 folder: 2020-06-Light-Engineering
 title: Light Engineering

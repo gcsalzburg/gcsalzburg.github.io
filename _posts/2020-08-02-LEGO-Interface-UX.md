@@ -1,4 +1,6 @@
 ---
+redirect_new_url: https://interactionmagic.com/UX-LEGO-Interfaces
+
 layout: post
 folder: 2020-08-LEGO-Interface-UX
 title: The UX of LEGO Interface Panels

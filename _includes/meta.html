@@ -2,6 +2,11 @@
    <base href="/images/posts/{{ page.folder }}/">
 {% endif %}
 
+{% if page.redirect_new_url %}
+	<meta http-equiv="refresh" content="0; url={{ page.redirect_new_url }}">
+	<link rel="canonical" href="{{ page.redirect_new_url }}" />
+{% endif %}
+
 <meta name="author" content="{{ site.author }}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.designedbycave.co.uk{{ page.url }}">
